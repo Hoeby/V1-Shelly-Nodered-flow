@@ -1,0 +1,4229 @@
+[
+    {
+        "id": "e673d877691c41c6",
+        "type": "tab",
+        "label": "V1 Shelly2Domoticz",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "505618e07c90630b",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "IDX shelly tabel",
+        "style": {
+            "label": true,
+            "stroke": "#3f93cf",
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "e8b32b858198239f",
+            "5eb70da670c07e6a",
+            "50797f1e05707d42",
+            "8876f268f2d2828e",
+            "3d92f31de30d2c22",
+            "5dec884841d31a6d",
+            "a3d3d04d66b5ed84",
+            "d9b14a45b233c8ca",
+            "5afe174b5169057b",
+            "06b5226a793bb531",
+            "6c3819770488d525",
+            "9f5fd34525d8135c",
+            "3c8a782951a4f4d2",
+            "b6df36f40e4d0704",
+            "ba44b09a0ce99ac8",
+            "81090e781671c7f4",
+            "9d12a3a11dac2c76",
+            "4282781648061454",
+            "0227d6c01c5f9cd9",
+            "ddac08a116fcf0c3",
+            "52ade3ef04838837",
+            "c5b02678e09ddf1d",
+            "4ff9f519f9ecd23f",
+            "ccd07e8f467ccb60",
+            "9677dd6b0280c920",
+            "e8e94dbbef05c969",
+            "d44d4522420736c5",
+            "c624c439fa74fc4b"
+        ],
+        "x": 34,
+        "y": 1319,
+        "w": 1632,
+        "h": 662
+    },
+    {
+        "id": "59796bbcdf36aee8",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Receive shelly messages",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "60c874dfbb8f595d",
+            "d1555be9c3cec11c",
+            "93cae58a2be98597",
+            "7679e17e2f74a4f3",
+            "cdcee4b77dd5dac8",
+            "a88e5d6c145c87b0",
+            "229f1ecffed6cb09",
+            "c3c285d9f0cc02c7",
+            "c751b4b5bfd383b3",
+            "5ee0b2ef0cde066b",
+            "913bd9a00d3ed0d0",
+            "d8f3a779ee2d1a98",
+            "6109e6f354b90320",
+            "c5682192946879ac"
+        ],
+        "x": 34,
+        "y": 719,
+        "w": 1632,
+        "h": 242
+    },
+    {
+        "id": "0617ce56c5fd4166",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Central MQTT settings",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "106af48d94188ff7",
+            "8f67fb6f17b9b259",
+            "df646706d0e7cddc",
+            "f2351208b93aa7c7"
+        ],
+        "x": 34,
+        "y": 539,
+        "w": 672,
+        "h": 122
+    },
+    {
+        "id": "8e27df35e701539c",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Central save file location",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "29fdebd646d344d7",
+            "f4ea7c28610d1d38",
+            "c42defa6f5a5566d",
+            "c2c82b38c4f838e5",
+            "5f3fabe39116c2cb",
+            "e24c6eb02dbb2cdc"
+        ],
+        "x": 34,
+        "y": 359,
+        "w": 432,
+        "h": 122
+    },
+    {
+        "id": "4aa6b6492bda6cb7",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Download knop flows.json",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "b5e6bfaab72c1bf3",
+            "b07d1efa2ed3aac7",
+            "672f107ca3aea6fb",
+            "bb476e0c14d4b19b",
+            "5af6644d56787bc3",
+            "4077a92944aa6440",
+            "de3b54b968b48044",
+            "86bede4f147dd6d2",
+            "999b9d08a9dd50cf",
+            "b9d26164507a8b6e",
+            "1986b629315fdc72",
+            "ee72a3f655b87184"
+        ],
+        "x": 34,
+        "y": 2139,
+        "w": 1632,
+        "h": 122
+    },
+    {
+        "id": "054f5cc44a05c112",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Save file location",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "ca2b73584ae14c45",
+            "74fde5d61217d46c",
+            "234388f62b903c9c",
+            "587911ce143e5445",
+            "04f10959e558a441",
+            "1b11fdfc0e8ab45b",
+            "cea40c14a5aa608b",
+            "6bcf6c1f710e50bb",
+            "191fdec39955e3b6",
+            "43917631f7b9b013",
+            "a526afda514625a8",
+            "47bfbc6d3ff5eca7",
+            "2f0a28612a2e4a15",
+            "f944b9b61b7444cb",
+            "9af3ba5fe586cf07",
+            "25e486f012aaf733",
+            "3a7a3eebc35cc036",
+            "39ab3f68538d945d"
+        ],
+        "x": 34,
+        "y": 2279,
+        "w": 1632,
+        "h": 282
+    },
+    {
+        "id": "c6b77ac5e9765603",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Set flow.get(tztest) na deploy",
+        "style": {
+            "label": true,
+            "stroke": "#3f93cf",
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "9709d58317f010ce",
+            "724ad9c0b234695f",
+            "da24c2ab0c496238",
+            "83ab7f191c167f8a",
+            "627e2b54ad1cf716",
+            "e1bf2d166d88f049",
+            "8081552f10e7e0a1",
+            "0d7f3efb7b51742b",
+            "08ecb22249cad446",
+            "6222a9be28dfbf5f",
+            "24a56aca949f201e"
+        ],
+        "x": 34,
+        "y": 1999,
+        "w": 1632,
+        "h": 122
+    },
+    {
+        "id": "e5ca1fdfc9e163a0",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Shelly status list",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "8e6765c3919bd08e",
+            "8e495666c59199df",
+            "d2854726d6ae6bf0",
+            "5eaaa97fb04db3e5",
+            "382b6385af5b08ad",
+            "e0629ba6d2bf621f",
+            "9c97b63f791a8c89",
+            "0334f7d7aeb5bf9a",
+            "425d8d11c47a321d",
+            "74b3380d315c5269",
+            "452b38fec749323b"
+        ],
+        "x": 34,
+        "y": 1179,
+        "w": 1632,
+        "h": 122
+    },
+    {
+        "id": "3164a082264709ba",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "Shelly IDX table",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true
+        },
+        "nodes": [
+            "dcb8f3e1d62c327b",
+            "b4642b1c08dea7c6",
+            "f21c86a1e5386551",
+            "b858fae724241dfd",
+            "ab4be1d628b41d46",
+            "e75eda3c5fa16c37",
+            "afb7808bae42db99",
+            "9ecc5b80c032bd78",
+            "20d89472b6d42ff9",
+            "7aed0e3ca235c70e",
+            "dd2baae8845ebade",
+            "011ffac1fa754918",
+            "381c30ab3cd13477",
+            "be6ba06d57e8ef2e"
+        ],
+        "x": 34,
+        "y": 979,
+        "w": 1632,
+        "h": 182
+    },
+    {
+        "id": "d269e0dd2f0f8ad6",
+        "type": "comment",
+        "z": "e673d877691c41c6",
+        "name": "V1_18-05-2023_R1",
+        "info": "V1 18-05-2023 R1 Beta:\n- Start of shelly script",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "06b5226a793bb531",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 1520,
+        "wires": [
+            [
+                "ddac08a116fcf0c3"
+            ]
+        ]
+    },
+    {
+        "id": "50797f1e05707d42",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Clear",
+        "func": "delete msg.payload;\nmsg.payload =\"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1900,
+        "wires": [
+            [
+                "e8b32b858198239f",
+                "3d92f31de30d2c22",
+                "5dec884841d31a6d",
+                "a3d3d04d66b5ed84",
+                "5afe174b5169057b",
+                "c5b02678e09ddf1d",
+                "4ff9f519f9ecd23f",
+                "3c8a782951a4f4d2",
+                "9677dd6b0280c920",
+                "e8e94dbbef05c969",
+                "d44d4522420736c5"
+            ]
+        ]
+    },
+    {
+        "id": "8876f268f2d2828e",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Set Device settings",
+        "func": "let option1 = [\"Shelly Plug S\"];\nlet option2 = [\"Shelly Plug S\"];\nlet option3 = [\"Shelly Plug S\"];\nlet option4 = [\"Shelly Plug S\"];\nlet option5 = [];\nlet option6 = [];\nlet option7 = [];\nlet option8 = [];\nlet data1 = context.get(\"data1\") || null; //get from context or default to null\nlet data2 = context.get(\"data2\") || null; //get from context or default to null\nlet data3 = context.get(\"data3\") || null; //get from context or default to null\nlet data4 = context.get(\"data4\") || \"Not set\"; //get from context or default to 0\nlet data5 = context.get(\"data5\") || \"Not set\"; //get from context or default to 0\nlet data6 = context.get(\"data6\") || \"Not set\"; //get from context or default to 0\nlet data7 = context.get(\"data7\") || \"Not set\"; //get from context or default to 0\nlet data8 = context.get(\"data8\") || \"Not set\"; //get from context or default to 0\nlet data9 = context.get(\"data9\") || \"Not set\"; //get from context or default to 0\nlet data10 = context.get(\"data10\") || \"Not set\"; //get from context or default to 0\nlet data11 = context.get(\"data11\") || \"Not set\"; //get from context or default to 0\nlet data12 = context.get(\"data12\") || \"Not set\"; //get from context or default to 0\nlet data13 = context.get(\"data13\") || \"Not set\"; //get from context or default to 0\n\n\nlet reconfig = flow.get(\"sh2dz-idx\") || {};\n\nswitch (msg.topic){\n\n    case \"device\":\n        data1 = msg.payload; \n        context.set(\"data1\", data1);//store in context for next time \n        return;\n\n    case \"sw\":\n        data2 = msg.payload;\n        context.set(\"data2\", data2);//store in context for next time \n        return;\n\n    case \"type\":\n        data3 = msg.payload;\n        context.set(\"data3\", data3);//store in context for next time \n        return;\n    \n    case \"idx\":\n        data4 = msg.payload; \n        context.set(\"data4\", data4);//store in context for next time \n        return;\n        \n    case \"idxoption1\":\n        data5 = msg.payload;\n        context.set(\"data5\", data5); //store in context for next time \n        return;\n        \n    case \"idxoption2\":\n        data6 = msg.payload;\n        context.set(\"data6\", data6); //store in context for next time \n        return;\n    \n    case \"idxoption3\":\n        data7 = msg.payload;\n        context.set(\"data7\", data7); //store in context for next time \n        return;\n    \n    case \"idxoption4\":\n        data8 = msg.payload;\n        context.set(\"data8\", data8); //store in context for next time \n        return;\n\n    case \"idxoption5\":\n        data9 = msg.payload;\n        context.set(\"data9\", data9); //store in context for next time \n        return;\n\n    case \"idxoption6\":\n        data10 = msg.payload;\n        context.set(\"data10\", data10); //store in context for next time \n        return;\n    \n    case \"idxoption7\":\n        data11 = msg.payload;\n        context.set(\"data11\", data11); //store in context for next time \n        return;\n    \n    case \"idxoption8\":\n        data12 = msg.payload;\n        context.set(\"data12\", data12); //store in context for next time \n        return;\n\n    case \"offline\":\n        data13 = msg.payload;\n        context.set(\"data13\", data13); //store in context for next time \n        return;\n\n    case \"submit\":\n        if (data1 !== null ) {\n            let receivedSensors = [];\n\n            let dev = reconfig[(data1.split(\"/\")[0])] || {};\n            dev.name = data1.split(\":\")[0];\n            dev.sw = data1.split(\":\")[1];\n            dev.type = data3;\n            dev.idx = data4;\n            if (option1.includes(data3)) {\n                dev.idxoption1 = data5;\n            } else {\n                dev.idxoption1 = \"N/A\";\n            }\n            if (option2.includes(data3)) {\n                dev.idxoption2 = data6;\n            } else {\n                dev.idxoption2 = \"N/A\";\n            } \n            if (option3.includes(data3)) {\n                dev.idxoption3 = data7;\n            } else {\n                dev.idxoption3 = \"N/A\";\n            }\n            if (option4.includes(data3)) {\n                dev.idxoption4 = data8;\n            } else {\n                dev.idxoption4 = \"N/A\";\n            }\n            if (option5.includes(data3)) {\n                dev.idxoption5 = data9;\n            } else {\n                dev.idxoption5 = \"N/A\";\n            }\n            if (option6.includes(data3)) {\n                dev.idxoption6 = data10;\n            } else {\n                dev.idxoption6 = \"N/A\";\n            }\n            if (option7.includes(data3)) {\n                dev.idxoption7 = data11;\n            } else {\n                dev.idxoption7 = \"N/A\";\n            }\n            if (option8.includes(data3)) {\n                dev.idxoption8 = data12;\n            } else {\n                dev.idxoption8 = \"N/A\";\n            }\n            dev.offline = data13;\n            // write back\n            reconfig[(data1.split(\"/\")[0])] = dev;\n            receivedSensors.push(dev);\n \n            flow.set(\"sh2dz-idx\", reconfig);\n            context.set(\"data1\", null);\n        } else {\n            return;\n        }\n    }\n\nreturn [{payload:Object.values(reconfig)},msg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1540,
+        "wires": [
+            [
+                "06b5226a793bb531",
+                "c624c439fa74fc4b"
+            ],
+            [
+                "6c3819770488d525"
+            ]
+        ]
+    },
+    {
+        "id": "d9b14a45b233c8ca",
+        "type": "delay",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 1900,
+        "wires": [
+            [
+                "50797f1e05707d42"
+            ]
+        ]
+    },
+    {
+        "id": "6c3819770488d525",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Shelly, Restore idx table",
+        "mode": "link",
+        "links": [
+            "dd2baae8845ebade"
+        ],
+        "x": 1105,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "b5e6bfaab72c1bf3",
+        "type": "http in",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "url": "/flows.json",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 2220,
+        "wires": [
+            [
+                "672f107ca3aea6fb"
+            ]
+        ]
+    },
+    {
+        "id": "b07d1efa2ed3aac7",
+        "type": "http response",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "672f107ca3aea6fb",
+        "type": "http request",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "body",
+        "url": "https://raw.githubusercontent.com/Hoeby/V1-Shelly-Nodered-flow/main/flows.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 2220,
+        "wires": [
+            [
+                "4077a92944aa6440"
+            ]
+        ]
+    },
+    {
+        "id": "9f5fd34525d8135c",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Shelly, Device in",
+        "links": [
+            "452b38fec749323b"
+        ],
+        "x": 75,
+        "y": 1360,
+        "wires": [
+            [
+                "0227d6c01c5f9cd9"
+            ]
+        ]
+    },
+    {
+        "id": "bb476e0c14d4b19b",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 2180,
+        "wires": [
+            [
+                "5af6644d56787bc3"
+            ]
+        ]
+    },
+    {
+        "id": "5af6644d56787bc3",
+        "type": "http request",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://raw.githubusercontent.com/Hoeby/V1-Shelly-Nodered-flow/main/version",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 2180,
+        "wires": [
+            [
+                "ee72a3f655b87184"
+            ]
+        ]
+    },
+    {
+        "id": "68de8c634a871a55",
+        "type": "comment",
+        "z": "e673d877691c41c6",
+        "name": "Wat aanpassen bij een nieuwe release",
+        "info": "- De \"comment\" node van de release notes.\n- Node \"UPDATE RELEASE\", de versie in aanpassen.\n- Node \"SCRIPT VERSION\", de versie in aanpassen.\n- Op github de \"version\" file aanpassen.\n- Op github de \"releasenotes\" file aanpassen.",
+        "x": 170,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4077a92944aa6440",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "Make http header",
+        "func": "let store = flow.get(\"version\")\nmsg.headers['Content-Disposition'] = 'attachment; filename=\"' + store + '.json\"'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 2220,
+        "wires": [
+            [
+                "b07d1efa2ed3aac7"
+            ]
+        ]
+    },
+    {
+        "id": "86bede4f147dd6d2",
+        "type": "http request",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://raw.githubusercontent.com/Hoeby/V1-Shelly-Nodered-flow/main/releasenotes",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1090,
+        "y": 2180,
+        "wires": [
+            [
+                "b9d26164507a8b6e"
+            ]
+        ]
+    },
+    {
+        "id": "b9d26164507a8b6e",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "Check response github",
+        "func": "if (msg.statusCode === 200 || 201) {\n    return msg;\n} else {\n    msg.payload = '<p style=\"color:red;\">Error loading release notes from github</p><br><a href=\"https://raw.githubusercontent.com/Hoeby/V1-Shelly-Nodered-flow/main/releasenotes\" target=\"_blank\">Hyperlink to github, for the release notes</a>'\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 2180,
+        "wires": [
+            [
+                "999b9d08a9dd50cf"
+            ]
+        ]
+    },
+    {
+        "id": "65ad857098cd1934",
+        "type": "comment",
+        "z": "e673d877691c41c6",
+        "name": "Welke modules installeren voor deze flow",
+        "info": "Via manage pallette, onderstaande modules toevoegen\n- node-red-dashboard\n- node-red-node-ui-table",
+        "x": 180,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3c8a782951a4f4d2",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Device list",
+        "func": "msg.payload = \"\"\nmsg.options = [ \"Shelly Plug S\",\n                \"Shelly 2.5\"]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1880,
+        "wires": [
+            [
+                "b6df36f40e4d0704"
+            ]
+        ]
+    },
+    {
+        "id": "81090e781671c7f4",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "How to setup device in domoticz",
+        "func": "let device = context.get(\"type\") || 0; //get from context or default to 0\n\nswitch (msg.topic){\n\n    case \"type\":\n        device = msg.payload; \n        context.set(\"type\", device);//store in context for next time \n        return;\n\n    case \"submit\":\n        //Shelly Plug S       \n        if (device === \"Shelly Plug S\" ) {   \n            msg.topic = \"Shelly Plug S (generation 2)\"\n            msg.payload = \"<p>Make dummy device in domoticz.</p><p>IDX = switch (Dummy = switch)</p><p>IDXoption1 = Power (Dummy = Usage, Electric)</p><p>IDXoption2 = Voltage (Dummy = General, Voltage)</p><p>IDXoption3 = Current (Dummy = General, Current)</p><p>IDXoption4 = Total power (Dummy = General, kWh)</p><p>IDXoption5 = Not available for this device</p><p>IDXoption6 = Not available for this device</p><p>IDXoption7 = Not available for this device</p><p>IDXoption8 = Not available for this device</p>\"\n        \n        } else {\n            msg.topic = \"Device unknown\"\n            msg.payload = \"<p>First select device type, afterwards the info is shown</p>\"\n        }\n        return msg;\n    }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 1820,
+        "wires": [
+            [
+                "9d12a3a11dac2c76"
+            ]
+        ]
+    },
+    {
+        "id": "0227d6c01c5f9cd9",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "extract devicenames",
+        "func": "if (msg.topic === \"no-update\")  {\n   return;\n} else {\n   msg.options = msg.payload.map(obj => {\n      var rObj = {};\n      rObj[obj.name + \"_switch\" + obj.sw] = obj.name+\":\"+obj.sw\n      return rObj;\n   });\n}\n\nmsg.payload = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1360,
+        "wires": [
+            [
+                "4282781648061454"
+            ]
+        ]
+    },
+    {
+        "id": "60c874dfbb8f595d",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Shelly, MQTT ",
+        "links": [
+            "8f67fb6f17b9b259"
+        ],
+        "x": 75,
+        "y": 840,
+        "wires": [
+            [
+                "cdcee4b77dd5dac8",
+                "7679e17e2f74a4f3",
+                "93cae58a2be98597"
+            ]
+        ]
+    },
+    {
+        "id": "106af48d94188ff7",
+        "type": "mqtt in",
+        "z": "e673d877691c41c6",
+        "g": "0617ce56c5fd4166",
+        "name": "Messages from MQTT-server",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e6ffe1b28d49f4ed",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 620,
+        "wires": [
+            [
+                "8f67fb6f17b9b259"
+            ]
+        ]
+    },
+    {
+        "id": "8f67fb6f17b9b259",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "0617ce56c5fd4166",
+        "name": "Shelly, Central MQTT-IN",
+        "mode": "link",
+        "links": [
+            "60c874dfbb8f595d"
+        ],
+        "x": 665,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "df646706d0e7cddc",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "0617ce56c5fd4166",
+        "name": "Shelly, Messages to MQTT-server",
+        "links": [
+            "bdcd14fe01c04ddf"
+        ],
+        "x": 75,
+        "y": 600,
+        "wires": [
+            [
+                "f2351208b93aa7c7"
+            ]
+        ]
+    },
+    {
+        "id": "f2351208b93aa7c7",
+        "type": "mqtt out",
+        "z": "e673d877691c41c6",
+        "g": "0617ce56c5fd4166",
+        "name": "Messages to MQTT-server",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e6ffe1b28d49f4ed",
+        "x": 360,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d1555be9c3cec11c",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Shelly, Shelly received message",
+        "mode": "link",
+        "links": [
+            "9c97b63f791a8c89",
+            "dcb8f3e1d62c327b"
+        ],
+        "x": 1435,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "e8b32b858198239f",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX nummer",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1420,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "3d92f31de30d2c22",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 1",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption1",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1460,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "5dec884841d31a6d",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 2",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1500,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "a3d3d04d66b5ed84",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 4",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption4",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1580,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "5afe174b5169057b",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 3",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption3",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1540,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "5eb70da670c07e6a",
+        "type": "ui_button",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "group": "e151206531f4336f",
+        "order": 15,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Set settings",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "str",
+        "x": 550,
+        "y": 1820,
+        "wires": [
+            [
+                "8876f268f2d2828e",
+                "d9b14a45b233c8ca"
+            ]
+        ]
+    },
+    {
+        "id": "de3b54b968b48044",
+        "type": "ui_button",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "",
+        "group": "d823ccdecb8e433a",
+        "order": 1,
+        "width": 30,
+        "height": 1,
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "show",
+        "topicType": "str",
+        "x": 890,
+        "y": 2180,
+        "wires": [
+            [
+                "86bede4f147dd6d2"
+            ]
+        ]
+    },
+    {
+        "id": "ba44b09a0ce99ac8",
+        "type": "ui_button",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "group": "e151206531f4336f",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "How setup device in domoticz",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "str",
+        "x": 1490,
+        "y": 1780,
+        "wires": [
+            [
+                "81090e781671c7f4"
+            ]
+        ]
+    },
+    {
+        "id": "b6df36f40e4d0704",
+        "type": "ui_dropdown",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "device type",
+        "label": "",
+        "tooltip": "",
+        "place": "Device type",
+        "group": "e151206531f4336f",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "type",
+        "topicType": "str",
+        "className": "",
+        "x": 730,
+        "y": 1880,
+        "wires": [
+            [
+                "8876f268f2d2828e",
+                "81090e781671c7f4"
+            ]
+        ]
+    },
+    {
+        "id": "4282781648061454",
+        "type": "ui_dropdown",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Device",
+        "group": "e151206531f4336f",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "device",
+        "topicType": "str",
+        "className": "",
+        "x": 540,
+        "y": 1360,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "9a37421c4e8288f6",
+        "type": "ui_text",
+        "z": "e673d877691c41c6",
+        "group": "53b94e9a48b9cb3e",
+        "order": 1,
+        "width": 30,
+        "height": 2,
+        "name": "Top text info tab",
+        "label": "{{msg.topic}}",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9d12a3a11dac2c76",
+        "type": "ui_toast",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Close",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Shelly Device Info",
+        "x": 1450,
+        "y": 1860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "999b9d08a9dd50cf",
+        "type": "ui_template",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "group": "ecbbb13f9bc2e1f2",
+        "name": "",
+        "order": 1,
+        "width": 30,
+        "height": 1,
+        "format": "<div ng-init=\"init()\" id=\"pin_insert\" class=\"dialog\">\n    \n    <div class=\"dialog_content\">\n        \n        <div class=\"dialog_header\">\n            <h2 style=\"margin:10px\">Release notes</h2>\n        </div>\n        \n        <div class=\"dialog_body\">\n            <div ng-bind-html=\"msg.payload\" style=\"height:400px;width:100%;margin: 4px 2px;overflow:auto;\"></div>\n            <!--<div ng-bind-html=\"msg.payload\"></div>-->\n            <form action=\"/flows.json\" method=\"get\"><input type=\"submit\" class=\"buttons\" value=\"Download\" name=\"Submit\" id=\"frm1_submit\"/></form>\n            <button class=\"buttoncl\" id=\"myCls\" ng-click=\"closeDialog()\">Close</button>\n        </div> \n    </div> \n</div> \n\n<style>\n\n/* The Dialog (background) */\n.dialog {\n    display: none; /* Hidden by default */\n    position: fixed; /* Stay in place */\n    z-index: 9999; /* Sit on top */\n    left: 0;\n    top: 0;\n    width: 100%; /* Full width */\n    height: 100%; /* Full height */\n    overflow: auto; /* Enable scroll if needed */\n    color : rgb(255,255,255);\n\tbackground-color: rgb(0,0,0); /* Fallback color */\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n    -webkit-transform: translateZ(0px);\n    -webkit-transform: translate3d(0,0,0);\n    -webkit-perspective: 1000;\n}\n\n.dialog_content {\n\tposition: absolute;\n    background-color: rgb(51,51,51);\n    left: 25%;\n    top: 30px;\n    border-radius: 3px;\n    padding: 0;\n    width: 50%;\n    /*height: 70%;*/\n    height: 550px;\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\n    -webkit-animation-name: animatetop;\n    animation-name: animatetop;\n    animation-duration: 0.4s;\n}\n\n/* Dialog Header */\n.dialog_header {\n    padding: 2px 16px;\n    background-color: rgb(20,117,120);\n    border-radius: 3px 3px 0 0;\n    color: white;\n}\n\n/* Dialog Body */\n.dialog_body {padding: 5px;}\n\n/* The Close Button */\n.close {\n    color: #fff;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n    cursor: pointer;\n}\n\n.close:hover,\n.close:focus {\n    color: #1565C0;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n\n.btn1 {\n  color : rgb(255,255,255);\n  background-color: rgb(20,117,120);\n  border-radius: 3px 3px 3px 3px;\n  font-size: 16px;\n}\n\n/* Button style */\n    .buttoncl {\n        position: absolute;\n        border: none;\n        /*border-radius: 2px;*/\n        padding: 15px 4.4%;\n        font-size: 16px;\n        font-weight:550;\n        font-family:arial;\n        margin: 4px 2px;\n        /*text-transform: uppercase;*/\n        display: inline-block;\n        cursor: pointer;\n        color: white;\n        background-color:  #0A8085;\n        outline: none;\n        left: 85%;\n        top: 88%;\n    } \n    \n    .buttons {\n        position: absolute;\n        background-color: #0A8085;\n        border: none;\n        color: #FFF7E0; \n        padding: 15px 4.4%;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        font-weight:550;\n        font-family:arial;\n        margin: 4px 2px;\n        cursor: pointer;\n        left: 65%;\n        top: 88%;\n    }\n\n</style>\n\n<script>\nvar dialog;\n\n\n/* ==== */\n(function(scope) {\n    \n    scope.passcode = \"\";\n    \n    scope.init = function() {\n        scope.send({payload : \"init\"});\n\t\tscope.passcode = \"\";\n        //Hide the md-panel\n        $('#pin_insert').parent().parent().css(\"display\", \"none\");\n        //This trick make it works on smartphones too :)\n        dialog = $('#pin_insert').detach();\n        //dialog.appendTo(document.body); // This leaves ghost numpads if pinpad is not opened!\n    }\n    \n    scope.showDialog = function() {\n        dialog.appendTo(document.body); // better to add the body only when the numpad is displayed (seams to be removed automatically)\n        dialog.css(\"display\", \"block\");\n    }\n    \n    scope.closeDialog = function(){\n        dialog.css(\"display\", \"none\");\n\t\tscope.send({payload : scope.passcode});\n    }\n     \n\n    scope.$watch('msg', function(data) {\n        if(data && data.topic){\n            switch(data.topic){\n               case \"show\":\n\t\t\t\t\t\tscope.passcode = \"\";\n                        scope.showDialog();\n                break;\n                case \"close\": \n                    dialog.css(\"display\", \"none\");\n                break;\n            }\n        }\n    });\n})(scope);\n\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1580,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29fdebd646d344d7",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "g": "8e27df35e701539c",
+        "name": "Pi file save location",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/home/pi/domoticz/plugins/shelly",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "f4ea7c28610d1d38"
+            ]
+        ]
+    },
+    {
+        "id": "f4ea7c28610d1d38",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "8e27df35e701539c",
+        "name": "Shelly, Pi save location",
+        "mode": "link",
+        "links": [
+            "cea40c14a5aa608b"
+        ],
+        "x": 425,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "34e392f2dd4740c3",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "name": "get file location",
+        "func": "let location = flow.get(\"savefiledestination\")\nmsg.payload = \"<center>Data save folder: \" + location + \"</center>\"\nmsg.topic = \"Actuel version: <b>V1_18-05-2023_R1</b>\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "ed45e8edf73c0a9d"
+            ]
+        ]
+    },
+    {
+        "id": "db0e2c2ff354401d",
+        "type": "comment",
+        "z": "e673d877691c41c6",
+        "name": "Save data locaties",
+        "info": "Native system:\n/home/pi/domoticz/plugins/shelly\n\nDocker system:\n/data/saved-files/shelly",
+        "x": 110,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ca2b73584ae14c45",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 850,
+        "y": 2320,
+        "wires": [
+            [
+                "f944b9b61b7444cb"
+            ]
+        ]
+    },
+    {
+        "id": "74fde5d61217d46c",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Get save location pi",
+        "func": "let destination = msg.payload;\nmsg.filename = destination + \"/testPIdirectory\";\nflow.set(\"savefiledestination\", destination);\nmsg.delay = 5000;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 2360,
+        "wires": [
+            [
+                "3a7a3eebc35cc036"
+            ]
+        ]
+    },
+    {
+        "id": "234388f62b903c9c",
+        "type": "catch",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "",
+        "scope": [
+            "7ee6eacc2a5d9cd1",
+            "3a7a3eebc35cc036"
+        ],
+        "uncaught": false,
+        "x": 110,
+        "y": 2440,
+        "wires": [
+            [
+                "6bcf6c1f710e50bb"
+            ]
+        ]
+    },
+    {
+        "id": "587911ce143e5445",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Get save location docker",
+        "func": "let destination = msg.payload;\nmsg.filename = destination + \"/testDOCKERdirectory\";\nflow.set(\"savefiledestination\", destination);\nmsg.delay = 5000;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 2440,
+        "wires": [
+            [
+                "39ab3f68538d945d"
+            ]
+        ]
+    },
+    {
+        "id": "04f10959e558a441",
+        "type": "catch",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "",
+        "scope": [
+            "082e0f0318b184c7",
+            "39ab3f68538d945d"
+        ],
+        "uncaught": false,
+        "x": 110,
+        "y": 2520,
+        "wires": [
+            [
+                "43917631f7b9b013"
+            ]
+        ]
+    },
+    {
+        "id": "c42defa6f5a5566d",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "g": "8e27df35e701539c",
+        "name": "Docker file save location",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/data/saved-files/shelly",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "c2c82b38c4f838e5"
+            ]
+        ]
+    },
+    {
+        "id": "c2c82b38c4f838e5",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "8e27df35e701539c",
+        "name": "Shelly, Docker save location",
+        "mode": "link",
+        "links": [
+            "191fdec39955e3b6"
+        ],
+        "x": 425,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5f3fabe39116c2cb",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "8e27df35e701539c",
+        "name": "Shelly, Pi save location",
+        "links": [
+            "1b11fdfc0e8ab45b"
+        ],
+        "x": 75,
+        "y": 400,
+        "wires": [
+            [
+                "29fdebd646d344d7"
+            ]
+        ]
+    },
+    {
+        "id": "e24c6eb02dbb2cdc",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "8e27df35e701539c",
+        "name": "Shelly, Docker save location",
+        "links": [
+            "6bcf6c1f710e50bb"
+        ],
+        "x": 75,
+        "y": 440,
+        "wires": [
+            [
+                "c42defa6f5a5566d"
+            ]
+        ]
+    },
+    {
+        "id": "1b11fdfc0e8ab45b",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Shelly, Start after deploy",
+        "mode": "link",
+        "links": [
+            "3748b4bc6e4d5a24",
+            "5f3fabe39116c2cb"
+        ],
+        "x": 1625,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "cea40c14a5aa608b",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Shelly, Pi data save location",
+        "links": [
+            "f4ea7c28610d1d38"
+        ],
+        "x": 335,
+        "y": 2360,
+        "wires": [
+            [
+                "74fde5d61217d46c"
+            ]
+        ]
+    },
+    {
+        "id": "6bcf6c1f710e50bb",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Shelly, Get docker save location",
+        "mode": "link",
+        "links": [
+            "e24c6eb02dbb2cdc"
+        ],
+        "x": 265,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "191fdec39955e3b6",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Shelly, Docker data save location",
+        "links": [
+            "c2c82b38c4f838e5"
+        ],
+        "x": 335,
+        "y": 2440,
+        "wires": [
+            [
+                "587911ce143e5445",
+                "47bfbc6d3ff5eca7"
+            ]
+        ]
+    },
+    {
+        "id": "43917631f7b9b013",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Error find directory",
+        "func": "let error = \"ERROR, directory PI and DOCKER not found\"\nflow.set(\"savefiledestination\", error);\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2520,
+        "wires": [
+            [
+                "47bfbc6d3ff5eca7"
+            ]
+        ]
+    },
+    {
+        "id": "a526afda514625a8",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Shelly, start UI",
+        "mode": "link",
+        "links": [
+            "6222a9be28dfbf5f",
+            "a3ee9f334dc1ae67"
+        ],
+        "x": 1625,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "2f0a28612a2e4a15",
+        "type": "delay",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1460,
+        "y": 2520,
+        "wires": [
+            [
+                "a526afda514625a8"
+            ]
+        ]
+    },
+    {
+        "id": "47bfbc6d3ff5eca7",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "reset delay",
+        "func": "delete msg.delay;\ndelete msg.error;\nmsg.reset = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 2520,
+        "wires": [
+            [
+                "2f0a28612a2e4a15"
+            ]
+        ]
+    },
+    {
+        "id": "a3ee9f334dc1ae67",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "name": "Shelly, start UI text bar",
+        "links": [
+            "a526afda514625a8"
+        ],
+        "x": 35,
+        "y": 80,
+        "wires": [
+            [
+                "34e392f2dd4740c3"
+            ]
+        ]
+    },
+    {
+        "id": "a7950a59346f4466",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "name": "start after deploy",
+        "func": "let location = \"please wait, loading config\"\nmsg.payload = \"Data save folder: \" + location\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "ed45e8edf73c0a9d"
+            ]
+        ]
+    },
+    {
+        "id": "ed45e8edf73c0a9d",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "SCRIPT VERSION",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Actuel version: V1_18-05-2023_R1_beta",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "9a37421c4e8288f6"
+            ]
+        ]
+    },
+    {
+        "id": "3748b4bc6e4d5a24",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "name": "Shelly, startup",
+        "links": [
+            "1b11fdfc0e8ab45b"
+        ],
+        "x": 35,
+        "y": 120,
+        "wires": [
+            [
+                "a7950a59346f4466"
+            ]
+        ]
+    },
+    {
+        "id": "ddac08a116fcf0c3",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Get save location",
+        "func": "let destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/shellytabel.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1520,
+        "wires": [
+            [
+                "52ade3ef04838837"
+            ]
+        ]
+    },
+    {
+        "id": "52ade3ef04838837",
+        "type": "file",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Save to file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 1570,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f944b9b61b7444cb",
+        "type": "http request",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:1880/settings",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1070,
+        "y": 2320,
+        "wires": [
+            [
+                "9af3ba5fe586cf07"
+            ]
+        ]
+    },
+    {
+        "id": "9af3ba5fe586cf07",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1270,
+        "y": 2320,
+        "wires": [
+            [
+                "25e486f012aaf733"
+            ]
+        ]
+    },
+    {
+        "id": "25e486f012aaf733",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "Get version",
+        "func": "flow.set(\"NoderedVersion\",msg.payload.version);\nmsg.payload = new(Date);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 2320,
+        "wires": [
+            [
+                "1b11fdfc0e8ab45b"
+            ]
+        ]
+    },
+    {
+        "id": "9709d58317f010ce",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 2040,
+        "wires": [
+            [
+                "83ab7f191c167f8a"
+            ]
+        ]
+    },
+    {
+        "id": "724ad9c0b234695f",
+        "type": "debug",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Debug flow.get",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "da24c2ab0c496238",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Set flow.get test",
+        "func": "let store =  msg.payload;\nflow.set(\"sh2dz-idx\", store);\nreturn [{payload:Object.values(store)}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 2040,
+        "wires": [
+            [
+                "0d7f3efb7b51742b"
+            ]
+        ]
+    },
+    {
+        "id": "83ab7f191c167f8a",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Payload2Object",
+        "func": "let store = msg.payload;\nlet msg2 = Object.assign({}, store);\nreturn [{payload:(msg2)}];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 2040,
+        "wires": [
+            [
+                "627e2b54ad1cf716"
+            ]
+        ]
+    },
+    {
+        "id": "627e2b54ad1cf716",
+        "type": "split",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 950,
+        "y": 2040,
+        "wires": [
+            [
+                "e1bf2d166d88f049"
+            ]
+        ]
+    },
+    {
+        "id": "e1bf2d166d88f049",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "shelly2topic",
+        "func": "let value = msg.payload.name+\":\"+msg.payload.sw\nmsg.topic = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 2040,
+        "wires": [
+            [
+                "8081552f10e7e0a1"
+            ]
+        ]
+    },
+    {
+        "id": "8081552f10e7e0a1",
+        "type": "join",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1290,
+        "y": 2040,
+        "wires": [
+            [
+                "724ad9c0b234695f",
+                "da24c2ab0c496238"
+            ]
+        ]
+    },
+    {
+        "id": "0d7f3efb7b51742b",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Shelly, Restore idx table (read file)",
+        "mode": "link",
+        "links": [
+            "dd2baae8845ebade"
+        ],
+        "x": 1625,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "08ecb22249cad446",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Get save location",
+        "func": "delete msg.payload;\nlet destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/shellytabel.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 2040,
+        "wires": [
+            [
+                "24a56aca949f201e"
+            ]
+        ]
+    },
+    {
+        "id": "6222a9be28dfbf5f",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Shelly, start UI",
+        "links": [
+            "a526afda514625a8"
+        ],
+        "x": 75,
+        "y": 2040,
+        "wires": [
+            [
+                "08ecb22249cad446"
+            ]
+        ]
+    },
+    {
+        "id": "24a56aca949f201e",
+        "type": "file in",
+        "z": "e673d877691c41c6",
+        "g": "c6b77ac5e9765603",
+        "name": "Read backup",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 2040,
+        "wires": [
+            [
+                "9709d58317f010ce"
+            ]
+        ]
+    },
+    {
+        "id": "3a7a3eebc35cc036",
+        "type": "file",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "V3 Pi, test directory exists",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1110,
+        "y": 2360,
+        "wires": [
+            [
+                "2f0a28612a2e4a15"
+            ]
+        ]
+    },
+    {
+        "id": "39ab3f68538d945d",
+        "type": "file",
+        "z": "e673d877691c41c6",
+        "g": "054f5cc44a05c112",
+        "name": "V3 Docker, test directory exists",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1130,
+        "y": 2440,
+        "wires": [
+            [
+                "2f0a28612a2e4a15"
+            ]
+        ]
+    },
+    {
+        "id": "0d5d59cf06df4f69",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "name": "Shelly, update release in",
+        "links": [
+            "ee72a3f655b87184"
+        ],
+        "x": 375,
+        "y": 160,
+        "wires": [
+            [
+                "4cf11930594779a2"
+            ]
+        ]
+    },
+    {
+        "id": "a8f4a4a75ee5d787",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "name": "Shelly, update release out",
+        "mode": "link",
+        "links": [
+            "1986b629315fdc72"
+        ],
+        "x": 665,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4cf11930594779a2",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "name": "UPDATE RELEASE",
+        "func": "let version = \"V1_18-05-2023_R1_beta\"\nlet oldStr = msg.payload;\nlet newStr = oldStr.slice(0, oldStr.length-1);\nlet store = newStr;\nflow.set(\"version\", newStr);\nlet html = \"\";\nmsg.topic = \"Release notes\";\nif (msg.statusCode === 200 || 201) {\n    if (store === version) {\n        msg.text = \"FLOW IS UP TO DATE WITH GITHUB (\" + version + \")\"\n        msg.background = \"#0A8085\";\n        return msg;\n    } else {\n        msg.text = \"THERE IS AN UPDATE, DOWNLOAD FLOW FILE FROM GITHUB\"\n        msg.background = \"#8C101C\";\n        return msg;\n    }\n}\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "a8f4a4a75ee5d787"
+            ]
+        ]
+    },
+    {
+        "id": "ee72a3f655b87184",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "Shelly, update release in",
+        "mode": "link",
+        "links": [
+            "0d5d59cf06df4f69"
+        ],
+        "x": 435,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "1986b629315fdc72",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "4aa6b6492bda6cb7",
+        "name": "Shelly, update release out",
+        "links": [
+            "a8f4a4a75ee5d787"
+        ],
+        "x": 745,
+        "y": 2180,
+        "wires": [
+            [
+                "de3b54b968b48044"
+            ]
+        ]
+    },
+    {
+        "id": "c5b02678e09ddf1d",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 5",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 13,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption5",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1620,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "93cae58a2be98597",
+        "type": "switch",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Contain shellyplus",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "status/switch",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 820,
+        "wires": [
+            [
+                "c3c285d9f0cc02c7"
+            ]
+        ]
+    },
+    {
+        "id": "7679e17e2f74a4f3",
+        "type": "switch",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Contain shellies",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "shellies",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 780,
+        "wires": [
+            [
+                "229f1ecffed6cb09"
+            ]
+        ]
+    },
+    {
+        "id": "cdcee4b77dd5dac8",
+        "type": "switch",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Contain domoticz/out",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "domoticz/out",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 860,
+        "wires": [
+            [
+                "c5682192946879ac"
+            ]
+        ]
+    },
+    {
+        "id": "a88e5d6c145c87b0",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Source domoticz",
+        "rules": [
+            {
+                "t": "set",
+                "p": "source",
+                "pt": "msg",
+                "to": "domoticz",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 880,
+        "wires": [
+            [
+                "c751b4b5bfd383b3"
+            ]
+        ]
+    },
+    {
+        "id": "229f1ecffed6cb09",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Source shelly gen 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "source",
+                "pt": "msg",
+                "to": "gen1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic_addon",
+                "pt": "msg",
+                "to": "shellies",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 760,
+        "wires": [
+            [
+                "c751b4b5bfd383b3",
+                "d1555be9c3cec11c"
+            ]
+        ]
+    },
+    {
+        "id": "c3c285d9f0cc02c7",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Source shelly gen 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "source",
+                "pt": "msg",
+                "to": "gen2",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic_addon",
+                "pt": "msg",
+                "to": "none",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 820,
+        "wires": [
+            [
+                "913bd9a00d3ed0d0"
+            ]
+        ]
+    },
+    {
+        "id": "c751b4b5bfd383b3",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Shelly ID filter on ui table",
+        "func": "let storetopic = msg.topic;\nlet devs = flow.get(\"sh2dz-idx\") || {};\nlet length = Object.keys(devs).length;\n\nif (msg.source === 'gen1' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let dev = devs[IDkey] || {};\n        \n        if (IDkey === storetopic.split(\"/\")[1] + \":\" + msg.topic.split(\":\")[1]) {\n            let type = dev.type;\n            msg.payload.domoticz = { name: dev.name, sw: dev.sw, idx: dev.idx, idxoption1: dev.idxoption1, idxoption2: dev.idxoption2, idxoption3: dev.idxoption3, idxoption4: dev.idxoption4, idxoption5: dev.idxoption5, idxoption6: dev.idxoption6, idxoption7: dev.idxoption7, idxoption8: dev.idxoption8, offline: dev.offline, addon: dev.addon, gen: dev.gen};\n            msg.payload.script = { source:\"Shelly_gen1\"};\n            if (type === \"Shelly 2.5\") {\n                return [msg, null, null]\n            } else if (type === \"Shelly Plug S\") {\n                return [null, msg, null];\n            } else {\n                return [null, null, msg];\n            }\n        }\n    }\n}\n\nif (msg.source === 'gen2' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let dev = devs[IDkey] || {};\n                \n        if (IDkey === storetopic.split(\"/\")[1] + \":\"+msg.topic.split(\":\")[1]){\n            let type = dev.type;\n            msg.payload.domoticz = { name: dev.name, sw: dev.sw, idx: dev.idx, idxoption1: dev.idxoption1, idxoption2: dev.idxoption2, idxoption3: dev.idxoption3, idxoption4: dev.idxoption4, idxoption5: dev.idxoption5, idxoption6: dev.idxoption6, idxoption7: dev.idxoption7, idxoption8: dev.idxoption8, offline: dev.offline, addon: dev.addon, gen: dev.gen };\n            msg.payload.script = { source: \"Shelly_gen2\" };\n            \n            if (type === \"Shelly 2.5\") {\n                return [msg, null, null]\n            } else if (type === \"Shelly Plug S\") {\n                return [null, msg, null];\n            } else {\n                return [null, null, msg];\n            }\n        }\n    }\n}\n\nif ( msg.source === 'domoticz' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let message = devs[IDkey];\n        let messageidx = parseInt(devs[IDkey].idx);\n\n        if (messageidx === msg.payload.idx) {\n            let type = message.type;\n            msg.payload.domoticz = { name: message.name, sw: message.sw, idx: message.idx, idxoption1: message.idxoption1, idxoption2: message.idxoption2, idxoption3: message.idxoption3, idxoption4: message.idxoption4, idxoption5: message.idxoption5, idxoption6: message.idxoption6, idxoption7: message.idxoption7, idxoption8: message.idxoption8, offline: message.offline, addon: message.addon, gen: message.gen };\n            msg.payload.script = { source: \"Domoticz\" };\n            \n            if (type === \"Shelly 2.5\") {\n                return [msg, null, null]\n            } else if (type === \"Shelly Plug S\") {\n                return [null, msg, null];\n            } else {\n                return [null, null, msg];\n            }\n        }\n    }\n}",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1530,
+        "y": 820,
+        "wires": [
+            [],
+            [
+                "ea147d2dd284877a",
+                "358b19e58fb93868"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5ee0b2ef0cde066b",
+        "type": "debug",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "IDX not in filter",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ddbfe8d9a1299a69",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"src\":\"shellyplusplugs-b48a0a1bf220\",\"dst\":\"shellyplusplugs-b48a0a1bf220/events\",\"method\":\"NotifyStatus\",\"params\":{\"ts\":1683836732.65,\"switch:0\":{\"id\":0,\"apower\":0,\"current\":0,\"output\":false,\"source\":\"HTTP\",\"voltage\":229.7}}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-b48a0a1bf220/events/rpc",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 220,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "d90107b143291cf6",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "Event/rpc",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            [
+                "ddbfe8d9a1299a69"
+            ]
+        ]
+    },
+    {
+        "id": "427ba00e81797f32",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1470,
+        "y": 280,
+        "wires": [
+            [
+                "f3afe7c4ffef39a4",
+                "93cae58a2be98597"
+            ]
+        ]
+    },
+    {
+        "id": "c40a37b12334d091",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":false, \"apower\":0.0, \"voltage\":0.0, \"current\":0.000, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-b48a0a1bf220/status/switch:0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 260,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "1bab2512cbdf20c0",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "b48a0a1bf220 : 0 Status false",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 260,
+        "wires": [
+            [
+                "c40a37b12334d091"
+            ]
+        ]
+    },
+    {
+        "id": "71e038718aee4059",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":true, \"apower\":0.053, \"voltage\":231.3, \"current\":0.000, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-b48a0a1bf220/status/switch:0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 300,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "3c90c0fdd126ee20",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "b48a0a1bf220 : 0 Status true",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "71e038718aee4059"
+            ]
+        ]
+    },
+    {
+        "id": "cb7a3263e3b7a12c",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":true, \"apower\":12.0, \"voltage\":231.3, \"current\":7.090, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-c48a0a1bf220/status/switch:0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 340,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "d0b39e3ca4991543",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "c48a0a1bf220 : 0 Status true",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "cb7a3263e3b7a12c"
+            ]
+        ]
+    },
+    {
+        "id": "f3afe7c4ffef39a4",
+        "type": "debug",
+        "z": "e673d877691c41c6",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1620,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "72c16e6db1c43611",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellies/shellyswitch25-68C63AF9A2B1/roller/0/stop_reason",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "normal",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 180,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "6e7b1ffbc454bc63",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "oude shellie",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "72c16e6db1c43611"
+            ]
+        ]
+    },
+    {
+        "id": "7f467423191b7392",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellies/shellyswitch25-68C63AF9A2B1/roller/0/pos",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 140,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "37f0c15baf268131",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "oude shellie",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1010,
+        "y": 140,
+        "wires": [
+            [
+                "7f467423191b7392"
+            ]
+        ]
+    },
+    {
+        "id": "8e6765c3919bd08e",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "Shelly, Update table out",
+        "mode": "link",
+        "links": [
+            "0334f7d7aeb5bf9a"
+        ],
+        "x": 1625,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "8e495666c59199df",
+        "type": "ui_toast",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Close",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Shelly Device Info",
+        "x": 1450,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2854726d6ae6bf0",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "Del shelly device status list",
+        "func": "if (msg.topic === \"del\") {\n    let devs = flow.get(\"sh2dz-status\") || {};\n    delete devs[(msg.payload.name+\":\"+msg.payload.sw)];\n    \n    msg.topic = msg.payload.name + \" removed from status table\";\n    msg.payload = \"Device is removed.\"\n    return msg;\n}\n\nmsg.topic = msg.payload.label;\n\nlet str = JSON.stringify(msg.payload, null, 2);\ndelete msg.payload;\nmsg.payload = \"<pre>\" + str + \"</pre>\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 1260,
+        "wires": [
+            [
+                "8e495666c59199df",
+                "8e6765c3919bd08e"
+            ]
+        ]
+    },
+    {
+        "id": "5eaaa97fb04db3e5",
+        "type": "ui_table",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "group": "5d07dbcaa2c15860",
+        "name": "Shelly Devices",
+        "order": 1,
+        "width": 30,
+        "height": 11,
+        "columns": [
+            {
+                "field": "name",
+                "title": "Topic name",
+                "width": "15%",
+                "align": "left",
+                "formatter": "html",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "sw",
+                "title": "Switch",
+                "width": "8%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "output",
+                "title": "Relay state",
+                "width": "10%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "power",
+                "title": "Power",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "voltage",
+                "title": "Voltage",
+                "width": "8%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "current",
+                "title": "Current",
+                "width": "8%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "seen",
+                "title": "Last",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "status",
+                "title": "Status",
+                "width": "39%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "del",
+                "title": "Remove",
+                "width": "7%",
+                "align": "center",
+                "formatter": "tickCross",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 880,
+        "y": 1260,
+        "wires": [
+            [
+                "d2854726d6ae6bf0"
+            ]
+        ]
+    },
+    {
+        "id": "382b6385af5b08ad",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "store shelly devices",
+        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}, {payload:Object.values(devs)}];\n} else {\n\n    let checkname;\n    // properties that should  show up in the status\n    let inStatus = [\"power\", \"voltage\", \"current\"];\n\n    // properties that should not show up in the status\n    let notStatus = [\"id\", \"source\"];\n\n    //node.warn(msg.payload);\n    devs = flow.get(\"sh2dz-status\") || {}; \n    \n    let devt = flow.get(\"sh2dz-idx\") || {};\n    let length = Object.keys(devt).length;\n     \n    let receivedSensors = [];\n    let ID = (msg.topic.split(\"/\")[1] + \":\"+msg.topic.split(\":\")[1]);\n    let dev = devs[ID] || {};\n\n    dev.name = msg.topic.split(\"/\")[1];\n    dev.sw = msg.topic.split(\":\")[1];\n    dev.output = msg.payload.output;\n    dev.power = msg.payload.apower;\n    dev.voltage = msg.payload.voltage;\n    dev.current = msg.payload.current;\n\n    dev.lastTime = new Date().getTime();    \n\n\n    // create status from properties\n    let status = \"\";\n    for (let prop in dev) {\n        if (inStatus.includes(prop)) {\n            status += \" \" + prop + \": \" + dev[prop];\n        }\n    }\n    if (status === \"\") {\n        for (let prop in dev) {\n            if (!notStatus.includes(prop)) {\n                status += \" \" + prop + \": \" + dev[prop];\n            }\n        }\n    }\n    dev.status = status;\n\n    // write back\n    devs[ID] = dev;\n    receivedSensors.push(dev);\n       \n    Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n    flow.set(\"sh2dz-status\", devs);\n\n    return [{topic: status, payload:Object.values(devs)}];\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1260,
+        "wires": [
+            [
+                "74b3380d315c5269",
+                "5eaaa97fb04db3e5"
+            ]
+        ]
+    },
+    {
+        "id": "e0629ba6d2bf621f",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "add src",
+        "func": "msg.src = 'restore';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1260,
+        "wires": [
+            [
+                "382b6385af5b08ad"
+            ]
+        ]
+    },
+    {
+        "id": "9c97b63f791a8c89",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "Shelly message received",
+        "links": [
+            "d1555be9c3cec11c"
+        ],
+        "x": 425,
+        "y": 1220,
+        "wires": [
+            [
+                "382b6385af5b08ad"
+            ]
+        ]
+    },
+    {
+        "id": "0334f7d7aeb5bf9a",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "Shelly, restore/update table",
+        "links": [
+            "8e6765c3919bd08e"
+        ],
+        "x": 205,
+        "y": 1220,
+        "wires": [
+            [
+                "e0629ba6d2bf621f"
+            ]
+        ]
+    },
+    {
+        "id": "425d8d11c47a321d",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1260,
+        "wires": [
+            [
+                "e0629ba6d2bf621f"
+            ]
+        ]
+    },
+    {
+        "id": "3dc6569703f2e1c8",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":true, \"apower\":21.0, \"voltage\":213.3, \"current\":17.090, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-c48a0a1bf220/status/switch:0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 380,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "d4e91a71cb43999c",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "c48a0a1bf220 : 0 Status true",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 380,
+        "wires": [
+            [
+                "3dc6569703f2e1c8"
+            ]
+        ]
+    },
+    {
+        "id": "4ff9f519f9ecd23f",
+        "type": "ui_dropdown",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Offline notificatie",
+        "label": "Offline notify",
+        "tooltip": "",
+        "place": "",
+        "group": "e151206531f4336f",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Disable",
+                "value": "Disable",
+                "type": "str"
+            },
+            {
+                "label": "60 seconds",
+                "value": 60,
+                "type": "num"
+            },
+            {
+                "label": "120 seconds",
+                "value": 120,
+                "type": "num"
+            },
+            {
+                "label": "180 seconds",
+                "value": 180,
+                "type": "num"
+            },
+            {
+                "label": "240 seconds",
+                "value": 240,
+                "type": "num"
+            },
+            {
+                "label": "300 seconds",
+                "value": 300,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "offline",
+        "topicType": "str",
+        "className": "",
+        "x": 560,
+        "y": 1780,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "74b3380d315c5269",
+        "type": "delay",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 1220,
+        "wires": [
+            [
+                "452b38fec749323b"
+            ]
+        ]
+    },
+    {
+        "id": "452b38fec749323b",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "e5ca1fdfc9e163a0",
+        "name": "Shelly, Device discovered",
+        "mode": "link",
+        "links": [
+            "9f5fd34525d8135c"
+        ],
+        "x": 1055,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "ccd07e8f467ccb60",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Set device list",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 1940,
+        "wires": [
+            [
+                "3c8a782951a4f4d2"
+            ]
+        ]
+    },
+    {
+        "id": "46d16bcb4ca90bf1",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":false, \"apower\":0.0, \"voltage\":0.0, \"current\":0.000, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-b48a0a1bf220/status/switch:1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "1ef96fd41d05b053",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "b48a0a1bf220 : 1 Status false",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 420,
+        "wires": [
+            [
+                "46d16bcb4ca90bf1"
+            ]
+        ]
+    },
+    {
+        "id": "aad59392ad23e29f",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":true, \"apower\":0.053, \"voltage\":231.3, \"current\":0.000, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-b48a0a1bf220/status/switch:1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 460,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "1a027d574255f90c",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "b48a0a1bf220 : 1 Status true",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "aad59392ad23e29f"
+            ]
+        ]
+    },
+    {
+        "id": "6628cb2185b94bd1",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":true, \"apower\":12.0, \"voltage\":231.3, \"current\":7.090, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-c48a0a1bf220/status/switch:1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 500,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "f9eec02291544d91",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "c48a0a1bf220 : 1 Status true",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 500,
+        "wires": [
+            [
+                "6628cb2185b94bd1"
+            ]
+        ]
+    },
+    {
+        "id": "bb4229eb9c355485",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0, \"source\":\"HTTP\", \"output\":true, \"apower\":21.0, \"voltage\":213.3, \"current\":17.090, \"aenergy\":{\"total\":0.000,\"by_minute\":[0.000,0.000,0.000],\"minute_ts\":1683837554},\"temperature\":{\"tC\":39.9, \"tF\":103.8}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellyplusplugs-c48a0a1bf220/status/switch:1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 540,
+        "wires": [
+            [
+                "427ba00e81797f32"
+            ]
+        ]
+    },
+    {
+        "id": "7c7a94984b8b701d",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "c48a0a1bf220 : 1 Status true",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 980,
+        "y": 540,
+        "wires": [
+            [
+                "bb4229eb9c355485"
+            ]
+        ]
+    },
+    {
+        "id": "913bd9a00d3ed0d0",
+        "type": "switch",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Contain shellyplus",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "shellies",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 820,
+        "wires": [
+            [
+                "6109e6f354b90320"
+            ],
+            [
+                "d8f3a779ee2d1a98"
+            ]
+        ]
+    },
+    {
+        "id": "d8f3a779ee2d1a98",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "add shellies",
+        "func": "msg.topic = \"shellies/\"+msg.topic;\nmsg.topic_addon = \"shellies\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 840,
+        "wires": [
+            [
+                "c751b4b5bfd383b3",
+                "d1555be9c3cec11c"
+            ]
+        ]
+    },
+    {
+        "id": "6109e6f354b90320",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "add shellies",
+        "func": "msg.topic_addon = \"none\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 800,
+        "wires": [
+            [
+                "c751b4b5bfd383b3",
+                "d1555be9c3cec11c"
+            ]
+        ]
+    },
+    {
+        "id": "ea147d2dd284877a",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "name": "gen2 Shelly Plug S",
+        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\" )  \n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n\n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[i];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n\n          if (messageidx === idx) {\n            if (dev.online === true){\n              //apower\n              if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                apower = null\n              } else {\n                apower = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: message.idxoption1,\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //voltage\n              if (Number(message.idxoption2) === 0 || message.idxoption2 === undefined || message.idxoption2 === \"N/A\" || message.idxoption2 === \"Not set\") {\n                voltage = null;\n              } else {\n                voltage = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: message.idxoption2,\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //current\n              if (Number(message.idxoption3) === 0 || message.idxoption3 === undefined || message.idxoption3 === \"N/A\" || message.idxoption3 === \"Not set\") {\n                current = null;\n              } else {\n                current = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: message.idxoption3,\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //total\n              if (Number(message.idxoption4) === 0 || message.idxoption4 === undefined || message.idxoption4 === \"N/A\" || message.idxoption4 === \"Not set\") {\n                total = null;\n              } else {\n                total = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: message.idxoption4,\n                    nvalue: 0,\n                    svalue: \"0;0\",\n                  }\n                }\n              }\n  \n              //Output\n              if (Number(message.idx) === 0 || message.idx === undefined) {\n                msg = null\n              } else {\n                msg = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: message.idx,\n                    nvalue: 0,\n                  }\n                }\n   \n                dev.online = false\n                dev.output = false\n              \n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }  \n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen2\") {\n    let info = msg.topic.split(\"/\")[2];\n    let output;\n    \n    if (info === \"status\") {\n      let domoticz = flow.get(\"dz-state\") || {};\n      let idxstate = [];\n      let ID = \"idx:\" + msg.payload.domoticz.idx\n      let dev = domoticz[ID] || {};\n      let length = Object.keys(domoticz).length;\n\n      dev.lasttime = d.getTime();\n      dev.offline = msg.payload.domoticz.offline;\n      dev.online = true;\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n\n      //apower\n      if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined || msg.payload.domoticz.idxoption1 === \"N/A\" || msg.payload.domoticz.idxoption1 === \"Not set\") {\n        apower = null\n      } else {\n        apower = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: msg.payload.domoticz.idxoption1,\n            svalue: msg.payload.apower.toString(),\n          }\n        }\n      }\n\n      //voltage\n      if (Number(msg.payload.domoticz.idxoption2) === 0 || msg.payload.domoticz.idxoption2 === undefined || msg.payload.domoticz.idxoption2 === \"N/A\" || msg.payload.domoticz.idxoption2 === \"Not set\") {\n        voltage = null;\n      } else {\n        voltage = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: msg.payload.domoticz.idxoption2,\n            svalue: msg.payload.voltage.toString(),\n          }\n        }\n      }\n\n      //current\n      if (Number(msg.payload.domoticz.idxoption3) === 0 || msg.payload.domoticz.idxoption3 === undefined || msg.payload.domoticz.idxoption3 === \"N/A\" || msg.payload.domoticz.idxoption3 === \"Not set\") {\n        current = null;\n      } else {\n        current = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: msg.payload.domoticz.idxoption3,\n            svalue: msg.payload.current.toString(),\n          }\n        }\n      }\n\n      //total\n      if (Number(msg.payload.domoticz.idxoption4) === 0 || msg.payload.domoticz.idxoption4 === undefined || msg.payload.domoticz.idxoption4 === \"N/A\" || msg.payload.domoticz.idxoption4 === \"Not set\") {\n        total = null;\n      } else {\n        total = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: msg.payload.domoticz.idxoption4,\n            nvalue: 0,\n            svalue: msg.payload.aenergy.total + \"\\\";\\\"\" + 0,\n          }\n        }\n      }\n\n      //Output\n      if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n        msg = null\n      } else {\n        if (output == msg.payload.output) {\n          msg = null;\n        } else {\n          dev.output = msg.payload.output\n          let val = msg.payload.output == true ? 1 : 0;\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: msg.payload.domoticz.idx,\n              nvalue: val,\n            }\n          }\n        }\n      }\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  if (msg.payload.domoticz.addon === \"shellies\") {\n    msg.topic = msg.payload.domoticz.name + \"/command/switch:\" + msg.payload.domoticz.sw;\n  } else { \n    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/command/switch:\" + msg.payload.domoticz.sw;\n  }\n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2470,
+        "y": 820,
+        "wires": [
+            [
+                "bdcd14fe01c04ddf"
+            ]
+        ]
+    },
+    {
+        "id": "9677dd6b0280c920",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 6",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption6",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8e94dbbef05c969",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 7",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption7",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d44d4522420736c5",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 8",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 14,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption8",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76151a7e11613d35",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "Heartbeat check every minute",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1910,
+        "y": 660,
+        "wires": [
+            [
+                "de140755a162f719"
+            ]
+        ]
+    },
+    {
+        "id": "de140755a162f719",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "name": "Source Heartbeat",
+        "func": "msg.payload = { script: { source: \"Heartbeat\" }};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2170,
+        "y": 660,
+        "wires": [
+            [
+                "ea147d2dd284877a"
+            ]
+        ]
+    },
+    {
+        "id": "358b19e58fb93868",
+        "type": "debug",
+        "z": "e673d877691c41c6",
+        "name": "debug 140",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "c624c439fa74fc4b",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "set idx filter",
+        "func": "let filter = [];\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    if (msg.payload[i].type === \"Shelly Plug S\") {\n        filter.push(msg.payload[i].idx)\n    }\n}\n\nflow.set(\"dz-idx-filter\", filter);\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5682192946879ac",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "IDX Check",
+        "func": "let filter = flow.get(\"dz-idx-filter\") || [];\n\nif (filter.includes(msg.payload.idx.toString())) {\n    return [msg, null];\n} else {\n    return [null, msg];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 900,
+        "wires": [
+            [
+                "a88e5d6c145c87b0"
+            ],
+            [
+                "5ee0b2ef0cde066b"
+            ]
+        ]
+    },
+    {
+        "id": "dcb8f3e1d62c327b",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Shelly, message idx tabel",
+        "links": [
+            "d1555be9c3cec11c"
+        ],
+        "x": 245,
+        "y": 1060,
+        "wires": [
+            [
+                "b4642b1c08dea7c6"
+            ]
+        ]
+    },
+    {
+        "id": "b4642b1c08dea7c6",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Voorbereiden voor device tabel",
+        "func": "let devs; \ndevs = flow.get(\"sh2dz-idx\") || {};\n\nif ( msg.src === 'restore' ) {\n    return [{payload:Object.values(devs)}];\n} else if (msg.source === 'gen2') {\n    let receivedSensors = [];\n    let name = msg.topic.split(\"/\")[1];\n    let relay = msg.topic.split(\":\")[1];\n    let ID = name + \":\" + relay;\n    let dev = devs[ID] || {};\n\n    dev.name = name;\n    dev.addon = msg.topic_addon;\n    dev.gen = msg.source;\n    dev.sw = relay;\n    if (dev.type === undefined) {\n        dev.type = \"Unknown\";\n    }\n    if (dev.idx === undefined) {\n        dev.idx = \"Not set\";\n    }\n    if (dev.idxoption1 === undefined) {\n        dev.idxoption1 = \"Not set\";\n    }\n    if (dev.idxoption2 === undefined) {\n        dev.idxoption2 = \"Not set\";\n    }\n    if (dev.idxoption3 === undefined) {\n        dev.idxoption3 = \"Not set\";\n    }\n    if (dev.idxoption4 === undefined) {\n        dev.idxoption4 = \"Not set\";\n    }\n    if (dev.idxoption5 === undefined) {\n        dev.idxoption5 = \"Not set\";\n    }\n    if (dev.idxoption6 === undefined) {\n        dev.idxoption6 = \"Not set\";\n    }\n    if (dev.idxoption7 === undefined) {\n        dev.idxoption7 = \"Not set\";\n    }\n    if (dev.idxoption8 === undefined) {\n        dev.idxoption8 = \"Not set\";\n    }\n    if (dev.offline === undefined) {\n        dev.offline = \"Not set\";\n    }\n   \n    // write back\n    devs[ID] = dev;\n    receivedSensors.push(dev);\n\n    flow.set(\"sh2dz-idx\", devs);\n    return [{ payload: Object.values(devs) }];\n}\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1020,
+        "wires": [
+            [
+                "f21c86a1e5386551"
+            ]
+        ]
+    },
+    {
+        "id": "f21c86a1e5386551",
+        "type": "ui_table",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "group": "e151206531f4336f",
+        "name": "Shelly tabel",
+        "order": 16,
+        "width": 30,
+        "height": 4,
+        "columns": [
+            {
+                "field": "name",
+                "title": "Name",
+                "width": "15%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "sw",
+                "title": "Switch",
+                "width": "5%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "gen",
+                "title": "Generation",
+                "width": "7%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "type",
+                "title": "Type",
+                "width": "13%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idx",
+                "title": "IDX",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption1",
+                "title": "Option 1",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption2",
+                "title": "Option 2",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption3",
+                "title": "Option 3",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption4",
+                "title": "Option 4",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption5",
+                "title": "Option 5",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption6",
+                "title": "Option 6",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption7",
+                "title": "Option 7",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "idxoption8",
+                "title": "Option 8",
+                "width": "6%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "offline",
+                "title": "Offline",
+                "width": "7%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "del",
+                "title": "Remove",
+                "width": "10%",
+                "align": "center",
+                "formatter": "tickCross",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 670,
+        "y": 1020,
+        "wires": [
+            [
+                "b858fae724241dfd"
+            ]
+        ]
+    },
+    {
+        "id": "b858fae724241dfd",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Prefix for asking del?",
+        "func": "if (msg.topic === \"del\") {\n    flow.set(\"delbuffer\", msg.payload)\n    \n    msg.topic = \"IDX tabel: Delete \" + msg.payload.name + \", switch \" + msg.payload.sw + \"?\";\n    msg.payload = \"Do you want to remove this device out the IDX list?\"\nreturn [msg, null];    \n}\n\n\nmsg.topic = msg.payload.name + \" (sw:\" + msg.payload.sw + \")\";\n\nlet str = JSON.stringify(msg.payload, null, 2);\ndelete msg.payload;\nmsg.payload = \"<pre>\" + str + \"</pre>\";\n\nreturn [null, msg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1100,
+        "wires": [
+            [
+                "ab4be1d628b41d46"
+            ],
+            [
+                "afb7808bae42db99"
+            ]
+        ]
+    },
+    {
+        "id": "ab4be1d628b41d46",
+        "type": "ui_toast",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Cancel",
+        "cancel": "Remove",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Del asking pop-up",
+        "x": 690,
+        "y": 1080,
+        "wires": [
+            [
+                "e75eda3c5fa16c37"
+            ]
+        ]
+    },
+    {
+        "id": "e75eda3c5fa16c37",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Del in shelly tabel",
+        "func": "if (msg.payload === \"Cancel\"){\n    flow.set(\"delbuffer\", \"\");\n    return;\n} else {\n    let dev = flow.get(\"sh2dz-idx\") || {};\n    let devs = flow.get(\"dz-state\") || {};\n    let filter = flow.get(\"dz-idx-filter\") || {};\n    let remove = flow.get(\"delbuffer\")   \n\n    delete dev[remove.name+\":\"+remove.sw];\n    delete devs[\"idx:\"+remove.idx];\n\n    for (var i = 0; i < filter.length; i++) {\n        if (filter[i] === remove.idx) {\n            filter.splice(i, 1);\n        }\n    }\n    flow.set(\"dz-idx-filter\", filter);\n\n    msg.topic = \"Removing shelly device from list.\"\n    msg.payload = remove.name + \", switch \" + remove.sw + \", is removed from IDX list.\";\n\n    let reconfig = flow.get(\"sh2dz-idx\") || {}\n    flow.set(\"delbuffer\", \"\");\n    return [msg,{payload:Object.values(reconfig)}];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1100,
+        "wires": [
+            [
+                "9ecc5b80c032bd78",
+                "20d89472b6d42ff9"
+            ],
+            [
+                "011ffac1fa754918"
+            ]
+        ]
+    },
+    {
+        "id": "afb7808bae42db99",
+        "type": "ui_toast",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Close",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Show detail info",
+        "x": 680,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ecc5b80c032bd78",
+        "type": "ui_toast",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Close",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Shelly Device Info",
+        "x": 1190,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20d89472b6d42ff9",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Shelly, Restore in (shelly table)",
+        "mode": "link",
+        "links": [
+            "dd2baae8845ebade"
+        ],
+        "x": 1115,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "7aed0e3ca235c70e",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "add src",
+        "func": "msg.src = 'restore';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 1020,
+        "wires": [
+            [
+                "b4642b1c08dea7c6"
+            ]
+        ]
+    },
+    {
+        "id": "dd2baae8845ebade",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Shelly, restore idxtable out",
+        "links": [
+            "0d7f3efb7b51742b",
+            "20d89472b6d42ff9",
+            "6c3819770488d525"
+        ],
+        "x": 75,
+        "y": 1020,
+        "wires": [
+            [
+                "7aed0e3ca235c70e"
+            ]
+        ]
+    },
+    {
+        "id": "011ffac1fa754918",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 1120,
+        "wires": [
+            [
+                "be6ba06d57e8ef2e"
+            ]
+        ]
+    },
+    {
+        "id": "381c30ab3cd13477",
+        "type": "file",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Save to file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 1570,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be6ba06d57e8ef2e",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Get save location",
+        "func": "let destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/shellytabel.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1120,
+        "wires": [
+            [
+                "381c30ab3cd13477"
+            ]
+        ]
+    },
+    {
+        "id": "bdcd14fe01c04ddf",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "name": "Shelly to mqtt",
+        "mode": "link",
+        "links": [
+            "df646706d0e7cddc"
+        ],
+        "x": 2685,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "2ae5126e5dc61089",
+        "type": "ui_spacer",
+        "z": "e673d877691c41c6",
+        "name": "spacer",
+        "group": "e151206531f4336f",
+        "order": 11,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "e6ffe1b28d49f4ed",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.178.14",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e151206531f4336f",
+        "type": "ui_group",
+        "name": "Idx table",
+        "tab": "e3edb57efc8062a5",
+        "order": 3,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d823ccdecb8e433a",
+        "type": "ui_group",
+        "name": "shelly update",
+        "tab": "e3edb57efc8062a5",
+        "order": 2,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "53b94e9a48b9cb3e",
+        "type": "ui_group",
+        "name": "Version number",
+        "tab": "e3edb57efc8062a5",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ecbbb13f9bc2e1f2",
+        "type": "ui_group",
+        "name": "",
+        "tab": "e3edb57efc8062a5",
+        "order": 5,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d07dbcaa2c15860",
+        "type": "ui_group",
+        "name": "status table",
+        "tab": "e3edb57efc8062a5",
+        "order": 4,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e3edb57efc8062a5",
+        "type": "ui_tab",
+        "name": "Shelly devices",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
