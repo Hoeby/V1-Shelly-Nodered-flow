@@ -540,7 +540,7 @@
         "z": "e673d877691c41c6",
         "g": "4aa6b6492bda6cb7",
         "name": "Make http header",
-        "func": "let store = flow.get(\"version\")\nmsg.headers['Content-Disposition'] = 'attachment; filename=\"' + store + '.json\"'\nreturn msg;",
+        "func": "let store = flow.get(\"version\")\nmsg.headers['Content-Disposition'] = 'attachment; filename=\"Shelly-' + store + '.json\"'\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2256,8 +2256,7 @@
         "wires": [
             [],
             [
-                "ea147d2dd284877a",
-                "358b19e58fb93868"
+                "ea147d2dd284877a"
             ],
             []
         ]
@@ -2268,7 +2267,7 @@
         "z": "e673d877691c41c6",
         "g": "59796bbcdf36aee8",
         "name": "IDX not in filter",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3623,22 +3622,6 @@
                 "ea147d2dd284877a"
             ]
         ]
-    },
-    {
-        "id": "358b19e58fb93868",
-        "type": "debug",
-        "z": "e673d877691c41c6",
-        "name": "debug 140",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1810,
-        "y": 860,
-        "wires": []
     },
     {
         "id": "c624c439fa74fc4b",
