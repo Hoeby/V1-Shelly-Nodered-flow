@@ -3,6 +3,9 @@
 To let this flow work correctly, nodered must be version 3.x.x
 If not, then the flow will not work.
 
+These shelly devices are supported in this flow:
+- Shelly Plus Plug S
+
 Which palette modules need to be installed in nodered:
 - node-red-dashboard
 - node-red-node-ui-table
