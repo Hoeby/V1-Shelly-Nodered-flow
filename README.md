@@ -14,7 +14,12 @@ The flow tries to make the needed directories, but to help the flow it is better
 For the PI with domoticz, make the directory: /home/pi/domoticz/plugins/shelly <br>
 For nodered in docker, make the directory: /data/saved-files/shelly  (remember, that this needs to be a volume, that the config is not gone when something happens with the container) <br>
 
-When the directories need to be different, the can be changed in the flow.
+Import the flow in your nodred environment.
+Copy the JSON flow with, open the next link and copy all data
+<a href="https://raw.githubusercontent.com/Hoeby/V1-Shelly-Nodered-flow/main/flows.json">JSON flow data.</a>
+Import this data in nodered
+
+When the directories where to config is saved need to be different, these can be changed in the flow.
 Search for this part in the flow. Double click on the correct environment and make your changes.
 For docker, remember that the location needs to be inside your container, otherwise nodered can't store the config <br>
 <img src="assets/save_location.png" width="500" >
