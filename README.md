@@ -17,4 +17,8 @@ For nodered in docker, make the directory: /data/saved-files/shelly  (remember, 
 When the directories need to be different, the can be changed in the flow.
 Search for this part in the flow. Double click on the correct environment and make your changes.
 For docker, remember that the location needs to be inside your container, otherwise nodered can't store the config <br>
-<img src="assets/save_location.png" width="300" >
+<img src="assets/save_location.png" width="500" >
+
+There are 2 mqtt nodes in the flow. Set the correct mqtt server in these nodes.
+After deploy, check that they are connected
+<img src="assets/mqtt.png" width="500" >
