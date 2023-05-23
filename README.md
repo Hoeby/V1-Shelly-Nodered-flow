@@ -40,7 +40,7 @@ When correct, you see this page in the web UI <br>
 The flow will test your directory. When correct working, the directory location is shown at the top. <br><br>
 If it stays on: please wait, loading config <br>
 Then the directory can't be written by nodered. check your directory and writting/reading rights <br>
-<img src="assets/ui.png" width="500" >
+<img src="assets/ui.png" width="1000" >
 
 To get the devices in the list. <br>
 Switch your shelly plugin (manually or with the shelly app). If your shelly device has the correct mqtt settings, it will appear in the IDX table. <br>
