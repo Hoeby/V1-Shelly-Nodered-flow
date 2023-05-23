@@ -46,6 +46,8 @@ To get the devices in the list. <br>
 Switch your shelly plugin (manually or with the shelly app). If your shelly device has the correct mqtt settings, it will appear in the IDX table. <br>
 To setup the idx settings. Choose the device, select the device type and click on "set settings". <br>
 Click on "How setup device in domoticz", which dummy devices manual need to be made in domoticz. This flow doens't automatically make devices in domoticz <br>
+<br>
+offline notify = if set, then in this time the flow needs to receive a mqtt message from shelly, otherwise it sets values to -1 and switches OFF, this to trigger, that the device is offline<br>
 
 you are ready to go
 
