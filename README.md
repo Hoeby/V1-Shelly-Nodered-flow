@@ -34,4 +34,18 @@ After deploy, check that they are connected <br>
 Go to you nodered web UI page <br>
 Replace "nodered IP" with the ip address from your environment <br> 
 Replace "nodered number" with the port number from your environment <br>
-http://nodered IP:nodered Port/ui
+http://nodered IP:nodered Port/ui <br>
+
+When correct, you see this page in the web UI <br>
+The flow will test your directory. When correct working, the directory location is shown at the top. <br><br>
+If it stays on: please wait, loading config <br>
+Then the directory can't be written by nodered. check your directory and writting/reading rights <br>
+<img src="assets/ui.png" width="500" >
+
+To get the devices in the list. <br>
+Switch your shelly plugin (manually or with the shelly app). If your shelly device has the correct mqtt settings, it will appear in the IDX table. <br>
+To setup the idx settings. Choose the device, select the device type and click on "set settings". <br>
+Click on "How setup device in domoticz", which dummy devices manual need to be made in domoticz. This flow doens't automatically make devices in domoticz <br>
+
+you are ready to go
+
