@@ -31,7 +31,7 @@ There are 2 mqtt nodes in the flow. Set the correct mqtt server in these nodes.
 After deploy, check that they are connected <br>
 <img src="assets/mqtt.png" width="500" >
 
-Go to you nodered web UI page
-Replace "nodered IP" with the ip address from your environment
-Replace "nodered number" with the port number from your environment
+Go to you nodered web UI page <br>
+Replace "nodered IP" with the ip address from your environment <br> 
+Replace "nodered number" with the port number from your environment <br>
 http://nodered IP:nodered Port/ui
