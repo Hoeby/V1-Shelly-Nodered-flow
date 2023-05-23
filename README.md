@@ -16,5 +16,5 @@ For nodered in docker, make the directory: /data/saved-files/shelly  (remember, 
 
 When the directories need to be different, the can be changed in the flow.
 Search for this part in the flow. Double click on the correct environment and make your changes.
-For docker, remember that the location needs to be inside your container, otherwise nodered can't store the config
+For docker, remember that the location needs to be inside your container, otherwise nodered can't store the config <br>
 <img src="assets/save_location.png" width="300" >
