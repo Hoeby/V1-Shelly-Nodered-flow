@@ -6,6 +6,9 @@ If not, then the flow will not work.
 These shelly devices are supported in this flow:
 - Shelly Plus Plug S
 
+# Index:
+- <a href="assets/readme_first_file_upload/README_First_file_upload.md">First time; How setup nodered and import this flow</a>
+
 Which palette modules need to be installed in nodered:
 - node-red-dashboard
 - node-red-node-ui-table
