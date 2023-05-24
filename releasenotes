@@ -1,3 +1,7 @@
-<b>V1 18-05-2023 R1: </b><br>
+<b>V1 24-05-2023 R1 beta: </b><br>
+- "Show discovered shellies" button added. To prevent that pull-down setup menu's clear itself <br>
+  &nbsp&nbsp&nbsp&nbsp It is not a network discovery option. The shelly first needs to send a message, before it will be added when the button is pushed <br>
+- Not (yet) supported option added. To already add those devices to the config <br>
+<b>V1 18-05-2023 R1 beta: </b><br>
 - The first release of the shelly flow <br>
-- Only device "Shelly Plug S" is available
+- Only device "Shelly Plug S" is available <br>
