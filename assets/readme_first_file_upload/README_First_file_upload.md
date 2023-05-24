@@ -18,11 +18,11 @@ Import this data in nodered
 When the directories where to config is saved need to be different, these can be changed in the flow.
 Search for this part in the flow. Double click on the correct environment and make your changes.
 For docker, remember that the location needs to be inside your container, otherwise nodered can't store the config <br>
-<img src="assets/save_location.png" width="500" >
+<img src="save_location.png" width="500" >
 
 There are 2 mqtt nodes in the flow. Set the correct mqtt server in these nodes.
 After deploy, check that they are connected <br>
-<img src="assets/mqtt.png" width="500" >
+<img src="mqtt.png" width="500" >
 
 Go to you nodered web UI page <br>
 Replace "nodered IP" with the ip address from your environment <br> 
@@ -33,7 +33,7 @@ When correct, you see this page in the web UI <br>
 The flow will test your directory. When correct working, the directory location is shown at the top. <br><br>
 If it stays on: please wait, loading config <br>
 Then the directory can't be written by nodered. check your directory and writting/reading rights <br>
-<img src="assets/ui.png" width="1000" >
+<img src="ui.png" width="1000" >
 
 To get the devices in the list. <br>
 Switch your shelly plugin (manually or with the shelly app). If your shelly device has the correct mqtt settings, it will appear in the IDX table. <br>
@@ -43,3 +43,5 @@ Click on "How setup device in domoticz", which dummy devices manual need to be m
 offline notify = if set, then in this time the flow needs to receive a mqtt message from shelly, otherwise it sets values to -1 and switches OFF, this to trigger, that the device is offline<br>
 
 you are ready to go
+
+<a href="../../README.md">Back to main page</a>
