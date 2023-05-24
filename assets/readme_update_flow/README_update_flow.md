@@ -26,3 +26,5 @@ Select the button "select a file to import" and choose the downloaded .json file
 The update (the replaced flow) is done. <br>
 Test the changed flow. If you are happy, then delete the disabled flow. <br>
 If not happy, delete the new imported flow and enable the old flow again. <br>
+
+<a href="../../README.md">Back to main page</a>
