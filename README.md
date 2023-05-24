@@ -8,3 +8,4 @@ These shelly devices are supported in this flow:
 
 # Index:
 - <a href="assets/readme_first_file_upload/README_First_file_upload.md">First time; How setup nodered and import this flow</a>
+- <a href="assets/readme_update_flow/README_update_flow.md">First time; How to execute an update</a>
