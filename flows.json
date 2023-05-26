@@ -8,53 +8,6 @@
         "env": []
     },
     {
-        "id": "505618e07c90630b",
-        "type": "group",
-        "z": "e673d877691c41c6",
-        "name": "IDX shelly tabel",
-        "style": {
-            "label": true,
-            "stroke": "#3f93cf",
-            "color": "#3f93cf"
-        },
-        "nodes": [
-            "e8b32b858198239f",
-            "5eb70da670c07e6a",
-            "50797f1e05707d42",
-            "8876f268f2d2828e",
-            "3d92f31de30d2c22",
-            "5dec884841d31a6d",
-            "a3d3d04d66b5ed84",
-            "d9b14a45b233c8ca",
-            "5afe174b5169057b",
-            "06b5226a793bb531",
-            "6c3819770488d525",
-            "9f5fd34525d8135c",
-            "3c8a782951a4f4d2",
-            "b6df36f40e4d0704",
-            "ba44b09a0ce99ac8",
-            "81090e781671c7f4",
-            "9d12a3a11dac2c76",
-            "4282781648061454",
-            "0227d6c01c5f9cd9",
-            "ddac08a116fcf0c3",
-            "52ade3ef04838837",
-            "c5b02678e09ddf1d",
-            "4ff9f519f9ecd23f",
-            "ccd07e8f467ccb60",
-            "9677dd6b0280c920",
-            "e8e94dbbef05c969",
-            "d44d4522420736c5",
-            "c624c439fa74fc4b",
-            "23bd47bccdefc478",
-            "efaccfebe7a2ccbf"
-        ],
-        "x": 34,
-        "y": 1339,
-        "w": 1632,
-        "h": 662
-    },
-    {
         "id": "59796bbcdf36aee8",
         "type": "group",
         "z": "e673d877691c41c6",
@@ -79,7 +32,7 @@
             "d8f3a779ee2d1a98",
             "6109e6f354b90320",
             "c5682192946879ac",
-            "e61aea3818815a9f"
+            "2465e353f74340f0"
         ],
         "x": 34,
         "y": 719,
@@ -310,124 +263,63 @@
         "h": 262
     },
     {
+        "id": "505618e07c90630b",
+        "type": "group",
+        "z": "e673d877691c41c6",
+        "name": "IDX shelly tabel",
+        "style": {
+            "label": true,
+            "stroke": "#3f93cf",
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "e8b32b858198239f",
+            "5eb70da670c07e6a",
+            "50797f1e05707d42",
+            "8876f268f2d2828e",
+            "3d92f31de30d2c22",
+            "5dec884841d31a6d",
+            "a3d3d04d66b5ed84",
+            "d9b14a45b233c8ca",
+            "5afe174b5169057b",
+            "06b5226a793bb531",
+            "6c3819770488d525",
+            "9f5fd34525d8135c",
+            "3c8a782951a4f4d2",
+            "b6df36f40e4d0704",
+            "ba44b09a0ce99ac8",
+            "81090e781671c7f4",
+            "9d12a3a11dac2c76",
+            "4282781648061454",
+            "0227d6c01c5f9cd9",
+            "ddac08a116fcf0c3",
+            "52ade3ef04838837",
+            "c5b02678e09ddf1d",
+            "4ff9f519f9ecd23f",
+            "ccd07e8f467ccb60",
+            "9677dd6b0280c920",
+            "e8e94dbbef05c969",
+            "d44d4522420736c5",
+            "c624c439fa74fc4b",
+            "23bd47bccdefc478",
+            "efaccfebe7a2ccbf",
+            "76f3de0ca3f29d86",
+            "8bdeaec89c411472",
+            "747796b81fb9857f"
+        ],
+        "x": 34,
+        "y": 1339,
+        "w": 1632,
+        "h": 662
+    },
+    {
         "id": "d269e0dd2f0f8ad6",
         "type": "comment",
         "z": "e673d877691c41c6",
-        "name": "V1_24-05-2023_R1_beta",
-        "info": "<b>V1 24-05-2023 R1 beta: </b><br>\n- \"Show discovered shellies\" button added. To prevent that pull-down setup menu's clear itself <br>\n  &nbsp&nbsp&nbsp&nbsp It is not a network discovery option. The shelly first needs to send a message, before it will be added when the button is pushed <br>\n- Not (yet) supported option added. To already add those devices to the config <br>\n<b>V1 18-05-2023 R1 beta: </b><br>\n- The first release of the shelly flow <br>\n- Only device \"Shelly Plug S\" is available <br>",
+        "name": "V1_26-05-2023_R1_beta",
+        "info": "<b>V1 26-05-2023 R1 beta: </b><br>\n- New device added \"Shelly Plug S <br>\n- When select device with a known config, the config is written in setup-nodes <br>\n- Announce message are stopped in the flow <br>\n<b>V1 24-05-2023 R1 beta: </b><br>\n- \"Show discovered shellies\" button added. To prevent that pull-down setup menu's clear itself <br>\n  &nbsp&nbsp&nbsp&nbsp It is not a network discovery option. The shelly first needs to send a message, before it will be added <br>\n- Not (yet) supported option added. To already add those devices to the config <br>\n<b>V1 18-05-2023 R1 beta: </b><br>\n- The first release of the shelly flow <br>\n- Only device \"Shelly Plus Plug S\" is available <br>",
         "x": 130,
         "y": 40,
-        "wires": []
-    },
-    {
-        "id": "06b5226a793bb531",
-        "type": "json",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1150,
-        "y": 1540,
-        "wires": [
-            [
-                "ddac08a116fcf0c3"
-            ]
-        ]
-    },
-    {
-        "id": "50797f1e05707d42",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Clear",
-        "func": "delete msg.payload;\nmsg.payload =\"\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 1920,
-        "wires": [
-            [
-                "e8b32b858198239f",
-                "3d92f31de30d2c22",
-                "5dec884841d31a6d",
-                "a3d3d04d66b5ed84",
-                "5afe174b5169057b",
-                "c5b02678e09ddf1d",
-                "4ff9f519f9ecd23f",
-                "3c8a782951a4f4d2",
-                "9677dd6b0280c920",
-                "e8e94dbbef05c969",
-                "d44d4522420736c5"
-            ]
-        ]
-    },
-    {
-        "id": "8876f268f2d2828e",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Set Device settings",
-        "func": "let option1 = [\"Shelly Plug S, Shelly Plus Plug S\"];\nlet option2 = [\"Shelly Plus Plug S\"];\nlet option3 = [\"Shelly Plus Plug S\"];\nlet option4 = [\"Shelly Plus Plug S\"];\nlet option5 = [];\nlet option6 = [];\nlet option7 = [];\nlet option8 = [];\nlet option13 = [\"Shelly Plus Plug S\"];\nlet data1 = context.get(\"data1\") || null; //get from context or default to null\nlet data2 = context.get(\"data2\") || null; //get from context or default to null\nlet data3 = context.get(\"data3\") || null; //get from context or default to null\nlet data4 = context.get(\"data4\") || \"Not set\"; //get from context or default to 0\nlet data5 = context.get(\"data5\") || \"Not set\"; //get from context or default to 0\nlet data6 = context.get(\"data6\") || \"Not set\"; //get from context or default to 0\nlet data7 = context.get(\"data7\") || \"Not set\"; //get from context or default to 0\nlet data8 = context.get(\"data8\") || \"Not set\"; //get from context or default to 0\nlet data9 = context.get(\"data9\") || \"Not set\"; //get from context or default to 0\nlet data10 = context.get(\"data10\") || \"Not set\"; //get from context or default to 0\nlet data11 = context.get(\"data11\") || \"Not set\"; //get from context or default to 0\nlet data12 = context.get(\"data12\") || \"Not set\"; //get from context or default to 0\nlet data13 = context.get(\"data13\") || \"Not set\"; //get from context or default to 0\n\n\nlet reconfig = flow.get(\"sh2dz-idx\") || {};\n\nswitch (msg.topic){\n\n    case \"device\":\n        data1 = msg.payload; \n        context.set(\"data1\", data1);//store in context for next time \n        return;\n\n    case \"sw\":\n        data2 = msg.payload;\n        context.set(\"data2\", data2);//store in context for next time \n        return;\n\n    case \"type\":\n        data3 = msg.payload;\n        context.set(\"data3\", data3);//store in context for next time \n        return;\n    \n    case \"idx\":\n        data4 = msg.payload; \n        context.set(\"data4\", data4);//store in context for next time \n        return;\n        \n    case \"idxoption1\":\n        data5 = msg.payload;\n        context.set(\"data5\", data5); //store in context for next time \n        return;\n        \n    case \"idxoption2\":\n        data6 = msg.payload;\n        context.set(\"data6\", data6); //store in context for next time \n        return;\n    \n    case \"idxoption3\":\n        data7 = msg.payload;\n        context.set(\"data7\", data7); //store in context for next time \n        return;\n    \n    case \"idxoption4\":\n        data8 = msg.payload;\n        context.set(\"data8\", data8); //store in context for next time \n        return;\n\n    case \"idxoption5\":\n        data9 = msg.payload;\n        context.set(\"data9\", data9); //store in context for next time \n        return;\n\n    case \"idxoption6\":\n        data10 = msg.payload;\n        context.set(\"data10\", data10); //store in context for next time \n        return;\n    \n    case \"idxoption7\":\n        data11 = msg.payload;\n        context.set(\"data11\", data11); //store in context for next time \n        return;\n    \n    case \"idxoption8\":\n        data12 = msg.payload;\n        context.set(\"data12\", data12); //store in context for next time \n        return;\n\n    case \"offline\":\n        data13 = msg.payload;\n        context.set(\"data13\", data13); //store in context for next time \n        return;\n\n    case \"submit\":\n        if (data1 !== null ) {\n            let receivedSensors = [];\n            let dev = reconfig[(data1.split(\"/\")[0])] || {};\n            \n            dev.type = data3;\n\n            dev.name = data1.split(\":\")[0];\n            dev.sw = data1.split(\":\")[1];\n                        \n            if (data3 === \"Not (yet) supported\") {\n                dev.idx = \"N/A\";\n            } else {\n                dev.idx = data4;\n            }            \n            if (option1.includes(data3)) {\n                dev.idxoption1 = data5;\n            } else {\n                dev.idxoption1 = \"N/A\";\n            }\n            if (option2.includes(data3)) {\n                dev.idxoption2 = data6;\n            } else {\n                dev.idxoption2 = \"N/A\";\n            } \n            if (option3.includes(data3)) {\n                dev.idxoption3 = data7;\n            } else {\n                dev.idxoption3 = \"N/A\";\n            }\n            if (option4.includes(data3)) {\n                dev.idxoption4 = data8;\n            } else {\n                dev.idxoption4 = \"N/A\";\n            }\n            if (option5.includes(data3)) {\n                dev.idxoption5 = data9;\n            } else {\n                dev.idxoption5 = \"N/A\";\n            }\n            if (option6.includes(data3)) {\n                dev.idxoption6 = data10;\n            } else {\n                dev.idxoption6 = \"N/A\";\n            }\n            if (option7.includes(data3)) {\n                dev.idxoption7 = data11;\n            } else {\n                dev.idxoption7 = \"N/A\";\n            }\n            if (option8.includes(data3)) {\n                dev.idxoption8 = data12;\n            } else {\n                dev.idxoption8 = \"N/A\";\n            }\n            if (option13.includes(data3)) {\n                dev.offline = data13;\n            } else {\n                dev.offline = \"N/A\";\n            }\n            // write back\n            reconfig[(data1.split(\"/\")[0])] = dev;\n            receivedSensors.push(dev);\n \n            flow.set(\"sh2dz-idx\", reconfig);\n            context.set(\"data1\", null);\n        } else {\n            return;\n        }\n    }\n\nreturn [{payload:Object.values(reconfig)},msg];",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 870,
-        "y": 1560,
-        "wires": [
-            [
-                "06b5226a793bb531",
-                "c624c439fa74fc4b"
-            ],
-            [
-                "6c3819770488d525"
-            ]
-        ]
-    },
-    {
-        "id": "d9b14a45b233c8ca",
-        "type": "delay",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 150,
-        "y": 1920,
-        "wires": [
-            [
-                "50797f1e05707d42"
-            ]
-        ]
-    },
-    {
-        "id": "6c3819770488d525",
-        "type": "link out",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Shelly, Restore idx table",
-        "mode": "link",
-        "links": [
-            "dd2baae8845ebade"
-        ],
-        "x": 1105,
-        "y": 1580,
         "wires": []
     },
     {
@@ -482,25 +374,6 @@
         "wires": [
             [
                 "4077a92944aa6440"
-            ]
-        ]
-    },
-    {
-        "id": "9f5fd34525d8135c",
-        "type": "link in",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Shelly, Device in",
-        "links": [
-            "452b38fec749323b",
-            "6908453d834d5d49",
-            "fbd1ad97ec777563"
-        ],
-        "x": 75,
-        "y": 1380,
-        "wires": [
-            [
-                "0227d6c01c5f9cd9"
             ]
         ]
     },
@@ -646,66 +519,6 @@
         "wires": []
     },
     {
-        "id": "3c8a782951a4f4d2",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Device list",
-        "func": "msg.payload = \"\"\nmsg.options = [//\"Shelly Plug S\",\n               //\"Shelly 2.5\",\n               \"Shelly Plus Plug S\",\n               \"Not (yet) supported\" ]\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 1900,
-        "wires": [
-            [
-                "b6df36f40e4d0704"
-            ]
-        ]
-    },
-    {
-        "id": "81090e781671c7f4",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "How to setup device in domoticz",
-        "func": "let device = context.get(\"type\") || 0; //get from context or default to 0\n\nswitch (msg.topic){\n\n    case \"type\":\n        device = msg.payload; \n        context.set(\"type\", device);//store in context for next time \n        return;\n\n    case \"submit\":\n        //Shelly Plug S       \n        if (device === \"Shelly Plus Plug S\" ) {   \n            msg.topic = \"Shelly Plus Plug S (generation 2)\"\n            msg.payload = \"<p>Make dummy device in domoticz.</p><p>IDX = switch (Dummy = switch)</p><p>IDXoption1 = Power (Dummy = Usage, Electric)</p><p>IDXoption2 = Voltage (Dummy = General, Voltage)</p><p>IDXoption3 = Current (Dummy = General, Current)</p><p>IDXoption4 = Total power (Dummy = General, kWh)</p><p>IDXoption5 = Not available for this device</p><p>IDXoption6 = Not available for this device</p><p>IDXoption7 = Not available for this device</p><p>IDXoption8 = Not available for this device</p>\"\n        \n        } else {\n            msg.topic = \"Device unknown\"\n            msg.payload = \"<p>First select device type, afterwards the info is shown</p>\"\n        }\n        return msg;\n    }",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 1840,
-        "wires": [
-            [
-                "9d12a3a11dac2c76"
-            ]
-        ]
-    },
-    {
-        "id": "0227d6c01c5f9cd9",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "extract devicenames",
-        "func": "if (msg.topic === \"no-update\")  {\n   return;\n} else {\n   msg.options = msg.payload.map(obj => {\n      var rObj = {};\n      rObj[obj.name + \"_switch:\" + obj.sw] = obj.name+\":\"+obj.sw\n      return rObj;\n   });\n}\n\nmsg.payload = {};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 1380,
-        "wires": [
-            [
-                "4282781648061454"
-            ]
-        ]
-    },
-    {
         "id": "60c874dfbb8f595d",
         "type": "link in",
         "z": "e673d877691c41c6",
@@ -813,171 +626,6 @@
         "wires": []
     },
     {
-        "id": "e8b32b858198239f",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX nummer",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1440,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
-        "id": "3d92f31de30d2c22",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 1",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 7,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption1",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1480,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
-        "id": "5dec884841d31a6d",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 2",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 12,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption2",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1520,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
-        "id": "a3d3d04d66b5ed84",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 4",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 8,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption4",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1600,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
-        "id": "5afe174b5169057b",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 3",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 3,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption3",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1560,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
-        "id": "5eb70da670c07e6a",
-        "type": "ui_button",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "group": "e151206531f4336f",
-        "order": 15,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Set settings",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "submit",
-        "topicType": "str",
-        "x": 550,
-        "y": 1840,
-        "wires": [
-            [
-                "8876f268f2d2828e",
-                "d9b14a45b233c8ca"
-            ]
-        ]
-    },
-    {
         "id": "de3b54b968b48044",
         "type": "ui_button",
         "z": "e673d877691c41c6",
@@ -1007,98 +655,6 @@
         ]
     },
     {
-        "id": "ba44b09a0ce99ac8",
-        "type": "ui_button",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "group": "e151206531f4336f",
-        "order": 10,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "How setup device in domoticz",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "submit",
-        "topicType": "str",
-        "x": 1490,
-        "y": 1800,
-        "wires": [
-            [
-                "81090e781671c7f4"
-            ]
-        ]
-    },
-    {
-        "id": "b6df36f40e4d0704",
-        "type": "ui_dropdown",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "device type",
-        "label": "",
-        "tooltip": "",
-        "place": "Device type",
-        "group": "e151206531f4336f",
-        "order": 11,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [],
-        "payload": "",
-        "topic": "type",
-        "topicType": "str",
-        "className": "",
-        "x": 730,
-        "y": 1900,
-        "wires": [
-            [
-                "8876f268f2d2828e",
-                "81090e781671c7f4"
-            ]
-        ]
-    },
-    {
-        "id": "4282781648061454",
-        "type": "ui_dropdown",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "place": "Device",
-        "group": "e151206531f4336f",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "multiple": false,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "device",
-        "topicType": "str",
-        "className": "",
-        "x": 540,
-        "y": 1380,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
         "id": "9a37421c4e8288f6",
         "type": "ui_text",
         "z": "e673d877691c41c6",
@@ -1115,28 +671,6 @@
         "x": 680,
         "y": 500,
         "wires": []
-    },
-    {
-        "id": "9d12a3a11dac2c76",
-        "type": "ui_toast",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "position": "dialog",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 1,
-        "ok": "Close",
-        "cancel": "",
-        "raw": true,
-        "className": "",
-        "topic": "",
-        "name": "Shelly Device Info",
-        "x": 1450,
-        "y": 1880,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "999b9d08a9dd50cf",
@@ -1610,7 +1144,7 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Actuel version: V1_24-05-2023_R1_beta",
+                "to": "Actuel version: V1_26-05-2023_R1_beta",
                 "tot": "str"
             }
         ],
@@ -1642,43 +1176,6 @@
             [
                 "a7950a59346f4466"
             ]
-        ]
-    },
-    {
-        "id": "ddac08a116fcf0c3",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Get save location",
-        "func": "let destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/shellytabel.txt\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1350,
-        "y": 1540,
-        "wires": [
-            [
-                "52ade3ef04838837"
-            ]
-        ]
-    },
-    {
-        "id": "52ade3ef04838837",
-        "type": "file",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Save to file",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "x": 1570,
-        "y": 1540,
-        "wires": [
-            []
         ]
     },
     {
@@ -2037,7 +1534,7 @@
         "z": "e673d877691c41c6",
         "g": "2929c89d283fc1ce",
         "name": "UPDATE RELEASE",
-        "func": "let version = \"V1_24-05-2023_R1_beta\"\nlet oldStr = msg.payload;\nlet newStr = oldStr.slice(0, oldStr.length-1);\nlet store = newStr;\nflow.set(\"version\", newStr);\nlet html = \"\";\nmsg.topic = \"Release notes\";\nif (msg.statusCode === 200 || 201) {\n    if (store === version) {\n        msg.text = \"FLOW IS UP TO DATE WITH GITHUB (\" + version + \")\"\n        msg.background = \"#0A8085\";\n        return msg;\n    } else {\n        msg.text = \"THERE IS AN UPDATE, CLICK HERE TO READ RELEASE-NOTES AND DOWNLOAD FLOW FILE FROM GITHUB\"\n        msg.background = \"#8C101C\";\n        return msg;\n    }\n}\nreturn;",
+        "func": "let version = \"V1_26-05-2023_R1_beta\"\nlet oldStr = msg.payload;\nlet newStr = oldStr.slice(0, oldStr.length-1);\nlet store = newStr;\nflow.set(\"version\", newStr);\nlet html = \"\";\nmsg.topic = \"Release notes\";\nif (msg.statusCode === 200 || 201) {\n    if (store === version) {\n        msg.text = \"FLOW IS UP TO DATE WITH GITHUB (\" + version + \")\"\n        msg.background = \"#0A8085\";\n        return msg;\n    } else {\n        msg.text = \"THERE IS AN UPDATE, CLICK HERE TO READ RELEASE-NOTES AND DOWNLOAD FLOW FILE FROM GITHUB\"\n        msg.background = \"#8C101C\";\n        return msg;\n    }\n}\nreturn;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2079,33 +1576,6 @@
         "wires": [
             [
                 "de3b54b968b48044"
-            ]
-        ]
-    },
-    {
-        "id": "c5b02678e09ddf1d",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 5",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 13,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption5",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1640,
-        "wires": [
-            [
-                "8876f268f2d2828e"
             ]
         ]
     },
@@ -2247,8 +1717,7 @@
         "wires": [
             [
                 "c751b4b5bfd383b3",
-                "d1555be9c3cec11c",
-                "e61aea3818815a9f"
+                "d1555be9c3cec11c"
             ]
         ]
     },
@@ -2293,7 +1762,7 @@
         "z": "e673d877691c41c6",
         "g": "59796bbcdf36aee8",
         "name": "Shelly ID filter on ui table",
-        "func": "let storetopic = msg.topic;\nlet devs = flow.get(\"sh2dz-idx\") || {};\nlet length = Object.keys(devs).length;\n\nif (msg.source === 'gen1' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let dev = devs[IDkey] || {};\n        \n        if (IDkey === storetopic.split(\"/\")[1] + \":\" + msg.topic.split(\"/\")[4]) {\n            let type = dev.type;\n            msg.payload.domoticz = { name: dev.name, sw: dev.sw, idx: dev.idx, idxoption1: dev.idxoption1, idxoption2: dev.idxoption2, idxoption3: dev.idxoption3, idxoption4: dev.idxoption4, idxoption5: dev.idxoption5, idxoption6: dev.idxoption6, idxoption7: dev.idxoption7, idxoption8: dev.idxoption8, offline: dev.offline, addon: dev.addon, gen: dev.gen};\n            msg.payload.script = { source:\"Shelly_gen1\"};\n            \n            if (type === \"Shelly Plug S\") {\n                return [msg, null, null, null]\n            } else if (type === \"Shelly 2.5\") {\n                return [null, msg, null, null]\n            } else if (type === \"Shelly Plus Plug S\") {\n                return [null, null, msg, null];\n            } else {\n                return [null, null, null, msg];\n            }\n        }\n    }\n}\n\nif (msg.source === 'gen2' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let dev = devs[IDkey] || {};\n                \n        if (IDkey === storetopic.split(\"/\")[1] + \":\"+msg.topic.split(\":\")[1]){\n            let type = dev.type;\n            msg.payload.domoticz = { name: dev.name, sw: dev.sw, idx: dev.idx, idxoption1: dev.idxoption1, idxoption2: dev.idxoption2, idxoption3: dev.idxoption3, idxoption4: dev.idxoption4, idxoption5: dev.idxoption5, idxoption6: dev.idxoption6, idxoption7: dev.idxoption7, idxoption8: dev.idxoption8, offline: dev.offline, addon: dev.addon, gen: dev.gen };\n            msg.payload.script = { source: \"Shelly_gen2\" };\n            \n            if (type === \"Shelly Plug S\") {\n                return [msg, null, null, null]\n            } else if (type === \"Shelly 2.5\") {\n                return [null, msg, null, null]\n            } else if (type === \"Shelly Plus Plug S\") {\n                return [null, null, msg, null];\n            } else {\n                return [null, null, null, msg];\n            }\n        }\n    }\n}\n\nif ( msg.source === 'domoticz' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let message = devs[IDkey];\n        let messageidx = parseInt(devs[IDkey].idx);\n\n        if (messageidx === msg.payload.idx) {\n            let type = message.type;\n            msg.payload.domoticz = { name: message.name, sw: message.sw, idx: message.idx, idxoption1: message.idxoption1, idxoption2: message.idxoption2, idxoption3: message.idxoption3, idxoption4: message.idxoption4, idxoption5: message.idxoption5, idxoption6: message.idxoption6, idxoption7: message.idxoption7, idxoption8: message.idxoption8, offline: message.offline, addon: message.addon, gen: message.gen };\n            msg.payload.script = { source: \"Domoticz\" };\n            \n            if (type === \"Shelly Plug S\") {\n                return [msg, null, null, null]\n            } else if (type === \"Shelly 2.5\") {\n                return [null, msg, null, null]\n            } else if (type === \"Shelly Plus Plug S\") {\n                return [null, null, msg, null];\n            } else {\n                return [null, null, null, msg];\n            }\n        }\n    }\n}",
+        "func": "let storetopic = msg.topic;\nlet devs = flow.get(\"sh2dz-idx\") || {};\nlet length = Object.keys(devs).length;\n\nif (msg.source === 'gen1' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let dev = devs[IDkey] || {};\n                \n        if (IDkey === storetopic.split(\"/\")[1] + \":\" + msg.topic.split(\"/\")[3]) {\n            let type = dev.type;\n            let output = msg.payload;\n            msg.payload = { output, script: { source: \"Shelly_gen1\" }, domoticz : { name: dev.name, sw: dev.sw, idx: dev.idx, idxoption1: dev.idxoption1, idxoption2: dev.idxoption2, idxoption3: dev.idxoption3, idxoption4: dev.idxoption4, idxoption5: dev.idxoption5, idxoption6: dev.idxoption6, idxoption7: dev.idxoption7, idxoption8: dev.idxoption8, offline: dev.offline, addon: dev.addon, gen: dev.gen}};\n            \n            if (type === \"Shelly Plug S\") {\n                return [msg, null, null, null]\n            } else if (type === \"Shelly 2.5\") {\n                return [null, msg, null, null]\n            } else if (type === \"Shelly Plus Plug S\") {\n                return [null, null, msg, null];\n            } else {\n                return [null, null, null, msg];\n            }\n        }\n    }\n}\n\nif (msg.source === 'gen2' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let dev = devs[IDkey] || {};\n                \n        if (IDkey === storetopic.split(\"/\")[1] + \":\"+msg.topic.split(\":\")[1]){\n            let type = dev.type;\n            msg.payload.domoticz = { name: dev.name, sw: dev.sw, idx: dev.idx, idxoption1: dev.idxoption1, idxoption2: dev.idxoption2, idxoption3: dev.idxoption3, idxoption4: dev.idxoption4, idxoption5: dev.idxoption5, idxoption6: dev.idxoption6, idxoption7: dev.idxoption7, idxoption8: dev.idxoption8, offline: dev.offline, addon: dev.addon, gen: dev.gen };\n            msg.payload.script = { source: \"Shelly_gen2\" };\n            \n            if (type === \"Shelly Plug S\") {\n                return [msg, null, null, null]\n            } else if (type === \"Shelly 2.5\") {\n                return [null, msg, null, null]\n            } else if (type === \"Shelly Plus Plug S\") {\n                return [null, null, msg, null];\n            } else {\n                return [null, null, null, msg];\n            }\n        }\n    }\n}\n\nif ( msg.source === 'domoticz' ) {\n    for (let i = 0; i < length; i++) {\n        let keys = Object.keys(devs);\n        let IDkey = keys[i];\n        let message = devs[IDkey];\n        let messageidx = parseInt(devs[IDkey].idx);\n\n        if (messageidx === msg.payload.idx) {\n            let type = message.type;\n            msg.payload.domoticz =  { name: message.name, sw: message.sw, idx: message.idx, idxoption1: message.idxoption1, idxoption2: message.idxoption2, idxoption3: message.idxoption3, idxoption4: message.idxoption4, idxoption5: message.idxoption5, idxoption6: message.idxoption6, idxoption7: message.idxoption7, idxoption8: message.idxoption8, offline: message.offline, addon: message.addon, gen: message.gen };\n            msg.payload.script = { source: \"Domoticz\" }\n                        \n            if (type === \"Shelly Plug S\") {\n                return [msg, null, null, null]\n            } else if (type === \"Shelly 2.5\") {\n                return [null, msg, null, null]\n            } else if (type === \"Shelly Plus Plug S\") {\n                return [null, null, msg, null];\n            } else {\n                return [null, null, null, msg];\n            }\n        }\n    }\n}",
         "outputs": 4,
         "noerr": 0,
         "initialize": "",
@@ -2303,7 +1772,7 @@
         "y": 820,
         "wires": [
             [
-                "7f1825b174f92603"
+                "630e204b8617031d"
             ],
             [],
             [
@@ -2320,7 +1789,7 @@
         "z": "e673d877691c41c6",
         "g": "59796bbcdf36aee8",
         "name": "IDX not in filter",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2918,7 +2387,7 @@
         "z": "e673d877691c41c6",
         "g": "e5ca1fdfc9e163a0",
         "name": "store shelly devices",
-        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}, {payload:Object.values(devs)}];\n} else {\n    if (msg.source === 'gen1') {\n        // properties that should  show up in the status\n        let inStatus = [];\n\n        // properties that should not show up in the status\n        let notStatus = [\"name\", \"status\"];\n\n        //node.warn(msg.payload);\n        devs = flow.get(\"sh2dz-status\") || {};\n\n        let devt = flow.get(\"sh2dz-idx\") || {};\n        let length = Object.keys(devt).length;\n\n        let receivedSensors = [];\n        let ID = (msg.topic.split(\"/\")[1] + \":\" + msg.topic.split(\"/\")[3]);\n        let dev = devs[ID] || {};\n\n        dev.name = msg.topic.split(\"/\")[1];\n        dev.sw = msg.topic.split(\"/\")[3];\n        dev.output = msg.payload;\n        //dev.power = msg.payload.apower;\n        //dev.voltage = msg.payload.voltage;\n        //dev.current = msg.payload.current;\n\n        dev.lastTime = new Date().getTime();\n\n\n        // create status from properties\n        let status = \"\";\n        for (let prop in dev) {\n            if (inStatus.includes(prop)) {\n                status += \" \" + prop + \": \" + dev[prop];\n            }\n        }\n        if (status === \"\") {\n            for (let prop in dev) {\n                if (!notStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n        }\n        dev.status = status;\n\n        // write back\n        devs[ID] = dev;\n        receivedSensors.push(dev);\n\n        Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime() - element[1].lastTime) / 60000) + \"m\");\n\n        flow.set(\"sh2dz-status\", devs);\n\n        return [{ topic: status, payload: Object.values(devs) }];\n\n    } else if (msg.source === 'gen2') {\n        // properties that should  show up in the status\n        let inStatus = [\"power\", \"voltage\", \"current\"];\n   \n        // properties that should not show up in the status\n        let notStatus = [\"id\", \"source\"];\n\n        //node.warn(msg.payload);\n        devs = flow.get(\"sh2dz-status\") || {}; \n    \n        let devt = flow.get(\"sh2dz-idx\") || {};\n        let length = Object.keys(devt).length;\n       \n        let receivedSensors = [];\n        let ID = (msg.topic.split(\"/\")[1] + \":\"+msg.topic.split(\":\")[1]);\n        let dev = devs[ID] || {};\n\n        dev.name = msg.topic.split(\"/\")[1];\n        dev.sw = msg.topic.split(\":\")[1];\n        dev.output = msg.payload.output;\n        dev.power = msg.payload.apower;\n        dev.voltage = msg.payload.voltage;\n        dev.current = msg.payload.current;\n\n        dev.lastTime = new Date().getTime();    \n\n\n        // create status from properties\n        let status = \"\";\n        for (let prop in dev) {\n            if (inStatus.includes(prop)) {\n                status += \" \" + prop + \": \" + dev[prop];\n            }\n        }\n        if (status === \"\") {\n            for (let prop in dev) {\n                if (!notStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n        }\n        dev.status = status;\n\n        // write back\n        devs[ID] = dev;\n        receivedSensors.push(dev);\n       \n        Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n        flow.set(\"sh2dz-status\", devs);\n\n        return [{topic: status, payload:Object.values(devs)}];\n    }\n}",
+        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}];\n} else {\n    if (msg.source === 'gen1') {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload === \"announce\") {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [];\n\n            // properties that should not show up in the status\n            let notStatus = [\"name\", \"status\"];\n \n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {};\n\n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n\n            let receivedSensors = [];\n            let ID = (msg.topic.split(\"/\")[1] + \":\" + msg.topic.split(\"/\")[3]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = msg.topic.split(\"/\")[3];\n            dev.output = msg.payload;\n            //dev.power = msg.payload.apower;\n            //dev.voltage = msg.payload.voltage;\n            //dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();\n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n\n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime() - element[1].lastTime) / 60000) + \"m\");\n\n            flow.set(\"sh2dz-status\", devs);\n\n            return [{ topic: status, payload: Object.values(devs) }];\n        }\n    } else if (msg.source === 'gen2') {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload.output === \"announce\" ) {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [\"power\", \"voltage\", \"current\"];\n   \n            // properties that should not show up in the status\n            let notStatus = [\"id\", \"source\"];\n\n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {}; \n    \n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n       \n            let receivedSensors = [];\n            let ID = (msg.topic.split(\"/\")[1] + \":\"+msg.topic.split(\":\")[1]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = msg.topic.split(\":\")[1];\n            dev.output = msg.payload.output;\n            dev.power = msg.payload.apower;\n            dev.voltage = msg.payload.voltage;\n            dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();    \n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n       \n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n            flow.set(\"sh2dz-status\", devs);\n\n            return [{topic: status, payload:Object.values(devs)}];\n        }\n    }\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3075,95 +2544,6 @@
         "wires": [
             [
                 "3dc6569703f2e1c8"
-            ]
-        ]
-    },
-    {
-        "id": "4ff9f519f9ecd23f",
-        "type": "ui_dropdown",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Offline notificatie",
-        "label": "Offline notify",
-        "tooltip": "",
-        "place": "",
-        "group": "e151206531f4336f",
-        "order": 5,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Disable",
-                "value": "Disable",
-                "type": "str"
-            },
-            {
-                "label": "60 seconds",
-                "value": 60,
-                "type": "num"
-            },
-            {
-                "label": "120 seconds",
-                "value": 120,
-                "type": "num"
-            },
-            {
-                "label": "180 seconds",
-                "value": 180,
-                "type": "num"
-            },
-            {
-                "label": "240 seconds",
-                "value": 240,
-                "type": "num"
-            },
-            {
-                "label": "300 seconds",
-                "value": 300,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "offline",
-        "topicType": "str",
-        "className": "",
-        "x": 560,
-        "y": 1800,
-        "wires": [
-            [
-                "8876f268f2d2828e"
-            ]
-        ]
-    },
-    {
-        "id": "ccd07e8f467ccb60",
-        "type": "inject",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "Set device list",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 300,
-        "y": 1960,
-        "wires": [
-            [
-                "3c8a782951a4f4d2"
             ]
         ]
     },
@@ -3514,81 +2894,6 @@
         ]
     },
     {
-        "id": "9677dd6b0280c920",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 6",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 4,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption6",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e8e94dbbef05c969",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 7",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 9,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption7",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d44d4522420736c5",
-        "type": "ui_text_input",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "",
-        "label": "IDX option 8",
-        "tooltip": "",
-        "group": "e151206531f4336f",
-        "order": 14,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": "250",
-        "topic": "idxoption8",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 550,
-        "y": 1760,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "76151a7e11613d35",
         "type": "inject",
         "z": "e673d877691c41c6",
@@ -3632,26 +2937,9 @@
         "y": 660,
         "wires": [
             [
-                "ea147d2dd284877a"
+                "ea147d2dd284877a",
+                "630e204b8617031d"
             ]
-        ]
-    },
-    {
-        "id": "c624c439fa74fc4b",
-        "type": "function",
-        "z": "e673d877691c41c6",
-        "g": "505618e07c90630b",
-        "name": "set idx filter",
-        "func": "let filter = [];\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    if (msg.payload[i].type === \"Shelly Plus Plug S\") {\n        filter.push(msg.payload[i].idx)\n    }\n}\n\nflow.set(\"dz-idx-filter\", filter);\nflow.set(\"dz-state\",{})\nreturn;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1170,
-        "y": 1500,
-        "wires": [
-            []
         ]
     },
     {
@@ -4119,7 +3407,7 @@
             "df646706d0e7cddc"
         ],
         "x": 2695,
-        "y": 820,
+        "y": 800,
         "wires": []
     },
     {
@@ -4136,42 +3424,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2780,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "7f1825b174f92603",
-        "type": "debug",
-        "z": "e673d877691c41c6",
-        "name": "Shellie gen1 filter debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1830,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "e61aea3818815a9f",
-        "type": "debug",
-        "z": "e673d877691c41c6",
-        "g": "59796bbcdf36aee8",
-        "name": "Shellie gen1 debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1510,
-        "y": 760,
+        "y": 840,
         "wires": []
     },
     {
@@ -4341,6 +3594,1020 @@
         ]
     },
     {
+        "id": "fbd1ad97ec777563",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "3164a082264709ba",
+        "name": "Shelly, Device discovered",
+        "mode": "link",
+        "links": [
+            "9f5fd34525d8135c"
+        ],
+        "x": 615,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "2465e353f74340f0",
+        "type": "debug",
+        "z": "e673d877691c41c6",
+        "g": "59796bbcdf36aee8",
+        "name": "Not (yet) supported",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1530,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "f20be26aa5480c68",
+        "type": "ui_text",
+        "z": "e673d877691c41c6",
+        "group": "61d922efb8a113fa",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Github URL: https://github.com/Hoeby/V1-Shelly-Nodered-flow",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "630e204b8617031d",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "name": "gen1 Shelly Plug S",
+        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\")\n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n \n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[j];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n          if (messageidx === idx) {\n            if (dev.output === true) {\n              if (dev.online === true) {\n    \n                //apower\n                if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                  apower = null\n                } else {\n                  apower = {\n                    topic: \"domoticz/in\",\n                    payload:\n                    {\n                      command: \"udevice\",\n                      idx: Number(message.idxoption1),\n                      svalue: \"-1\",\n                    }\n                  }\n                }\n\n                //Output\n                if (Number(message.idx) === 0 || message.idx === undefined) {\n                  msg = null\n                } else {\n                  msg = {\n                    topic: \"domoticz/in\",\n                    payload:\n                    {\n                      command: \"udevice\",\n                      idx: Number(message.idx),\n                      nvalue: 0,\n                    }\n                  }\n                }\n\n                dev.online = false\n                dev.output = false\n\n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }\n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen1\") {\n  let info = msg.topic.split(\"/\")[2];\n  let energy = msg.topic.split(\"/\")[4];\n  let output;\n\n  if (info === \"relay\") {\n    let domoticz = flow.get(\"dz-state\") || {};\n    let idxstate = [];\n    let ID = \"idx:\" + msg.payload.domoticz.idx\n    let dev = domoticz[ID] || {};\n    let length = Object.keys(domoticz).length;\n    let save = msg.payload; \n\n    dev.lasttime = d.getTime();\n    dev.offline = msg.payload.domoticz.offline;\n    dev.online = true;\n\n    for (let i = 0; i < length; i++) {\n      let keys = Object.keys(domoticz);\n      let IDkey = keys[i];\n      let dev = domoticz[IDkey] || {};\n\n      if (IDkey === ID) {\n        output = dev.output;\n      }\n    }\n      \n    //Output\n    let val;\n    if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n      msg = null\n    } else {\n      if (msg.payload.output === \"on\") {\n        dev.output = true;\n        val = 1;\n      } else if (msg.payload.output === \"off\") {\n        dev.output = false;\n        val = 0;\n      }\n      if (output == dev.output) {\n        msg = null;\n      } else {\n        msg = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idx),\n            nvalue: val,\n          }\n        }\n      }\n    }\n\n    //apower\n    if (dev.output === true) {\n      if (energy === \"energy\") {\n        if (Number(save.domoticz.idxoption1) === 0 || save.domoticz.idxoption1 === undefined || save.domoticz.idxoption1 === \"N/A\" || save.domoticz.idxoption1 === \"Not set\") {\n          apower = null\n        } else {\n          apower = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(save.domoticz.idxoption1),\n              svalue: save.output.toString(),\n            }\n          }\n        }\n      }\n    } else if (dev.output === false) {\n      if (output == dev.output) {\n        msg = null;\n      } else {\n        if (Number(save.domoticz.idxoption1) === 0 || save.domoticz.idxoption1 === undefined || save.domoticz.idxoption1 === \"N/A\" || save.domoticz.idxoption1 === \"Not set\") {\n          apower = null\n        } else {\n          apower = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(save.domoticz.idxoption1),\n              svalue: \"0\",\n            }\n          }\n        }\n      }\n    }\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  if (msg.payload.domoticz.addon === \"shellies\") {\n    msg.topic = msg.payload.domoticz.name + \"/relay/\" + msg.payload.domoticz.sw + \"/command\";\n  } else { \n    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/\" + msg.payload.domoticz.sw + \"/command\" ;\n  }\n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2470,
+        "y": 780,
+        "wires": [
+            [
+                "a502f454a853ade2",
+                "bdcd14fe01c04ddf"
+            ]
+        ]
+    },
+    {
+        "id": "a502f454a853ade2",
+        "type": "debug",
+        "z": "e673d877691c41c6",
+        "name": "gen1 shelly plug s",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2770,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "fd3b1e073db720c8",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "Shellies plug energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"output\":9,\"domoticz\":{\"name\":\"shellyplug-s-80646F817476\",\"sw\":\"0\",\"idx\":\"11\",\"idxoption1\":\"N/A\",\"idxoption2\":\"N/A\",\"idxoption3\":\"N/A\",\"idxoption4\":\"N/A\",\"idxoption5\":\"N/A\",\"idxoption6\":\"N/A\",\"idxoption7\":\"N/A\",\"idxoption8\":\"N/A\",\"offline\":\"N/A\",\"addon\":\"none\",\"gen\":\"gen1\"},\"script\":{\"source\":\"Shelly_gen1\"}}",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellies/shellyplug-s-80646F817476/relay/0/energy",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2260,
+        "y": 520,
+        "wires": [
+            [
+                "c4918a7fd24544d4"
+            ]
+        ]
+    },
+    {
+        "id": "e8ad7b578d895e98",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "Shellies plug on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellies/shellyplug-s-80646F817476/relay/0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2240,
+        "y": 480,
+        "wires": [
+            [
+                "7679e17e2f74a4f3"
+            ]
+        ]
+    },
+    {
+        "id": "2a7cd4863e7e25b5",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "name": "Shellies plug off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "shellies/shellyplug-s-80646F817476/relay/0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2240,
+        "y": 560,
+        "wires": [
+            [
+                "7679e17e2f74a4f3"
+            ]
+        ]
+    },
+    {
+        "id": "16e8fa516fb2bf18",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2040,
+        "y": 480,
+        "wires": [
+            [
+                "e8ad7b578d895e98"
+            ]
+        ]
+    },
+    {
+        "id": "868a5b809296faa1",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2040,
+        "y": 520,
+        "wires": [
+            [
+                "fd3b1e073db720c8"
+            ]
+        ]
+    },
+    {
+        "id": "c8d1ac9103a32e5e",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2040,
+        "y": 560,
+        "wires": [
+            [
+                "2a7cd4863e7e25b5"
+            ]
+        ]
+    },
+    {
+        "id": "c4918a7fd24544d4",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 2470,
+        "y": 520,
+        "wires": [
+            [
+                "7679e17e2f74a4f3"
+            ]
+        ]
+    },
+    {
+        "id": "e8b32b858198239f",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX nummer",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1440,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "5eb70da670c07e6a",
+        "type": "ui_button",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "group": "e151206531f4336f",
+        "order": 15,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Set settings",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "str",
+        "x": 550,
+        "y": 1840,
+        "wires": [
+            [
+                "8876f268f2d2828e",
+                "d9b14a45b233c8ca"
+            ]
+        ]
+    },
+    {
+        "id": "50797f1e05707d42",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Clear",
+        "func": "delete msg.payload;\nmsg.payload =\"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1920,
+        "wires": [
+            [
+                "e8b32b858198239f",
+                "3d92f31de30d2c22",
+                "5dec884841d31a6d",
+                "a3d3d04d66b5ed84",
+                "5afe174b5169057b",
+                "c5b02678e09ddf1d",
+                "4ff9f519f9ecd23f",
+                "3c8a782951a4f4d2",
+                "9677dd6b0280c920",
+                "e8e94dbbef05c969",
+                "d44d4522420736c5"
+            ]
+        ]
+    },
+    {
+        "id": "8876f268f2d2828e",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Set Device settings",
+        "func": "let option1 = [\"Shelly Plug S\", \"Shelly Plus Plug S\"];\nlet option2 = [\"Shelly Plus Plug S\"];\nlet option3 = [\"Shelly Plus Plug S\"];\nlet option4 = [\"Shelly Plus Plug S\"];\nlet option5 = [];\nlet option6 = [];\nlet option7 = [];\nlet option8 = [];\nlet option13 = [\"Shelly Plug S\", \"Shelly Plus Plug S\"];\nlet data1 = context.get(\"data1\") || null; //get from context or default to null\nlet data2 = context.get(\"data2\") || null; //get from context or default to null\nlet data3 = context.get(\"data3\") || null; //get from context or default to null\nlet data4 = context.get(\"data4\") || \"Not set\"; //get from context or default to 0\nlet data5 = context.get(\"data5\") || \"Not set\"; //get from context or default to 0\nlet data6 = context.get(\"data6\") || \"Not set\"; //get from context or default to 0\nlet data7 = context.get(\"data7\") || \"Not set\"; //get from context or default to 0\nlet data8 = context.get(\"data8\") || \"Not set\"; //get from context or default to 0\nlet data9 = context.get(\"data9\") || \"Not set\"; //get from context or default to 0\nlet data10 = context.get(\"data10\") || \"Not set\"; //get from context or default to 0\nlet data11 = context.get(\"data11\") || \"Not set\"; //get from context or default to 0\nlet data12 = context.get(\"data12\") || \"Not set\"; //get from context or default to 0\nlet data13 = context.get(\"data13\") || \"Not set\"; //get from context or default to 0\n\n\nlet reconfig = flow.get(\"sh2dz-idx\") || {};\n\nswitch (msg.topic){\n\n    case \"device\":\n        data1 = msg.payload; \n        context.set(\"data1\", data1);//store in context for next time \n        return;\n\n    case \"sw\":\n        data2 = msg.payload;\n        context.set(\"data2\", data2);//store in context for next time \n        return;\n\n    case \"type\":\n        data3 = msg.payload;\n        context.set(\"data3\", data3);//store in context for next time \n        return;\n    \n    case \"idx\":\n        data4 = msg.payload; \n        context.set(\"data4\", data4);//store in context for next time \n        return;\n        \n    case \"idxoption1\":\n        data5 = msg.payload;\n        context.set(\"data5\", data5); //store in context for next time \n        return;\n        \n    case \"idxoption2\":\n        data6 = msg.payload;\n        context.set(\"data6\", data6); //store in context for next time \n        return;\n    \n    case \"idxoption3\":\n        data7 = msg.payload;\n        context.set(\"data7\", data7); //store in context for next time \n        return;\n    \n    case \"idxoption4\":\n        data8 = msg.payload;\n        context.set(\"data8\", data8); //store in context for next time \n        return;\n\n    case \"idxoption5\":\n        data9 = msg.payload;\n        context.set(\"data9\", data9); //store in context for next time \n        return;\n\n    case \"idxoption6\":\n        data10 = msg.payload;\n        context.set(\"data10\", data10); //store in context for next time \n        return;\n    \n    case \"idxoption7\":\n        data11 = msg.payload;\n        context.set(\"data11\", data11); //store in context for next time \n        return;\n    \n    case \"idxoption8\":\n        data12 = msg.payload;\n        context.set(\"data12\", data12); //store in context for next time \n        return;\n\n    case \"offline\":\n        data13 = msg.payload;\n        context.set(\"data13\", data13); //store in context for next time \n        return;\n\n    case \"submit\":\n        if (data1 !== null ) {\n            let receivedSensors = [];\n            let dev = reconfig[(data1.split(\"/\")[0])] || {};\n            \n            dev.type = data3;\n\n            dev.name = data1.split(\":\")[0];\n            dev.sw = data1.split(\":\")[1];\n                        \n            if (data3 === \"Not (yet) supported\") {\n                dev.idx = \"N/A\";\n            } else {\n                dev.idx = data4;\n            }            \n            if (option1.includes(data3)) {\n                dev.idxoption1 = data5;\n            } else {\n                dev.idxoption1 = \"N/A\";\n            }\n            if (option2.includes(data3)) {\n                dev.idxoption2 = data6;\n            } else {\n                dev.idxoption2 = \"N/A\";\n            } \n            if (option3.includes(data3)) {\n                dev.idxoption3 = data7;\n            } else {\n                dev.idxoption3 = \"N/A\";\n            }\n            if (option4.includes(data3)) {\n                dev.idxoption4 = data8;\n            } else {\n                dev.idxoption4 = \"N/A\";\n            }\n            if (option5.includes(data3)) {\n                dev.idxoption5 = data9;\n            } else {\n                dev.idxoption5 = \"N/A\";\n            }\n            if (option6.includes(data3)) {\n                dev.idxoption6 = data10;\n            } else {\n                dev.idxoption6 = \"N/A\";\n            }\n            if (option7.includes(data3)) {\n                dev.idxoption7 = data11;\n            } else {\n                dev.idxoption7 = \"N/A\";\n            }\n            if (option8.includes(data3)) {\n                dev.idxoption8 = data12;\n            } else {\n                dev.idxoption8 = \"N/A\";\n            }\n            if (option13.includes(data3)) {\n                dev.offline = data13;\n            } else {\n                dev.offline = \"N/A\";\n            }\n            // write back\n            reconfig[(data1.split(\"/\")[0])] = dev;\n            receivedSensors.push(dev);\n \n            flow.set(\"sh2dz-idx\", reconfig);\n            context.set(\"data1\", null);\n        } else {\n            return;\n        }\n    }\n\nreturn [{payload:Object.values(reconfig)},msg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1560,
+        "wires": [
+            [
+                "06b5226a793bb531",
+                "c624c439fa74fc4b"
+            ],
+            [
+                "6c3819770488d525"
+            ]
+        ]
+    },
+    {
+        "id": "3d92f31de30d2c22",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 1",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption1",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1480,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "5dec884841d31a6d",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 2",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1520,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "a3d3d04d66b5ed84",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 4",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption4",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1600,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "d9b14a45b233c8ca",
+        "type": "delay",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 1920,
+        "wires": [
+            [
+                "50797f1e05707d42"
+            ]
+        ]
+    },
+    {
+        "id": "5afe174b5169057b",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 3",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption3",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1560,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "06b5226a793bb531",
+        "type": "json",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1150,
+        "y": 1540,
+        "wires": [
+            [
+                "ddac08a116fcf0c3"
+            ]
+        ]
+    },
+    {
+        "id": "6c3819770488d525",
+        "type": "link out",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Shelly, Restore idx table",
+        "mode": "link",
+        "links": [
+            "dd2baae8845ebade"
+        ],
+        "x": 1105,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "9f5fd34525d8135c",
+        "type": "link in",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Shelly, Device in",
+        "links": [
+            "452b38fec749323b",
+            "6908453d834d5d49",
+            "fbd1ad97ec777563"
+        ],
+        "x": 75,
+        "y": 1380,
+        "wires": [
+            [
+                "0227d6c01c5f9cd9"
+            ]
+        ]
+    },
+    {
+        "id": "3c8a782951a4f4d2",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Device list",
+        "func": "msg.payload = \"\"\nmsg.options = [\"Shelly Plug S\",\n               //\"Shelly 2.5\",\n               \"Shelly Plus Plug S\",\n               \"Not (yet) supported\" ]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1900,
+        "wires": [
+            [
+                "b6df36f40e4d0704"
+            ]
+        ]
+    },
+    {
+        "id": "b6df36f40e4d0704",
+        "type": "ui_dropdown",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "device type",
+        "label": "",
+        "tooltip": "",
+        "place": "Device type",
+        "group": "e151206531f4336f",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "type",
+        "topicType": "str",
+        "className": "",
+        "x": 730,
+        "y": 1900,
+        "wires": [
+            [
+                "8876f268f2d2828e",
+                "81090e781671c7f4"
+            ]
+        ]
+    },
+    {
+        "id": "ba44b09a0ce99ac8",
+        "type": "ui_button",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "group": "e151206531f4336f",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "How setup device in domoticz",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "str",
+        "x": 1490,
+        "y": 1800,
+        "wires": [
+            [
+                "81090e781671c7f4"
+            ]
+        ]
+    },
+    {
+        "id": "81090e781671c7f4",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "How to setup device in domoticz",
+        "func": "let device = context.get(\"type\") || 0; //get from context or default to 0\n\nswitch (msg.topic){\n\n    case \"type\":\n        device = msg.payload; \n        context.set(\"type\", device);//store in context for next time \n        return;\n\n    case \"submit\":\n        \n        //Shelly Plug s\n        if (device === \"Shelly Plug S\") {\n            msg.topic = \"Shelly Plug S (generation 1)\"\n            msg.payload = \"<p>Make dummy device in domoticz.</p><p>IDX = switch (Dummy = switch)</p><p>IDXoption1 = Power (Dummy = Usage, Electric)</p><p>IDXoption2 = Not available for this device</p><p>IDXoption3 = Not available for this device</p><p>IDXoption4 = Not available for this device</p><p>IDXoption5 = Not available for this device</p><p>IDXoption6 = Not available for this device</p><p>IDXoption7 = Not available for this device</p><p>IDXoption8 = Not available for this device</p>\"\n        \n        //Shelly Plus Plug S       \n        } else if (device === \"Shelly Plus Plug S\" ) {   \n            msg.topic = \"Shelly Plus Plug S (generation 2)\"\n            msg.payload = \"<p>Make dummy device in domoticz.</p><p>IDX = switch (Dummy = switch)</p><p>IDXoption1 = Power (Dummy = Usage, Electric)</p><p>IDXoption2 = Voltage (Dummy = General, Voltage)</p><p>IDXoption3 = Current (Dummy = General, Current)</p><p>IDXoption4 = Total power (Dummy = General, kWh)</p><p>IDXoption5 = Not available for this device</p><p>IDXoption6 = Not available for this device</p><p>IDXoption7 = Not available for this device</p><p>IDXoption8 = Not available for this device</p>\"\n        \n        } else {\n            msg.topic = \"Device unknown\"\n            msg.payload = \"<p>First select device type, afterwards the info is shown</p>\"\n        }\n        return msg;\n    }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 1840,
+        "wires": [
+            [
+                "9d12a3a11dac2c76"
+            ]
+        ]
+    },
+    {
+        "id": "9d12a3a11dac2c76",
+        "type": "ui_toast",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Close",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Shelly Device Info",
+        "x": 1450,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4282781648061454",
+        "type": "ui_dropdown",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Device",
+        "group": "e151206531f4336f",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "device",
+        "topicType": "str",
+        "className": "",
+        "x": 540,
+        "y": 1380,
+        "wires": [
+            [
+                "8876f268f2d2828e",
+                "8bdeaec89c411472",
+                "747796b81fb9857f"
+            ]
+        ]
+    },
+    {
+        "id": "0227d6c01c5f9cd9",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "extract devicenames",
+        "func": "if (msg.topic === \"no-update\")  {\n   return;\n} else {\n   msg.options = msg.payload.map(obj => {\n      var rObj = {};\n      rObj[obj.name + \"_switch:\" + obj.sw] = obj.name+\":\"+obj.sw\n      return rObj;\n   });\n}\n\nmsg.payload = {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 1380,
+        "wires": [
+            [
+                "4282781648061454"
+            ]
+        ]
+    },
+    {
+        "id": "ddac08a116fcf0c3",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Get save location",
+        "func": "let destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/shellytabel.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1540,
+        "wires": [
+            [
+                "52ade3ef04838837"
+            ]
+        ]
+    },
+    {
+        "id": "52ade3ef04838837",
+        "type": "file",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Save to file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 1570,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5b02678e09ddf1d",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 5",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 13,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption5",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1640,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "4ff9f519f9ecd23f",
+        "type": "ui_dropdown",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Offline notificatie",
+        "label": "Offline notify",
+        "tooltip": "",
+        "place": "",
+        "group": "e151206531f4336f",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Disable",
+                "value": "Disable",
+                "type": "str"
+            },
+            {
+                "label": "60 seconds",
+                "value": 60,
+                "type": "num"
+            },
+            {
+                "label": "120 seconds",
+                "value": 120,
+                "type": "num"
+            },
+            {
+                "label": "180 seconds",
+                "value": 180,
+                "type": "num"
+            },
+            {
+                "label": "240 seconds",
+                "value": 240,
+                "type": "num"
+            },
+            {
+                "label": "300 seconds",
+                "value": 300,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "offline",
+        "topicType": "str",
+        "className": "",
+        "x": 560,
+        "y": 1800,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "ccd07e8f467ccb60",
+        "type": "inject",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "Set device list",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 1960,
+        "wires": [
+            [
+                "3c8a782951a4f4d2"
+            ]
+        ]
+    },
+    {
+        "id": "9677dd6b0280c920",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 6",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption6",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1680,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "e8e94dbbef05c969",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 7",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption7",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1720,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "d44d4522420736c5",
+        "type": "ui_text_input",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "label": "IDX option 8",
+        "tooltip": "",
+        "group": "e151206531f4336f",
+        "order": 14,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "250",
+        "topic": "idxoption8",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 550,
+        "y": 1760,
+        "wires": [
+            [
+                "8876f268f2d2828e"
+            ]
+        ]
+    },
+    {
+        "id": "c624c439fa74fc4b",
+        "type": "function",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "set idx filter",
+        "func": "let filter = [];\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    if (msg.payload[i].type === \"Shelly Plug S\") {\n        filter.push(msg.payload[i].idx)\n    } else if (msg.payload[i].type === \"Shelly Plus Plug S\") {\n        filter.push(msg.payload[i].idx)\n    }\n}\n\nflow.set(\"dz-idx-filter\", filter);\nflow.set(\"dz-state\",{})\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "23bd47bccdefc478",
         "type": "function",
         "z": "e673d877691c41c6",
@@ -4391,52 +4658,118 @@
         ]
     },
     {
-        "id": "fbd1ad97ec777563",
-        "type": "link out",
+        "id": "76f3de0ca3f29d86",
+        "type": "function",
         "z": "e673d877691c41c6",
-        "g": "3164a082264709ba",
-        "name": "Shelly, Device discovered",
-        "mode": "link",
-        "links": [
-            "9f5fd34525d8135c"
-        ],
-        "x": 615,
-        "y": 1020,
-        "wires": []
+        "g": "505618e07c90630b",
+        "name": "Set stored value",
+        "func": "if (msg.payload === undefined) {\n  return;\n} else {\n  let devicename = msg.payload.split(\":\")[0];\n  let settings = flow.get(\"sh2dz-idx\") || {};\n  let length = Object.keys(settings).length;\n  let type, idx, idxoption1, idxoption2, idxoption3, idxoption4, idxoption5, idxoption6, idxoption7, idxoption8, offline\n\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(settings);\n    let IDkey = keys[i];\n    let dev = settings[IDkey] || {};\n\n    if (dev.name === devicename) {\n      if (dev.type === \"unknown\") {\n        node.log(\"unknown\")\n      } else {\n        type = dev.type\n        type = { payload: type,}\n      }\n      if (dev.idx === undefined ) {\n        node.log(\"unknown\")\n      } else {\n        idx = dev.idx\n        idx = { payload: idx, }\n      }\n      if (dev.idxoption1 === undefined || dev.idxoption1 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption1 = dev.idxoption1\n        idxoption1 = { payload: idxoption1, }\n      }\n      if (dev.idxoption2 === undefined || dev.idxoption2 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption2 = dev.idxoption2\n        idxoption2 = { payload: idxoption2, }\n      }\n      if (dev.idxoption3 === undefined || dev.idxoption3 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption3 = dev.idxoption3\n        idxoption3 = { payload: idxoption3, }\n      }\n      if (dev.idxoption4 === undefined || dev.idxoption4 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption4 = dev.idxoption4\n        idxoption4 = { payload: idxoption4, }\n      }\n      if (dev.idxoption5 === undefined || dev.idxoption5 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption5 = dev.idxoption5\n        idxoption5 = { payload: idxoption5, }\n      }\n      if (dev.idxoption6 === undefined || dev.idxoption6 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption6 = dev.idxoption6\n        idxoption6 = { payload: idxoption6, }\n      }\n      if (dev.idxoption7 === undefined || dev.idxoption7 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption7 = dev.idxoption7\n        idxoption7 = { payload: idxoption7, }\n      }\n      if (dev.idxoption8 === undefined || dev.idxoption8 === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        idxoption8 = dev.idxoption8\n        idxoption8 = { payload: idxoption8, }\n      }\n      if (dev.offline === undefined || dev.offline === \"Not set\") {\n        node.log(\"unknown\")\n      } else {\n        offline = dev.offline\n        offline = { payload: offline, }\n      }\n    }\n  }\n  return [type, idx, idxoption1, idxoption2, idxoption3, idxoption4, idxoption5, idxoption6, idxoption7, idxoption8, offline];\n}\n\nreturn;",
+        "outputs": 11,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 1740,
+        "wires": [
+            [
+                "b6df36f40e4d0704"
+            ],
+            [
+                "e8b32b858198239f"
+            ],
+            [
+                "3d92f31de30d2c22"
+            ],
+            [
+                "5dec884841d31a6d"
+            ],
+            [
+                "5afe174b5169057b"
+            ],
+            [
+                "a3d3d04d66b5ed84"
+            ],
+            [
+                "c5b02678e09ddf1d"
+            ],
+            [
+                "9677dd6b0280c920"
+            ],
+            [
+                "e8e94dbbef05c969"
+            ],
+            [
+                "d44d4522420736c5"
+            ],
+            [
+                "4ff9f519f9ecd23f"
+            ]
+        ]
     },
     {
-        "id": "2465e353f74340f0",
-        "type": "debug",
+        "id": "8bdeaec89c411472",
+        "type": "delay",
         "z": "e673d877691c41c6",
-        "name": "Not (yet) supported",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1810,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "f20be26aa5480c68",
-        "type": "ui_text",
-        "z": "e673d877691c41c6",
-        "group": "61d922efb8a113fa",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "g": "505618e07c90630b",
         "name": "",
-        "label": "Github URL: https://github.com/Hoeby/V1-Shelly-Nodered-flow",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 250,
-        "y": 80,
-        "wires": []
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 1620,
+        "wires": [
+            [
+                "76f3de0ca3f29d86"
+            ]
+        ]
+    },
+    {
+        "id": "747796b81fb9857f",
+        "type": "change",
+        "z": "e673d877691c41c6",
+        "g": "505618e07c90630b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 1500,
+        "wires": [
+            [
+                "e8b32b858198239f",
+                "3d92f31de30d2c22",
+                "5dec884841d31a6d",
+                "a3d3d04d66b5ed84",
+                "5afe174b5169057b",
+                "b6df36f40e4d0704",
+                "c5b02678e09ddf1d",
+                "4ff9f519f9ecd23f",
+                "9677dd6b0280c920",
+                "e8e94dbbef05c969",
+                "d44d4522420736c5"
+            ]
+        ]
     },
     {
         "id": "e6ffe1b28d49f4ed",
@@ -4464,17 +4797,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "e151206531f4336f",
-        "type": "ui_group",
-        "name": "Idx table",
-        "tab": "e3edb57efc8062a5",
-        "order": 3,
-        "disp": true,
-        "width": "30",
-        "collapse": false,
-        "className": ""
     },
     {
         "id": "d823ccdecb8e433a",
@@ -4515,6 +4837,17 @@
         "name": "status table",
         "tab": "e3edb57efc8062a5",
         "order": 4,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e151206531f4336f",
+        "type": "ui_group",
+        "name": "Idx table",
+        "tab": "e3edb57efc8062a5",
+        "order": 3,
         "disp": true,
         "width": "30",
         "collapse": false,
