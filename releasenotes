@@ -1,5 +1,9 @@
+<b>V1 28-05-2023 R1 beta: </b><br>
+unfortunately, by adding shelly 2.5, saving configuration has had to change <br> 
+As a result, the configuration of the older version cannot be read and the configuration will have to be redone <br>
+- New device added "Shelly 2.5" (only as relay/input module, not as shutter module (works in progress)) <br>
 <b>V1 26-05-2023 R1 beta: </b><br>
-- New device added "Shelly Plug S <br>
+- New device added "Shelly Plug S" <br>
 - When select device with a known config, the config is written in setup-nodes <br>
 - Announce message are stopped in the flow <br>
 <b>V1 24-05-2023 R1 beta: </b><br>
