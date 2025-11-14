@@ -21,3 +21,5 @@ As a result, the configuration of the older version cannot be read and the confi
 <b>V1 18-05-2023 R1 beta: </b><br>
 - The first release of the shelly flow <br>
 - Only device "Shelly Plus Plug S" is available <br>
+<b>V1 14-11-2025 R1 beta: </b><br>
+- New device added "Shelly pro 2PM" (only switch functions, not input readings, still beta release)<br>
