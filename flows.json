@@ -1923,8 +1923,8 @@
                 }
             },
             {
-                "field": "sw",
-                "title": "Input/Relay",
+                "field": "command",
+                "title": "Command",
                 "width": "8%",
                 "align": "center",
                 "formatter": "plaintext",
@@ -1943,39 +1943,9 @@
                 }
             },
             {
-                "field": "power",
-                "title": "Power",
-                "width": "6%",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "voltage",
-                "title": "Voltage",
-                "width": "8%",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "current",
-                "title": "Current",
-                "width": "8%",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
                 "field": "seen",
-                "title": "Last",
-                "width": "6%",
+                "title": "Last seen",
+                "width": "8%",
                 "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1985,7 +1955,7 @@
             {
                 "field": "status",
                 "title": "Status",
-                "width": "39%",
+                "width": "59%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -2019,7 +1989,7 @@
         "z": "92d196b8dd5edc6f",
         "g": "ec98a9e37e566593",
         "name": "store shelly devices",
-        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}];\n} else {\n    if (msg.source === 'gen1') {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload === \"announce\") {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [];\n\n            // properties that should not show up in the status\n            let notStatus = [\"name\", \"status\"];\n \n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {};\n\n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n\n            let receivedSensors = [];\n            let sw;\n            if (msg.topic.split(\"/\")[3] === undefined) {\n                sw = msg.topic.split(\"/\")[2];\n            } else {\n                sw = msg.topic.split(\"/\")[2] + \" \" + msg.topic.split(\"/\")[3];\n            }\n            let ID = (msg.topic.split(\"/\")[1]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = sw;\n            dev.output = msg.payload;\n            //dev.power = msg.payload.apower;\n            //dev.voltage = msg.payload.voltage;\n            //dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();\n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n\n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime() - element[1].lastTime) / 60000) + \"m\");\n\n            flow.set(\"sh2dz-status\", devs);\n\n            return [{ topic: status, payload: Object.values(devs) }];\n        }\n    } else {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload.output === \"announce\" ) {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [\"power\", \"voltage\", \"current\"];\n   \n            // properties that should not show up in the status\n            let notStatus = [\"id\", \"source\"];\n\n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {}; \n    \n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n       \n            let receivedSensors = [];\n            let ID = (msg.topic.split(\"/\")[1]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = msg.topic.split(\":\")[1];\n            dev.output = msg.payload.output;\n            dev.power = msg.payload.apower;\n            dev.voltage = msg.payload.voltage;\n            dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();    \n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n       \n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n            flow.set(\"sh2dz-status\", devs);\n\n            return [{topic: status, payload:Object.values(devs)}];\n        }\n    }\n}",
+        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}];\n} else {\n    if (msg.source === 'gen1') {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload === \"announce\") {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [];\n\n            // properties that should not show up in the status\n            let notStatus = [\"name\", \"status\"];\n \n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {};\n\n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n\n            let receivedSensors = [];\n            let sw;\n            if (msg.topic.split(\"/\")[3] === undefined) {\n                sw = msg.topic.split(\"/\")[2];\n            } else {\n                sw = msg.topic.split(\"/\")[2] + \" \" + msg.topic.split(\"/\")[3];\n            }\n            let ID = (msg.topic.split(\"/\")[1]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = sw;\n            dev.output = msg.payload;\n            //dev.power = msg.payload.apower;\n            //dev.voltage = msg.payload.voltage;\n            //dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();\n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n\n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime() - element[1].lastTime) / 60000) + \"m\");\n\n            flow.set(\"sh2dz-status\", devs);\n\n            return [{ topic: status, payload: Object.values(devs) }];\n        }\n    } else {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload.output === \"announce\" ) {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [\"power\", \"voltage\", \"current\"];\n   \n            // properties that should not show up in the status\n            let notStatus = [\"id\", \"source\"];\n\n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {}; \n         \n            let receivedSensors = [];\n            let ID = (msg.topic.split(\"/\")[0]);\n            let dev = devs[ID] || {};\n\n            dev.name = ID;\n            dev.command = (msg.topic.split(\"/\")[2]);;\n            if ((msg.payload.output === true) || (msg.payload.output === false)) {\n              dev.output = \"output = \" + msg.payload.output;\n            } else {\n              dev.output = null;  \n            }\n\n            dev.lastTime = new Date().getTime();    \n\n            dev.power = msg.payload.apower;\n            dev.voltage = msg.payload.voltage;\n            dev.current = msg.payload.current;\n\n            //create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop] + \", \";\n                }\n            }\n\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n       \n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n            flow.set(\"sh2dz-status\", devs);\n\n            return [{topic: status, payload:Object.values(devs)}];\n        }\n    }\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6976,7 +6946,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"id\":0,\"source\":\"mqtt\",\"output\":true,\"apower\":0,\"voltage\":0,\"current\":0,\"aenergy\":{\"total\":39.236,\"by_minute\":[0.429,1.718,0.859],\"minute_ts\":1713723900},\"temperature\":{\"tC\":37.8,\"tF\":100}}",
+                "to": "{\"id\":0,\"source\":\"mqtt\",\"output\":true,\"apower\":1,\"voltage\":2,\"current\":3,\"aenergy\":{\"total\":39.236,\"by_minute\":[0.429,1.718,0.859],\"minute_ts\":1713723900},\"temperature\":{\"tC\":37.8,\"tF\":100}}",
                 "tot": "str"
             }
         ],
