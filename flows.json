@@ -401,11 +401,67 @@
         "h": 122
     },
     {
+        "id": "1b078b4e3cb34041",
+        "type": "group",
+        "z": "92d196b8dd5edc6f",
+        "name": "Set flow.get(telegrambot+chatid) na deploy",
+        "style": {
+            "label": true,
+            "stroke": "#3f93cf",
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "2d5dcb4304a0901a",
+            "f897010fb19eecc9",
+            "24b8247762331bc4",
+            "cf994b3878b086ab",
+            "6aba90f378f86134",
+            "4ee5d0c3b24afb48",
+            "8059f74a1505fd2d",
+            "2ddd3e5049ca712a",
+            "11baf83766458e57",
+            "d0bde3c507cbec9f",
+            "65b7fc994ed8a9d5",
+            "1aa46d9667bcf55b"
+        ],
+        "x": 34,
+        "y": 3019,
+        "w": 1632,
+        "h": 162
+    },
+    {
+        "id": "f9c91086607bc42e",
+        "type": "group",
+        "z": "92d196b8dd5edc6f",
+        "name": "Set telegram settings",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "ee14456093c642ae",
+            "21850dcc45e2382d",
+            "63f0dd7b943e2d88",
+            "cbf354f448d7609e",
+            "8df879b0f01694f6",
+            "05c29c01d7a525f2",
+            "3be3c709f83c4a7c",
+            "7856886803b859f9",
+            "8cd52e02a5b87194",
+            "956b8bc8609a7849"
+        ],
+        "x": 34,
+        "y": 3199,
+        "w": 1632,
+        "h": 202
+    },
+    {
         "id": "bea1ff20d6c4ede1",
         "type": "comment",
         "z": "92d196b8dd5edc6f",
-        "name": "V1_14-11-2025_R1",
-        "info": "<b>V1 07-05-2024 R1: </b><br>\n- Add switching improvement Shelly 1pm mini <br>\n<b>V1 21-04-2024 R2: </b><br>\n- Bug: issues with status gen3 to switch gen 2 <br>\n<b>V1 21-04-2024 R1: </b><br>\n- New device added \"Shelly 1pm mini\" (only switch functions, not power reading)<br>\n<b>V1 03-02-2024 R1 beta: </b><br>\n- Bug: switch number was not stored in data-file <br>\n<b>V1 28-05-2023 R1 beta: </b><br>\n<p style=\"color:red\">unfortunately, by adding shelly 2.5, saving configuration has had to change <br> \nAs a result, the configuration of the older version cannot be read and the configuration will have to be redone </p>\n- New device added \"Shelly 2.5\" (only as relay/input module, not as shutter module (work in progress)) <br>\n<b>V1 26-05-2023 R1 beta: </b><br>\n- New device added \"Shelly Plug S\" <br>\n- When select device with a known config, the config is written in setup-nodes <br>\n- Announce message are stopped in the flow <br>\n<b>V1 24-05-2023 R1 beta: </b><br>\n- \"Show discovered shellies\" button added. To prevent that pull-down setup menu's clear itself <br>\n  &nbsp&nbsp&nbsp&nbsp It is not a network discovery option. The shelly first needs to send a message, before it will be added <br>\n- Not (yet) supported option added. To already add those devices to the config <br>\n<b>V1 18-05-2023 R1 beta: </b><br>\n- The first release of the shelly flow <br>\n- Only device \"Shelly Plus Plug S\" is available <br>\n<b>V1 14-11-2025 R1 beta: </b><br>\n- New device added \"Shelly pro 2PM\" (only switch functions, not input readings, still beta release)<br>",
+        "name": "V1_15-11-2025_R1",
+        "info": "<b>V1 07-05-2024 R1: </b><br>\n- Add switching improvement Shelly 1pm mini <br>\n<b>V1 21-04-2024 R2: </b><br>\n- Bug: issues with status gen3 to switch gen 2 <br>\n<b>V1 21-04-2024 R1: </b><br>\n- New device added \"Shelly 1pm mini\" (only switch functions, not power reading)<br>\n<b>V1 03-02-2024 R1 beta: </b><br>\n- Bug: switch number was not stored in data-file <br>\n<b>V1 28-05-2023 R1 beta: </b><br>\n<p style=\"color:red\">unfortunately, by adding shelly 2.5, saving configuration has had to change <br> \nAs a result, the configuration of the older version cannot be read and the configuration will have to be redone </p>\n- New device added \"Shelly 2.5\" (only as relay/input module, not as shutter module (work in progress)) <br>\n<b>V1 26-05-2023 R1 beta: </b><br>\n- New device added \"Shelly Plug S\" <br>\n- When select device with a known config, the config is written in setup-nodes <br>\n- Announce message are stopped in the flow <br>\n<b>V1 24-05-2023 R1 beta: </b><br>\n- \"Show discovered shellies\" button added. To prevent that pull-down setup menu's clear itself <br>\n  &nbsp&nbsp&nbsp&nbsp It is not a network discovery option. The shelly first needs to send a message, before it will be added <br>\n- Not (yet) supported option added. To already add those devices to the config <br>\n<b>V1 18-05-2023 R1 beta: </b><br>\n- The first release of the shelly flow <br>\n- Only device \"Shelly Plus Plug S\" is available <br>\n<b>V1 14-11-2025 R1 beta: </b><br>\n- New device added \"Shelly pro 2PM\" (only switch functions, not input readings, still beta release)<br>\n<b>V1 15-11-2025 R1 beta: </b><br>\n- Change: Device heartbeat code refactored, only availble for \"Shelly pro 2PM\"<br>\n- Added: Telegram, for sending messages when device is offline<br>",
         "x": 110,
         "y": 40,
         "wires": []
@@ -1135,7 +1191,8 @@
         "mode": "link",
         "links": [
             "b997dae4a8bdff50",
-            "fbfa62df44b5e7c1"
+            "fbfa62df44b5e7c1",
+            "24b8247762331bc4"
         ],
         "x": 1625,
         "y": 2960,
@@ -1235,7 +1292,7 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Actuel version: V1_14-11-2025_R1",
+                "to": "Actuel version: V1_15-11-2025_R1",
                 "tot": "str"
             }
         ],
@@ -1408,7 +1465,7 @@
         "z": "92d196b8dd5edc6f",
         "g": "e114b44dfdc366ca",
         "name": "UPDATE RELEASE",
-        "func": "let version = \"V1_14-11-2025_R1\"\nlet oldStr = msg.payload;\nlet newStr = oldStr.slice(0, oldStr.length-1);\nlet store = newStr;\nflow.set(\"version\", newStr);\nlet html = \"\";\nmsg.topic = \"Release notes\";\nif (msg.statusCode === 200 || 201) {\n    if (store === version) {\n        msg.text = \"FLOW IS UP TO DATE WITH GITHUB (\" + version + \")\"\n        msg.background = \"#0A8085\";\n        return msg;\n    } else {\n        msg.text = \"THERE IS AN UPDATE, CLICK HERE TO READ RELEASE-NOTES AND DOWNLOAD FLOW FILE FROM GITHUB\"\n        msg.background = \"#8C101C\";\n        return msg;\n    }\n}\nreturn;",
+        "func": "let version = \"V1_15-11-2025_R1\"\nlet oldStr = msg.payload;\nlet newStr = oldStr.slice(0, oldStr.length-1);\nlet store = newStr;\nflow.set(\"version\", newStr);\nlet html = \"\";\nmsg.topic = \"Release notes\";\nif (msg.statusCode === 200 || 201) {\n    if (store === version) {\n        msg.text = \"FLOW IS UP TO DATE WITH GITHUB (\" + version + \")\"\n        msg.background = \"#0A8085\";\n        return msg;\n    } else {\n        msg.text = \"THERE IS AN UPDATE, CLICK HERE TO READ RELEASE-NOTES AND DOWNLOAD FLOW FILE FROM GITHUB\"\n        msg.background = \"#8C101C\";\n        return msg;\n    }\n}\nreturn;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1989,7 +2046,7 @@
         "z": "92d196b8dd5edc6f",
         "g": "ec98a9e37e566593",
         "name": "store shelly devices",
-        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}];\n} else {\n    if (msg.source === 'gen1') {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload === \"announce\") {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [];\n\n            // properties that should not show up in the status\n            let notStatus = [\"name\", \"status\"];\n \n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {};\n\n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n\n            let receivedSensors = [];\n            let sw;\n            if (msg.topic.split(\"/\")[3] === undefined) {\n                sw = msg.topic.split(\"/\")[2];\n            } else {\n                sw = msg.topic.split(\"/\")[2] + \" \" + msg.topic.split(\"/\")[3];\n            }\n            let ID = (msg.topic.split(\"/\")[1]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = sw;\n            dev.output = msg.payload;\n            //dev.power = msg.payload.apower;\n            //dev.voltage = msg.payload.voltage;\n            //dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();\n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n\n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime() - element[1].lastTime) / 60000) + \"m\");\n\n            flow.set(\"sh2dz-status\", devs);\n\n            return [{ topic: status, payload: Object.values(devs) }];\n        }\n    } else {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload.output === \"announce\" ) {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [\"power\", \"voltage\", \"current\"];\n   \n            // properties that should not show up in the status\n            let notStatus = [\"id\", \"source\"];\n\n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {}; \n         \n            let receivedSensors = [];\n            let ID = (msg.topic.split(\"/\")[0]);\n            let dev = devs[ID] || {};\n\n            dev.name = ID;\n            dev.command = (msg.topic.split(\"/\")[2]);;\n            if ((msg.payload.output === true) || (msg.payload.output === false)) {\n              dev.output = \"output = \" + msg.payload.output;\n            } else {\n              dev.output = null;  \n            }\n\n            dev.lastTime = new Date().getTime();    \n\n            dev.power = msg.payload.apower;\n            dev.voltage = msg.payload.voltage;\n            dev.current = msg.payload.current;\n\n            //create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop] + \", \";\n                }\n            }\n\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n       \n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n            flow.set(\"sh2dz-status\", devs);\n\n            return [{topic: status, payload:Object.values(devs)}];\n        }\n    }\n}",
+        "func": "let devs; \nlet status = \"update\";\n\nif ( msg.src === 'restore' ) {\n    devs = flow.get(\"sh2dz-status\") || {};\n    return [{payload:Object.values(devs)}];\n} else {\n    if (msg.source === 'gen1') {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload === \"announce\") {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [];\n\n            // properties that should not show up in the status\n            let notStatus = [\"name\", \"status\"];\n \n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {};\n\n            let devt = flow.get(\"sh2dz-idx\") || {};\n            let length = Object.keys(devt).length;\n\n            let receivedSensors = [];\n            let sw;\n            if (msg.topic.split(\"/\")[3] === undefined) {\n                sw = msg.topic.split(\"/\")[2];\n            } else {\n                sw = msg.topic.split(\"/\")[2] + \" \" + msg.topic.split(\"/\")[3];\n            }\n            let ID = (msg.topic.split(\"/\")[1]);\n            let dev = devs[ID] || {};\n\n            dev.name = msg.topic.split(\"/\")[1];\n            dev.sw = sw;\n            dev.output = msg.payload;\n            //dev.power = msg.payload.apower;\n            //dev.voltage = msg.payload.voltage;\n            //dev.current = msg.payload.current;\n\n            dev.lastTime = new Date().getTime();\n\n            // create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (inStatus.includes(prop)) {\n                    status += \" \" + prop + \": \" + dev[prop];\n                }\n            }\n            if (status === \"\") {\n                for (let prop in dev) {\n                    if (!notStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop];\n                    }\n                }\n            }\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n\n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime() - element[1].lastTime) / 60000) + \"m\");\n\n            flow.set(\"sh2dz-status\", devs);\n\n            return [{ topic: status, payload: Object.values(devs) }];\n        }\n    } else {\n        if (msg.topic.split(\"/\")[1] === \"announce\" || msg.payload.output === \"announce\" ) {\n            node.log(\"Announce message received\")\n        } else {\n            // properties that should  show up in the status\n            let inStatus = [\"power\", \"voltage\", \"current\", \"total\", \"temperature\"];\n   \n            // properties that should not show up in the status\n            let notStatus = [\"id\", \"source\"];\n\n            //node.warn(msg.payload);\n            devs = flow.get(\"sh2dz-status\") || {}; \n         \n            let receivedSensors = [];\n            let ID = (msg.topic.split(\"/\")[0]);\n            let dev = devs[ID] || {};\n\n            dev.name = ID;\n            dev.command = (msg.topic.split(\"/\")[2]);;\n            if ((msg.payload.output === true) || (msg.payload.output === false)) {\n              dev.output = \"output = \" + msg.payload.output;\n            } else {\n              dev.output = null;  \n            }\n\n            dev.lastTime = new Date().getTime();    \n\n            dev.power = msg.payload.apower;\n            dev.voltage = msg.payload.voltage;\n            dev.current = msg.payload.current;\n            dev.total = msg.payload.aenergy.total;\n            dev.temperature = msg.payload.temperature.tC;\n\n            //create status from properties\n            let status = \"\";\n            for (let prop in dev) {\n                if (dev[prop] === undefined) {\n                    null;\n                } else {\n                    if (inStatus.includes(prop)) {\n                        status += \" \" + prop + \": \" + dev[prop] + \", \";\n                    }\n                }\n            }\n\n            dev.status = status;\n\n            // write back\n            devs[ID] = dev;\n            receivedSensors.push(dev);\n       \n            Object.entries(devs).forEach(element => element[1].seen = Math.round((new Date().getTime()-element[1].lastTime)/60000)+\"m\");\n    \n            flow.set(\"sh2dz-status\", devs);\n\n            return [{topic: status, payload:Object.values(devs)}];\n        }\n    }\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2416,7 +2473,7 @@
         "type": "function",
         "z": "92d196b8dd5edc6f",
         "name": "gen2 Shelly Plus Plug S",
-        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\" )  \n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n\n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[i];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n\n          if (messageidx === idx) {\n            if (dev.online === true){\n              //apower\n              if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                apower = null\n              } else {\n                apower = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption1),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //voltage\n              if (Number(message.idxoption2) === 0 || message.idxoption2 === undefined || message.idxoption2 === \"N/A\" || message.idxoption2 === \"Not set\") {\n                voltage = null;\n              } else {\n                voltage = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption2),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //current\n              if (Number(message.idxoption3) === 0 || message.idxoption3 === undefined || message.idxoption3 === \"N/A\" || message.idxoption3 === \"Not set\") {\n                current = null;\n              } else {\n                current = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption3),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //total\n              if (Number(message.idxoption4) === 0 || message.idxoption4 === undefined || message.idxoption4 === \"N/A\" || message.idxoption4 === \"Not set\") {\n                total = null;\n              } else {\n                total = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption4),\n                    nvalue: 0,\n                    svalue: \"0;0\",\n                  }\n                }\n              }\n  \n              //Output\n              if (Number(message.idx) === 0 || message.idx === undefined) {\n                msg = null\n              } else {\n                msg = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idx),\n                    nvalue: 0,\n                  }\n                }\n   \n                dev.online = false\n                dev.output = false\n              \n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }  \n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen2-3\") {\n    let info = msg.topic.split(\"/\")[1];\n    let output;\n    \n    if (info === \"status\") {\n      let domoticz = flow.get(\"dz-state\") || {};\n      let idxstate = [];\n      let ID = \"idx:\" + msg.payload.domoticz.idx\n      let dev = domoticz[ID] || {};\n      let length = Object.keys(domoticz).length;\n\n      dev.lasttime = d.getTime();\n      dev.offline = msg.payload.domoticz.offline;\n      dev.online = true;\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n\n      //apower\n      if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined || msg.payload.domoticz.idxoption1 === \"N/A\" || msg.payload.domoticz.idxoption1 === \"Not set\") {\n        apower = null\n      } else {\n        apower = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption1),\n            svalue: msg.payload.apower.toString(),\n          }\n        }\n      }\n\n      //voltage\n      if (Number(msg.payload.domoticz.idxoption2) === 0 || msg.payload.domoticz.idxoption2 === undefined || msg.payload.domoticz.idxoption2 === \"N/A\" || msg.payload.domoticz.idxoption2 === \"Not set\") {\n        voltage = null;\n      } else {\n        voltage = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption2),\n            svalue: msg.payload.voltage.toString(),\n          }\n        }\n      }\n\n      //current\n      if (Number(msg.payload.domoticz.idxoption3) === 0 || msg.payload.domoticz.idxoption3 === undefined || msg.payload.domoticz.idxoption3 === \"N/A\" || msg.payload.domoticz.idxoption3 === \"Not set\") {\n        current = null;\n      } else {\n        current = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption3),\n            svalue: msg.payload.current.toString(),\n          }\n        }\n      }\n\n      //total\n      if (Number(msg.payload.domoticz.idxoption4) === 0 || msg.payload.domoticz.idxoption4 === undefined || msg.payload.domoticz.idxoption4 === \"N/A\" || msg.payload.domoticz.idxoption4 === \"Not set\") {\n        total = null;\n      } else {\n        total = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption4),\n            nvalue: 0,\n            svalue: msg.payload.aenergy.total + \"\\\";\\\"\" + 0,\n          }\n        }\n      }\n\n      //Output\n      if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n        msg = null\n      } else {\n        if (output == msg.payload.output) {\n          msg = null;\n        } else {\n          dev.output = msg.payload.output\n          let val = msg.payload.output == true ? 1 : 0;\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(msg.payload.domoticz.idx),\n              nvalue: val,\n            }\n          }\n        }\n      }\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  msg.topic = msg.payload.domoticz.name + \"/command/switch:\" + msg.payload.domoticz.sw;\n  \n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
+        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\" )  \n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n\n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[i];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n\n          if (messageidx === idx) {\n            if (dev.online === true){\n              //apower\n              if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                apower = null\n              } else {\n                apower = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption1),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //voltage\n              if (Number(message.idxoption2) === 0 || message.idxoption2 === undefined || message.idxoption2 === \"N/A\" || message.idxoption2 === \"Not set\") {\n                voltage = null;\n              } else {\n                voltage = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption2),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //current\n              if (Number(message.idxoption3) === 0 || message.idxoption3 === undefined || message.idxoption3 === \"N/A\" || message.idxoption3 === \"Not set\") {\n                current = null;\n              } else {\n                current = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption3),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //total\n              if (Number(message.idxoption4) === 0 || message.idxoption4 === undefined || message.idxoption4 === \"N/A\" || message.idxoption4 === \"Not set\") {\n                total = null;\n              } else {\n                total = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption4),\n                    nvalue: 0,\n                    svalue: \"0;0\",\n                  }\n                }\n              }\n  \n              //Output\n              if (Number(message.idx) === 0 || message.idx === undefined) {\n                msg = null\n              } else {\n                msg = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idx),\n                    nvalue: 0,\n                  }\n                }\n   \n                dev.online = false\n                dev.output = false\n              \n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }  \n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen2-3\") {\n    let info = msg.topic.split(\"/\")[1];\n    let output;\n    \n    if (info === \"status\") {\n      let domoticz = flow.get(\"dz-state\") || {};\n      let idxstate = [];\n      let ID = \"idx:\" + msg.payload.domoticz.idx\n      let dev = domoticz[ID] || {};\n      let length = Object.keys(domoticz).length;\n\n      dev.lasttime = d.getTime();\n      dev.offline = msg.payload.domoticz.offline;\n      dev.online = true;\n      dev.name = msg.payload.domoticz.name;\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n\n      //apower\n      if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined || msg.payload.domoticz.idxoption1 === \"N/A\" || msg.payload.domoticz.idxoption1 === \"Not set\") {\n        apower = null\n      } else {\n        apower = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption1),\n            svalue: msg.payload.apower.toString(),\n          }\n        }\n      }\n\n      //voltage\n      if (Number(msg.payload.domoticz.idxoption2) === 0 || msg.payload.domoticz.idxoption2 === undefined || msg.payload.domoticz.idxoption2 === \"N/A\" || msg.payload.domoticz.idxoption2 === \"Not set\") {\n        voltage = null;\n      } else {\n        voltage = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption2),\n            svalue: msg.payload.voltage.toString(),\n          }\n        }\n      }\n\n      //current\n      if (Number(msg.payload.domoticz.idxoption3) === 0 || msg.payload.domoticz.idxoption3 === undefined || msg.payload.domoticz.idxoption3 === \"N/A\" || msg.payload.domoticz.idxoption3 === \"Not set\") {\n        current = null;\n      } else {\n        current = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption3),\n            svalue: msg.payload.current.toString(),\n          }\n        }\n      }\n\n      //total\n      if (Number(msg.payload.domoticz.idxoption4) === 0 || msg.payload.domoticz.idxoption4 === undefined || msg.payload.domoticz.idxoption4 === \"N/A\" || msg.payload.domoticz.idxoption4 === \"Not set\") {\n        total = null;\n      } else {\n        total = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idxoption4),\n            nvalue: 0,\n            svalue: msg.payload.aenergy.total + \"\\\";\\\"\" + 0,\n          }\n        }\n      }\n\n      //Output\n      if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n        msg = null\n      } else {\n        if (output == msg.payload.output) {\n          msg = null;\n        } else {\n          dev.output = msg.payload.output\n          let val = msg.payload.output == true ? 1 : 0;\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(msg.payload.domoticz.idx),\n              nvalue: val,\n            }\n          }\n        }\n      }\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  msg.topic = msg.payload.domoticz.name + \"/command/switch:\" + msg.payload.domoticz.sw;\n  \n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2451,33 +2508,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1910,
+        "payload": "{\"script\":{\"source\":\"Heartbeat\"}}",
+        "payloadType": "json",
+        "x": 2190,
         "y": 720,
         "wires": [
             [
-                "30344ffa61dd6d31"
-            ]
-        ]
-    },
-    {
-        "id": "30344ffa61dd6d31",
-        "type": "function",
-        "z": "92d196b8dd5edc6f",
-        "name": "Source Heartbeat",
-        "func": "msg.payload = { script: { source: \"Heartbeat\" }};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2170,
-        "y": 720,
-        "wires": [
-            [
-                "8d78d3552e502f99",
-                "c139d896b383bce5"
+                "b179283e080d8798"
             ]
         ]
     },
@@ -2557,18 +2594,8 @@
             {
                 "field": "name",
                 "title": "Name",
-                "width": "18%",
+                "width": "23%",
                 "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "sw",
-                "title": "Switch",
-                "width": "5%",
-                "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
                     "target": "_blank"
@@ -2676,7 +2703,7 @@
             },
             {
                 "field": "offline",
-                "title": "Offline",
+                "title": "Offline (sec)",
                 "width": "9%",
                 "align": "center",
                 "formatter": "plaintext",
@@ -3041,7 +3068,7 @@
         "type": "function",
         "z": "92d196b8dd5edc6f",
         "name": "gen1 Shelly Plug S",
-        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\")\n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n \n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[j];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n          if (messageidx === idx) {\n            if (dev.output === true) {\n              if (dev.online === true) {\n    \n                //apower\n                if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                  apower = null\n                } else {\n                  apower = {\n                    topic: \"domoticz/in\",\n                    payload:\n                    {\n                      command: \"udevice\",\n                      idx: Number(message.idxoption1),\n                      svalue: \"-1\",\n                    }\n                  }\n                }\n\n                //Output\n                if (Number(message.idx) === 0 || message.idx === undefined) {\n                  msg = null\n                } else {\n                  msg = {\n                    topic: \"domoticz/in\",\n                    payload:\n                    {\n                      command: \"udevice\",\n                      idx: Number(message.idx),\n                      nvalue: 0,\n                    }\n                  }\n                }\n\n                dev.online = false\n                dev.output = false\n\n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }\n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen1\") {\n  let info = msg.topic.split(\"/\")[2];\n  let energy = msg.topic.split(\"/\")[4];\n  let output;\n\n  if (info === \"relay\") {\n    let domoticz = flow.get(\"dz-state\") || {};\n    let idxstate = [];\n    let ID = \"idx:\" + msg.payload.domoticz.idx\n    let dev = domoticz[ID] || {};\n    let length = Object.keys(domoticz).length;\n    let save = msg.payload; \n\n    dev.lasttime = d.getTime();\n    dev.offline = msg.payload.domoticz.offline;\n    dev.online = true;\n\n    for (let i = 0; i < length; i++) {\n      let keys = Object.keys(domoticz);\n      let IDkey = keys[i];\n      let dev = domoticz[IDkey] || {};\n\n      if (IDkey === ID) {\n        output = dev.output;\n      }\n    }\n      \n    //Output\n    let val;\n    if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n      msg = null\n    } else {\n      if (msg.payload.output === \"on\") {\n        dev.output = true;\n        val = 1;\n      } else if (msg.payload.output === \"off\") {\n        dev.output = false;\n        val = 0;\n      }\n      if (output == dev.output) {\n        msg = null;\n      } else {\n        msg = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idx),\n            nvalue: val,\n          }\n        }\n      }\n    }\n\n    //apower\n    if (dev.output === true) {\n      if (energy === \"energy\") {\n        if (Number(save.domoticz.idxoption1) === 0 || save.domoticz.idxoption1 === undefined || save.domoticz.idxoption1 === \"N/A\" || save.domoticz.idxoption1 === \"Not set\") {\n          apower = null\n        } else {\n          apower = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(save.domoticz.idxoption1),\n              svalue: save.output.output.toString(),\n            }\n          }\n        }\n      }\n    } else if (dev.output === false) {\n      if (output == dev.output) {\n        msg = null;\n      } else {\n        if (Number(save.domoticz.idxoption1) === 0 || save.domoticz.idxoption1 === undefined || save.domoticz.idxoption1 === \"N/A\" || save.domoticz.idxoption1 === \"Not set\") {\n          apower = null\n        } else {\n          apower = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(save.domoticz.idxoption1),\n              svalue: \"0\",\n            }\n          }\n        }\n      }\n    }\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/0/command\";\n  \n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
+        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\")\n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n \n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[j];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n          if (messageidx === idx) {\n            if (dev.output === true) {\n              if (dev.online === true) {\n    \n                //apower\n                if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                  apower = null\n                } else {\n                  apower = {\n                    topic: \"domoticz/in\",\n                    payload:\n                    {\n                      command: \"udevice\",\n                      idx: Number(message.idxoption1),\n                      svalue: \"-1\",\n                    }\n                  }\n                }\n\n                //Output\n                if (Number(message.idx) === 0 || message.idx === undefined) {\n                  msg = null\n                } else {\n                  msg = {\n                    topic: \"domoticz/in\",\n                    payload:\n                    {\n                      command: \"udevice\",\n                      idx: Number(message.idx),\n                      nvalue: 0,\n                    }\n                  }\n                }\n\n                dev.online = false\n                dev.output = false\n\n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }\n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen1\") {\n  let info = msg.topic.split(\"/\")[2];\n  let energy = msg.topic.split(\"/\")[4];\n  let output;\n\n  if (info === \"relay\") {\n    let domoticz = flow.get(\"dz-state\") || {};\n    let idxstate = [];\n    let ID = \"idx:\" + msg.payload.domoticz.idx\n    let dev = domoticz[ID] || {};\n    let length = Object.keys(domoticz).length;\n    let save = msg.payload; \n\n    dev.lasttime = d.getTime();\n    dev.offline = msg.payload.domoticz.offline;\n    dev.online = true;\n    dev.name = msg.payload.domoticz.name;\n\n    for (let i = 0; i < length; i++) {\n      let keys = Object.keys(domoticz);\n      let IDkey = keys[i];\n      let dev = domoticz[IDkey] || {};\n\n      if (IDkey === ID) {\n        output = dev.output;\n      }\n    }\n      \n    //Output\n    let val;\n    if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n      msg = null\n    } else {\n      if (msg.payload.output === \"on\") {\n        dev.output = true;\n        val = 1;\n      } else if (msg.payload.output === \"off\") {\n        dev.output = false;\n        val = 0;\n      }\n      if (output == dev.output) {\n        msg = null;\n      } else {\n        msg = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idx),\n            nvalue: val,\n          }\n        }\n      }\n    }\n\n    //apower\n    if (dev.output === true) {\n      if (energy === \"energy\") {\n        if (Number(save.domoticz.idxoption1) === 0 || save.domoticz.idxoption1 === undefined || save.domoticz.idxoption1 === \"N/A\" || save.domoticz.idxoption1 === \"Not set\") {\n          apower = null\n        } else {\n          apower = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(save.domoticz.idxoption1),\n              svalue: save.output.output.toString(),\n            }\n          }\n        }\n      }\n    } else if (dev.output === false) {\n      if (output == dev.output) {\n        msg = null;\n      } else {\n        if (Number(save.domoticz.idxoption1) === 0 || save.domoticz.idxoption1 === undefined || save.domoticz.idxoption1 === \"N/A\" || save.domoticz.idxoption1 === \"Not set\") {\n          apower = null\n        } else {\n          apower = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(save.domoticz.idxoption1),\n              svalue: \"0\",\n            }\n          }\n        }\n      }\n    }\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/0/command\";\n  \n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3362,7 +3389,7 @@
         "z": "92d196b8dd5edc6f",
         "g": "53310d80315438e7",
         "name": "Set Device settings",
-        "func": "let option1 = [\"Shelly Plug S\", \"Shelly Plus Plug S\", \"Shelly 1pm mini\", \"Shelly pro 2PM\"];\nlet option2 = [\"Shelly Plus Plug S\"];\nlet option3 = [\"Shelly Plus Plug S\"];\nlet option4 = [\"Shelly Plus Plug S\"];\nlet option5 = [];\nlet option6 = [];\nlet option7 = [];\nlet option8 = [];\nlet option13 = [\"Shelly Plug S\", \"Shelly Plus Plug S\"];\nlet data1 = context.get(\"data1\") || null; //get from context or default to null\nlet data2 = context.get(\"data2\") || null; //get from context or default to null\nlet data3 = context.get(\"data3\") || null; //get from context or default to null\nlet data4 = context.get(\"data4\") || \"Not set\"; //get from context or default to 0\nlet data5 = context.get(\"data5\") || \"Not set\"; //get from context or default to 0\nlet data6 = context.get(\"data6\") || \"Not set\"; //get from context or default to 0\nlet data7 = context.get(\"data7\") || \"Not set\"; //get from context or default to 0\nlet data8 = context.get(\"data8\") || \"Not set\"; //get from context or default to 0\nlet data9 = context.get(\"data9\") || \"Not set\"; //get from context or default to 0\nlet data10 = context.get(\"data10\") || \"Not set\"; //get from context or default to 0\nlet data11 = context.get(\"data11\") || \"Not set\"; //get from context or default to 0\nlet data12 = context.get(\"data12\") || \"Not set\"; //get from context or default to 0\nlet data13 = context.get(\"data13\") || \"Not set\"; //get from context or default to 0\n\n\nlet reconfig = flow.get(\"sh2dz-idx\") || {};\n\nswitch (msg.topic){\n\n    case \"device\":\n        //data1 = msg.payload; \n        data1 = msg.payload.split(\"/\")[0];\n        data2 = msg.payload.split(\"/\")[1];\n        context.set(\"data1\", data1);//store in context for next time \n        context.set(\"data2\", data2);//store in context for next time \n        return;\n\n    //case \"sw\":\n    //    data2 = msg.payload;\n    //    context.set(\"data2\", data2);//store in context for next time \n    //    return;\n\n    case \"type\":\n        data3 = msg.payload;\n        context.set(\"data3\", data3);//store in context for next time \n        return;\n    \n    case \"idx\":\n        data4 = msg.payload; \n        context.set(\"data4\", data4);//store in context for next time \n        return;\n        \n    case \"idxoption1\":\n        data5 = msg.payload;\n        context.set(\"data5\", data5); //store in context for next time \n        return;\n        \n    case \"idxoption2\":\n        data6 = msg.payload;\n        context.set(\"data6\", data6); //store in context for next time \n        return;\n    \n    case \"idxoption3\":\n        data7 = msg.payload;\n        context.set(\"data7\", data7); //store in context for next time \n        return;\n    \n    case \"idxoption4\":\n        data8 = msg.payload;\n        context.set(\"data8\", data8); //store in context for next time \n        return;\n\n    case \"idxoption5\":\n        data9 = msg.payload;\n        context.set(\"data9\", data9); //store in context for next time \n        return;\n\n    case \"idxoption6\":\n        data10 = msg.payload;\n        context.set(\"data10\", data10); //store in context for next time \n        return;\n    \n    case \"idxoption7\":\n        data11 = msg.payload;\n        context.set(\"data11\", data11); //store in context for next time \n        return;\n    \n    case \"idxoption8\":\n        data12 = msg.payload;\n        context.set(\"data12\", data12); //store in context for next time \n        return;\n\n    case \"offline\":\n        data13 = msg.payload;\n        context.set(\"data13\", data13); //store in context for next time \n        return;\n\n    case \"submit\":\n        if (data1 !== null ) {\n            let receivedSensors = [];\n            let dev = reconfig[(data1.split(\"/\")[0])] || {};\n            \n            dev.type = data3;\n\n            dev.name = data1.split(\":\")[0];\n            //dev.sw = data1.split(\":\")[1];\n            \n            if (data3 === \"Shelly pro 2PM\") {\n                dev.sw0 = \"0\";\n                dev.sw1 = \"1\";\n            } else {\n                dev.sw = data2;\n            }\n                        \n            if (data3 === \"Not (yet) supported\") {\n                dev.idx = \"N/A\";\n            } else {\n                dev.idx = data4;\n            }            \n            if (option1.includes(data3)) {\n                dev.idxoption1 = data5;\n            } else {\n                dev.idxoption1 = \"N/A\";\n            }\n            if (option2.includes(data3)) {\n                dev.idxoption2 = data6;\n            } else {\n                dev.idxoption2 = \"N/A\";\n            } \n            if (option3.includes(data3)) {\n                dev.idxoption3 = data7;\n            } else {\n                dev.idxoption3 = \"N/A\";\n            }\n            if (option4.includes(data3)) {\n                dev.idxoption4 = data8;\n            } else {\n                dev.idxoption4 = \"N/A\";\n            }\n            if (option5.includes(data3)) {\n                dev.idxoption5 = data9;\n            } else {\n                dev.idxoption5 = \"N/A\";\n            }\n            if (option6.includes(data3)) {\n                dev.idxoption6 = data10;\n            } else {\n                dev.idxoption6 = \"N/A\";\n            }\n            if (option7.includes(data3)) {\n                dev.idxoption7 = data11;\n            } else {\n                dev.idxoption7 = \"N/A\";\n            }\n            if (option8.includes(data3)) {\n                dev.idxoption8 = data12;\n            } else {\n                dev.idxoption8 = \"N/A\";\n            }\n            if (option13.includes(data3)) {\n                dev.offline = data13;\n            } else {\n                dev.offline = \"N/A\";\n            }\n            // write back\n            reconfig[(data1.split(\"/\")[0])] = dev;\n            receivedSensors.push(dev);\n \n            flow.set(\"sh2dz-idx\", reconfig);\n            context.set(\"data1\", null);\n        } else {\n            return;\n        }\n    }\n\nreturn [{payload:Object.values(reconfig)},msg];",
+        "func": "let option1 = [\"Shelly Plug S\", \"Shelly Plus Plug S\", \"Shelly 1pm mini\", \"Shelly pro 2PM\"];\nlet option2 = [\"Shelly Plus Plug S\"];\nlet option3 = [\"Shelly Plus Plug S\"];\nlet option4 = [\"Shelly Plus Plug S\"];\nlet option5 = [];\nlet option6 = [];\nlet option7 = [];\nlet option8 = [];\nlet option13 = [\"Shelly pro 2PM\"];\nlet data1 = context.get(\"data1\") || null; //get from context or default to null\nlet data2 = context.get(\"data2\") || null; //get from context or default to null\nlet data3 = context.get(\"data3\") || null; //get from context or default to null\nlet data4 = context.get(\"data4\") || \"Not set\"; //get from context or default to 0\nlet data5 = context.get(\"data5\") || \"Not set\"; //get from context or default to 0\nlet data6 = context.get(\"data6\") || \"Not set\"; //get from context or default to 0\nlet data7 = context.get(\"data7\") || \"Not set\"; //get from context or default to 0\nlet data8 = context.get(\"data8\") || \"Not set\"; //get from context or default to 0\nlet data9 = context.get(\"data9\") || \"Not set\"; //get from context or default to 0\nlet data10 = context.get(\"data10\") || \"Not set\"; //get from context or default to 0\nlet data11 = context.get(\"data11\") || \"Not set\"; //get from context or default to 0\nlet data12 = context.get(\"data12\") || \"Not set\"; //get from context or default to 0\nlet data13 = context.get(\"data13\") || \"Not set\"; //get from context or default to 0\n\n\nlet reconfig = flow.get(\"sh2dz-idx\") || {};\n\nswitch (msg.topic){\n\n    case \"device\":\n        //data1 = msg.payload; \n        data1 = msg.payload.split(\"/\")[0];\n        data2 = msg.payload.split(\"/\")[1];\n        context.set(\"data1\", data1);//store in context for next time \n        context.set(\"data2\", data2);//store in context for next time \n        return;\n\n    //case \"sw\":\n    //    data2 = msg.payload;\n    //    context.set(\"data2\", data2);//store in context for next time \n    //    return;\n\n    case \"type\":\n        data3 = msg.payload;\n        context.set(\"data3\", data3);//store in context for next time \n        return;\n    \n    case \"idx\":\n        data4 = msg.payload; \n        context.set(\"data4\", data4);//store in context for next time \n        return;\n        \n    case \"idxoption1\":\n        data5 = msg.payload;\n        context.set(\"data5\", data5); //store in context for next time \n        return;\n        \n    case \"idxoption2\":\n        data6 = msg.payload;\n        context.set(\"data6\", data6); //store in context for next time \n        return;\n    \n    case \"idxoption3\":\n        data7 = msg.payload;\n        context.set(\"data7\", data7); //store in context for next time \n        return;\n    \n    case \"idxoption4\":\n        data8 = msg.payload;\n        context.set(\"data8\", data8); //store in context for next time \n        return;\n\n    case \"idxoption5\":\n        data9 = msg.payload;\n        context.set(\"data9\", data9); //store in context for next time \n        return;\n\n    case \"idxoption6\":\n        data10 = msg.payload;\n        context.set(\"data10\", data10); //store in context for next time \n        return;\n    \n    case \"idxoption7\":\n        data11 = msg.payload;\n        context.set(\"data11\", data11); //store in context for next time \n        return;\n    \n    case \"idxoption8\":\n        data12 = msg.payload;\n        context.set(\"data12\", data12); //store in context for next time \n        return;\n\n    case \"offline\":\n        data13 = msg.payload;\n        context.set(\"data13\", data13); //store in context for next time \n        return;\n\n    case \"submit\":\n        if (data1 !== null ) {\n            let receivedSensors = [];\n            let dev = reconfig[(data1.split(\"/\")[0])] || {};\n            \n            dev.type = data3;\n\n            dev.name = data1.split(\":\")[0];\n            //dev.sw = data1.split(\":\")[1];\n            \n            if (data3 === \"Shelly pro 2PM\") {\n                dev.sw0 = \"0\";\n                dev.sw1 = \"1\";\n            } else {\n                dev.sw = data2;\n            }\n                        \n            if (data3 === \"Not (yet) supported\") {\n                dev.idx = \"N/A\";\n            } else {\n                dev.idx = data4;\n            }            \n            if (option1.includes(data3)) {\n                dev.idxoption1 = data5;\n            } else {\n                dev.idxoption1 = \"N/A\";\n            }\n            if (option2.includes(data3)) {\n                dev.idxoption2 = data6;\n            } else {\n                dev.idxoption2 = \"N/A\";\n            } \n            if (option3.includes(data3)) {\n                dev.idxoption3 = data7;\n            } else {\n                dev.idxoption3 = \"N/A\";\n            }\n            if (option4.includes(data3)) {\n                dev.idxoption4 = data8;\n            } else {\n                dev.idxoption4 = \"N/A\";\n            }\n            if (option5.includes(data3)) {\n                dev.idxoption5 = data9;\n            } else {\n                dev.idxoption5 = \"N/A\";\n            }\n            if (option6.includes(data3)) {\n                dev.idxoption6 = data10;\n            } else {\n                dev.idxoption6 = \"N/A\";\n            }\n            if (option7.includes(data3)) {\n                dev.idxoption7 = data11;\n            } else {\n                dev.idxoption7 = \"N/A\";\n            }\n            if (option8.includes(data3)) {\n                dev.idxoption8 = data12;\n            } else {\n                dev.idxoption8 = \"N/A\";\n            }\n            if (option13.includes(data3)) {\n                dev.offline = data13;\n            } else {\n                dev.offline = \"N/A\";\n            }\n            // write back\n            reconfig[(data1.split(\"/\")[0])] = dev;\n            receivedSensors.push(dev);\n \n            flow.set(\"sh2dz-idx\", reconfig);\n            context.set(\"data1\", null);\n        } else {\n            return;\n        }\n    }\n\nreturn [{payload:Object.values(reconfig)},msg];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -4641,7 +4668,7 @@
         "type": "function",
         "z": "92d196b8dd5edc6f",
         "name": "gen1 Shelly 2.5",
-        "func": "let d = new Date();\nlet savetopic = msg.topic;\n\nif (msg.payload.script.source === \"Shelly_gen1\") {\n    let info = msg.topic.split(\"/\")[2];\n    let variable = msg.topic.split(\"/\")[4];\n    let shutter;\n\n    if (variable === \"command\") {\n        return;\n    }\n\n    if (info === \"roller\") {\n        let domoticz = flow.get(\"dz-state\") || {};\n        let idxstate = [];\n        let ID = \"idx \" + msg.payload.domoticz.idx\n        let dev = domoticz[ID] || {};\n        let length = Object.keys(domoticz).length;\n        let save = msg.payload;\n\n        for (let i = 0; i < length; i++) {\n            let keys = Object.keys(domoticz);\n            let IDkey = keys[i];\n            let dev = domoticz[IDkey] || {};\n            if (IDkey === ID) {\n                shutter = dev.shutter;\n            }\n        }\n\n        //Position\n        if (variable === \"pos\") {\n            dev.lasttime = d.getTime();\n            dev.offline = msg.payload.domoticz.offline;\n            dev.online = true;\n\n            if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n                msg.payload = null;\n            } else {\n                dev.shutter = msg.payload.output;\n                if (shutter === dev.shutter) {\n                    msg = null;\n                } else {\n                    msg = {\n                        topic: \"domoticz/in\",\n                        payload:\n                        {\n                            command: \"switchlight\",\n                            idx: Number(msg.payload.domoticz.idx),\n                            switchcmd: \"Set Level\",\n                            level: msg.payload.output\n                        }\n                    }\n                }\n            }\n           \n        //Store stop_reason\n        } else if (variable === \"stop_reason\") {\n            if (msg.payload.output === \"normal\") {\n                dev.state = \"stop\"\n                msg = null;\n            } else {\n                msg = null;\n            }\n        } else {\n            msg = null;\n        }\n        domoticz[ID] = dev;\n        idxstate.push(dev);\n\n        flow.set(\"dz-state\", domoticz);\n        return msg;\n        \n    }\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n    let shelly = flow.get(\"dz-state\") || {};\n    let idxshellystate = [];\n    let IDidx = \"idx \" + msg.payload.domoticz.idx\n    let dev = shelly[IDidx] || {};\n\n    if (msg.payload.domoticz.addon === \"shellies\") {\n      return;\n    } else {\n        if (msg.payload.idx === Number(msg.payload.domoticz.idx)) {\n            if (dev.shutter === msg.payload.Level) {\n                return;\n            } else{\n                if (msg.payload.hasOwnProperty(\"Level\")) {\n                    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/roller/0/command/pos\";\n                    msg.payload = msg.payload.Level;\n                } else if (msg.payload.nvalue == 1) {\n                    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/0/command\";\n                    msg.payload = \"on\";\n                } else if (msg.payload.nvalue == 0) {\n                    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/0/command\";\n                    msg.payload = \"off\";\n                }\n            }\n        }\n    }\n    dev.shutter = String(msg.payload);\n\n    shelly[IDidx] = dev;\n    idxshellystate.push(dev);\n\n    flow.set(\"dz-state\", shelly);\n    return msg\n}",
+        "func": "let d = new Date();\nlet savetopic = msg.topic;\n\nif (msg.payload.script.source === \"Shelly_gen1\") {\n    let info = msg.topic.split(\"/\")[2];\n    let variable = msg.topic.split(\"/\")[4];\n    let shutter;\n\n    if (variable === \"command\") {\n        return;\n    }\n\n    if (info === \"roller\") {\n        let domoticz = flow.get(\"dz-state\") || {};\n        let idxstate = [];\n        let ID = \"idx \" + msg.payload.domoticz.idx\n        let dev = domoticz[ID] || {};\n        let length = Object.keys(domoticz).length;\n        let save = msg.payload;\n\n        for (let i = 0; i < length; i++) {\n            let keys = Object.keys(domoticz);\n            let IDkey = keys[i];\n            let dev = domoticz[IDkey] || {};\n            if (IDkey === ID) {\n                shutter = dev.shutter;\n            }\n        }\n\n        //Position\n        if (variable === \"pos\") {\n            dev.lasttime = d.getTime();\n            dev.offline = msg.payload.domoticz.offline;\n            dev.online = true;\n            dev.name = msg.payload.domoticz.name;\n\n            if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n                msg.payload = null;\n            } else {\n                dev.shutter = msg.payload.output;\n                if (shutter === dev.shutter) {\n                    msg = null;\n                } else {\n                    msg = {\n                        topic: \"domoticz/in\",\n                        payload:\n                        {\n                            command: \"switchlight\",\n                            idx: Number(msg.payload.domoticz.idx),\n                            switchcmd: \"Set Level\",\n                            level: msg.payload.output\n                        }\n                    }\n                }\n            }\n           \n        //Store stop_reason\n        } else if (variable === \"stop_reason\") {\n            if (msg.payload.output === \"normal\") {\n                dev.state = \"stop\"\n                msg = null;\n            } else {\n                msg = null;\n            }\n        } else {\n            msg = null;\n        }\n        domoticz[ID] = dev;\n        idxstate.push(dev);\n\n        flow.set(\"dz-state\", domoticz);\n        return msg;\n        \n    }\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n    let shelly = flow.get(\"dz-state\") || {};\n    let idxshellystate = [];\n    let IDidx = \"idx \" + msg.payload.domoticz.idx\n    let dev = shelly[IDidx] || {};\n\n    if (msg.payload.domoticz.addon === \"shellies\") {\n      return;\n    } else {\n        if (msg.payload.idx === Number(msg.payload.domoticz.idx)) {\n            if (dev.shutter === msg.payload.Level) {\n                return;\n            } else{\n                if (msg.payload.hasOwnProperty(\"Level\")) {\n                    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/roller/0/command/pos\";\n                    msg.payload = msg.payload.Level;\n                } else if (msg.payload.nvalue == 1) {\n                    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/0/command\";\n                    msg.payload = \"on\";\n                } else if (msg.payload.nvalue == 0) {\n                    msg.topic = \"shellies/\" + msg.payload.domoticz.name + \"/relay/0/command\";\n                    msg.payload = \"off\";\n                }\n            }\n        }\n    }\n    dev.shutter = String(msg.payload);\n\n    shelly[IDidx] = dev;\n    idxshellystate.push(dev);\n\n    flow.set(\"dz-state\", shelly);\n    return msg\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5651,8 +5678,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2790,
-        "y": 1020,
+        "x": 2760,
+        "y": 1000,
         "wires": [
             [
                 "2976d6b0bb5edf50"
@@ -5926,7 +5953,7 @@
         "type": "function",
         "z": "92d196b8dd5edc6f",
         "name": "gen3 Shelly 1PM mini",
-        "func": "let d = new Date();\nlet idx;\n\nif (msg.payload.script.source === \"Shelly_gen2-3\") {\n  let info = msg.topic.split(\"/\")[1];\n  let input, output;\n  \n  if (info === \"events\") {\n    let domoticz = flow.get(\"dz-state\") || {};\n    let idxstate = [];\n    let ID;\n    let length = Object.keys(domoticz).length;\n    let dev;\n\n    if ((Object.keys(msg.payload[\"params\"])[1]) === \"input:0\") {\n      if (msg.payload.domoticz.idxoption1 === \"Not set\") {\n        return;\n      }\n      ID = \"idx:\" + msg.payload.domoticz.idxoption1;\n      dev = domoticz[ID] || {};\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          input = dev.input;\n        }\n      }\n    } else if ((Object.keys(msg.payload[\"params\"])[1]) === \"switch:0\") {\n      if (msg.payload.domoticz.idx === \"Not set\") {\n        return;\n      }\n      ID = \"idx:\" + msg.payload.domoticz.idx;\n      dev = domoticz[ID] || {};\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n    }\n   \n    dev.lasttime = d.getTime(); \n    dev.offline = msg.payload.domoticz.offline;\n    dev.online = true;\n       \n    //Input\n    if ((Object.keys(msg.payload[\"params\"])[1]) === \"input:0\"){\n      let value, state;\n      if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined) {\n        msg = null\n      } else {\n        if (msg.payload.params[\"input:0\"].state === true) {\n          dev.input = true;\n          value = 1;\n          state = \"On\"\n        } else if (msg.payload.params[\"input:0\"].state === false) {\n          dev.input = false;\n          value = 0;\n          state = \"Off\"\n        }\n        if (input == dev.input) {\n          msg = null;\n        } else {\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(msg.payload.domoticz.idxoption1),\n              nvalue: value,\n              svalue1: state\n            }\n          }\n        }\n      }\n    \n   \n    //Output\n    } else if ((Object.keys(msg.payload[\"params\"])[1]) === \"switch:0\") {\n      let value, state;\n      if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n        msg = null\n      } else {\n        if (msg.payload.params[\"switch:0\"].output === true) {\n          if (msg.payload.params[\"switch:0\"].output === dev.output) {\n            return;\n          } else {\n            dev.output = true;\n            value = 1;\n            state = \"On\"\n          }\n        } else if (msg.payload.params[\"switch:0\"].output === false) {\n          if (msg.payload.params[\"switch:0\"].output === dev.output) {\n            return;\n          } else {\n            dev.output = false;\n            value = 0;\n            state = \"Off\"\n          }\n        }\n        msg = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idx),\n            nvalue: value,\n            svalue1: state\n          }\n        }\n      }\n    } else {\n      return;\n    }\n\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return msg;\n    //return [[msg, apower, voltage, current, total]];\n  } \n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  msg.topic = msg.payload.domoticz.name + \"/command/switch:\" + msg.payload.domoticz.sw;\n  \n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  delete msg.source;\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  if (msg.topic === \"domoticz/out\") {\n    return;\n  } else {\n    return msg;\n  }\n}",
+        "func": "let d = new Date();\nlet idx;\n\nif (msg.payload.script.source === \"Shelly_gen2-3\") {\n  let info = msg.topic.split(\"/\")[1];\n  let input, output;\n  \n  if (info === \"events\") {\n    let domoticz = flow.get(\"dz-state\") || {};\n    let idxstate = [];\n    let ID;\n    let length = Object.keys(domoticz).length;\n    let dev;\n\n    if ((Object.keys(msg.payload[\"params\"])[1]) === \"input:0\") {\n      if (msg.payload.domoticz.idxoption1 === \"Not set\") {\n        return;\n      }\n      ID = \"idx:\" + msg.payload.domoticz.idxoption1;\n      dev = domoticz[ID] || {};\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          input = dev.input;\n        }\n      }\n    } else if ((Object.keys(msg.payload[\"params\"])[1]) === \"switch:0\") {\n      if (msg.payload.domoticz.idx === \"Not set\") {\n        return;\n      }\n      ID = \"idx:\" + msg.payload.domoticz.idx;\n      dev = domoticz[ID] || {};\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n    }\n   \n    dev.lasttime = d.getTime(); \n    dev.offline = msg.payload.domoticz.offline;\n    dev.online = true;\n    dev.name = msg.payload.domoticz.name;\n       \n    //Input\n    if ((Object.keys(msg.payload[\"params\"])[1]) === \"input:0\"){\n      let value, state;\n      if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined) {\n        msg = null\n      } else {\n        if (msg.payload.params[\"input:0\"].state === true) {\n          dev.input = true;\n          value = 1;\n          state = \"On\"\n        } else if (msg.payload.params[\"input:0\"].state === false) {\n          dev.input = false;\n          value = 0;\n          state = \"Off\"\n        }\n        if (input == dev.input) {\n          msg = null;\n        } else {\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(msg.payload.domoticz.idxoption1),\n              nvalue: value,\n              svalue1: state\n            }\n          }\n        }\n      }\n    \n   \n    //Output\n    } else if ((Object.keys(msg.payload[\"params\"])[1]) === \"switch:0\") {\n      let value, state;\n      if (Number(msg.payload.domoticz.idx) === 0 || msg.payload.domoticz.idx === undefined) {\n        msg = null\n      } else {\n        if (msg.payload.params[\"switch:0\"].output === true) {\n          if (msg.payload.params[\"switch:0\"].output === dev.output) {\n            return;\n          } else {\n            dev.output = true;\n            value = 1;\n            state = \"On\"\n          }\n        } else if (msg.payload.params[\"switch:0\"].output === false) {\n          if (msg.payload.params[\"switch:0\"].output === dev.output) {\n            return;\n          } else {\n            dev.output = false;\n            value = 0;\n            state = \"Off\"\n          }\n        }\n        msg = {\n          topic: \"domoticz/in\",\n          payload:\n          {\n            command: \"udevice\",\n            idx: Number(msg.payload.domoticz.idx),\n            nvalue: value,\n            svalue1: state\n          }\n        }\n      }\n    } else {\n      return;\n    }\n\n\n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return msg;\n    //return [[msg, apower, voltage, current, total]];\n  } \n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx = \"idx:\" + msg.payload.domoticz.idx\n  let dev = shelly[IDidx] || {};\n\n  msg.topic = msg.payload.domoticz.name + \"/command/switch:\" + msg.payload.domoticz.sw;\n  \n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  delete msg.source;\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  if (msg.topic === \"domoticz/out\") {\n    return;\n  } else {\n    return msg;\n  }\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6771,8 +6798,8 @@
         "type": "function",
         "z": "92d196b8dd5edc6f",
         "name": "gen2 Shelly pro 2PM",
-        "func": "let d = new Date();\nlet apower, voltage, current, total;\nlet idx;\n\nif (msg.payload.script.source === \"Heartbeat\") {\n  let heartbeat = flow.get(\"dz-state\") || {};\n  let idxstatus = [];\n  let length = Object.keys(heartbeat).length;\n  for (let i = 0; i < length; i++) {\n    let keys = Object.keys(heartbeat);\n    let IDkey = keys[i];\n    let dev = heartbeat[IDkey] || {};\n    if (dev.offline === \"Not set\" || dev.offline === \"Disable\") {\n      node.log(\"There is a device which has no heartbeat set or disabled\" )  \n    } else {\n      if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n        idx = Number(IDkey.split(\":\")[1])\n        let domoticz = flow.get(\"sh2dz-idx\") || {};\n        let objlength = Object.keys(domoticz).length;\n\n        for (let j = 0; j < objlength; j++) {\n          let objkeys = Object.keys(domoticz);\n          let objIDkey = objkeys[i];\n          let message = domoticz[objIDkey];\n          let messageidx = parseInt(domoticz[objIDkey].idx);\n\n          if (messageidx === idx) {\n            if (dev.online === true){\n              //apower\n              if (Number(message.idxoption1) === 0 || message.idxoption1 === undefined || message.idxoption1 === \"N/A\" || message.idxoption1 === \"Not set\") {\n                apower = null\n              } else {\n                apower = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption1),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //voltage\n              if (Number(message.idxoption2) === 0 || message.idxoption2 === undefined || message.idxoption2 === \"N/A\" || message.idxoption2 === \"Not set\") {\n                voltage = null;\n              } else {\n                voltage = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption2),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //current\n              if (Number(message.idxoption3) === 0 || message.idxoption3 === undefined || message.idxoption3 === \"N/A\" || message.idxoption3 === \"Not set\") {\n                current = null;\n              } else {\n                current = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption3),\n                    svalue: \"-1\",\n                  }\n                }\n              }\n    \n              //total\n              if (Number(message.idxoption4) === 0 || message.idxoption4 === undefined || message.idxoption4 === \"N/A\" || message.idxoption4 === \"Not set\") {\n                total = null;\n              } else {\n                total = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idxoption4),\n                    nvalue: 0,\n                    svalue: \"0;0\",\n                  }\n                }\n              }\n  \n              //Output\n              if (Number(message.idx) === 0 || message.idx === undefined) {\n                msg = null\n              } else {\n                msg = {\n                  topic: \"domoticz/in\",\n                  payload:\n                  {\n                    command: \"udevice\",\n                    idx: Number(message.idx),\n                    nvalue: 0,\n                  }\n                }\n   \n                dev.online = false\n                dev.output = false\n              \n                heartbeat[IDkey] = dev;\n                idxstatus.push(dev);\n\n                flow.set(\"dz-state\", heartbeat);\n              }\n              return [[msg, apower, voltage, current]];\n            }\n          }\n        }\n      }  \n    }\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Shelly_gen2-3\") {\n    let info = msg.topic.split(\"/\")[1];\n    let sw_id = msg.topic.split(\":\")[1];\n    let output, idx, ID;\n    \n    if (info === \"status\") {\n      let domoticz = flow.get(\"dz-state\") || {};\n      let idxstate = [];\n      \n      if (sw_id === \"0\") {\n        ID = \"idx:\" + msg.payload.domoticz.idx;\n        idx = msg.payload.domoticz.idx;\n      } else if (sw_id === \"1\") {\n        ID = \"idx:\" + msg.payload.domoticz.idxoption1;\n        idx = msg.payload.domoticz.idxoption1;\n      }\n\n      let dev = domoticz[ID] || {};\n      let length = Object.keys(domoticz).length;\n\n      dev.lasttime = d.getTime();\n      dev.offline = msg.payload.domoticz.offline;\n      dev.online = true;\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n\n      //apower\n      //if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined || msg.payload.domoticz.idxoption1 === \"N/A\" || msg.payload.domoticz.idxoption1 === \"Not set\") {\n      //  apower = null\n      //} else {\n      //  apower = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption1),\n      //      svalue: msg.payload.apower.toString(),\n      //    }\n      //  }\n      //}\n\n      //voltage\n      //if (Number(msg.payload.domoticz.idxoption2) === 0 || msg.payload.domoticz.idxoption2 === undefined || msg.payload.domoticz.idxoption2 === \"N/A\" || msg.payload.domoticz.idxoption2 === \"Not set\") {\n      //  voltage = null;\n      //} else {\n      //  voltage = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption2),\n      //      svalue: msg.payload.voltage.toString(),\n      //    }\n      //  }\n      //}\n\n      //current\n      //if (Number(msg.payload.domoticz.idxoption3) === 0 || msg.payload.domoticz.idxoption3 === undefined || msg.payload.domoticz.idxoption3 === \"N/A\" || msg.payload.domoticz.idxoption3 === \"Not set\") {\n      //  current = null;\n      //} else {\n      //  current = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption3),\n      //      svalue: msg.payload.current.toString(),\n      //    }\n      //  }\n      //}\n\n      //total\n      //if (Number(msg.payload.domoticz.idxoption4) === 0 || msg.payload.domoticz.idxoption4 === undefined || msg.payload.domoticz.idxoption4 === \"N/A\" || msg.payload.domoticz.idxoption4 === \"Not set\") {\n      //  total = null;\n      //} else {\n      //  total = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption4),\n      //     nvalue: 0,\n      //      svalue: msg.payload.aenergy.total + \"\\\";\\\"\" + 0,\n      //    }\n      //  }\n      //}\n\n      //Output\n      if (Number(idx) === 0 || idx === undefined || idx === \"Not set\") {\n        msg = null\n      } else {\n        if (output === msg.payload.output) {\n          return;\n        } else {\n          dev.output = msg.payload.output\n          let val = msg.payload.output == true ? 1 : 0;\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(idx),\n              nvalue: val,\n            }\n          }\n        }\n      }\n      \n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total]];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx, dev;\n\n  if (msg.payload.idx === Number(msg.payload.domoticz.idx)) {\n    msg.topic = msg.payload.domoticz.name + \"/command/switch:0\";\n    IDidx = \"idx:\" + msg.payload.domoticz.idx;\n    dev = shelly[IDidx] || {};\n  } else if (msg.payload.idx === Number(msg.payload.domoticz.idxoption1)) {\n    msg.topic = msg.payload.domoticz.name + \"/command/switch:1\";\n    IDidx = \"idx:\" + msg.payload.domoticz.idxoption1;\n    dev = shelly[IDidx] || {};\n  }\n\n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return msg\n}",
-        "outputs": 1,
+        "func": "let d = new Date();\nlet apower, voltage, current, total, idx;\n\nif (msg.payload.script.source === \"Shelly_gen2-3\") {\n    let info = msg.topic.split(\"/\")[1];\n    let sw_id = msg.topic.split(\":\")[1];\n    let output, idx, ID;\n    \n    if (info === \"status\") {\n      let domoticz = flow.get(\"dz-state\") || {};\n      let idxstate = [];\n      \n      if (sw_id === \"0\") {\n        ID = \"idx:\" + msg.payload.domoticz.idx;\n        idx = msg.payload.domoticz.idx;\n      } else if (sw_id === \"1\") {\n        ID = \"idx:\" + msg.payload.domoticz.idxoption1;\n        idx = msg.payload.domoticz.idxoption1;\n      }\n\n      let dev = domoticz[ID] || {};\n      let length = Object.keys(domoticz).length;\n\n      dev.lasttime = d.getTime();\n      dev.offline = msg.payload.domoticz.offline;\n      dev.name = msg.payload.domoticz.name;\n      if (dev.online === false) {\n        let bot = flow.get(\"bot\") || {};\n        let chatid = flow.get(\"chatid\") || {};\n\n        node.warn(\"Shelly device if back online: \" + msg.payload.domoticz.name)\n\n        let telegram = 'https://api.telegram.org/bot' + bot + '/sendMessage?chat_id=' + chatid + '&text=';\n        msg.payload = '' + telegram + 'Shelly device: ' + msg.payload.domoticz.name + ' is back online';\n        node.send([null, msg]);\n      }\n      dev.online = true;\n\n      for (let i = 0; i < length; i++) {\n        let keys = Object.keys(domoticz);\n        let IDkey = keys[i];\n        let dev = domoticz[IDkey] || {};\n\n        if (IDkey === ID) {\n          output = dev.output;\n        }\n      }\n\n      //apower\n      //if (Number(msg.payload.domoticz.idxoption1) === 0 || msg.payload.domoticz.idxoption1 === undefined || msg.payload.domoticz.idxoption1 === \"N/A\" || msg.payload.domoticz.idxoption1 === \"Not set\") {\n      //  apower = null\n      //} else {\n      //  apower = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption1),\n      //      svalue: msg.payload.apower.toString(),\n      //    }\n      //  }\n      //}\n\n      //voltage\n      //if (Number(msg.payload.domoticz.idxoption2) === 0 || msg.payload.domoticz.idxoption2 === undefined || msg.payload.domoticz.idxoption2 === \"N/A\" || msg.payload.domoticz.idxoption2 === \"Not set\") {\n      //  voltage = null;\n      //} else {\n      //  voltage = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption2),\n      //      svalue: msg.payload.voltage.toString(),\n      //    }\n      //  }\n      //}\n\n      //current\n      //if (Number(msg.payload.domoticz.idxoption3) === 0 || msg.payload.domoticz.idxoption3 === undefined || msg.payload.domoticz.idxoption3 === \"N/A\" || msg.payload.domoticz.idxoption3 === \"Not set\") {\n      //  current = null;\n      //} else {\n      //  current = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption3),\n      //      svalue: msg.payload.current.toString(),\n      //    }\n      //  }\n      //}\n\n      //total\n      //if (Number(msg.payload.domoticz.idxoption4) === 0 || msg.payload.domoticz.idxoption4 === undefined || msg.payload.domoticz.idxoption4 === \"N/A\" || msg.payload.domoticz.idxoption4 === \"Not set\") {\n      //  total = null;\n      //} else {\n      //  total = {\n      //    topic: \"domoticz/in\",\n      //    payload:\n      //    {\n      //      command: \"udevice\",\n      //      idx: Number(msg.payload.domoticz.idxoption4),\n      //     nvalue: 0,\n      //      svalue: msg.payload.aenergy.total + \"\\\";\\\"\" + 0,\n      //    }\n      //  }\n      //}\n\n      //Output\n      if (Number(idx) === 0 || idx === undefined || idx === \"Not set\") {\n        msg = null\n      } else {\n        if (output === msg.payload.output) {\n          return;\n        } else {\n          dev.output = msg.payload.output\n          let val = msg.payload.output == true ? 1 : 0;\n          msg = {\n            topic: \"domoticz/in\",\n            payload:\n            {\n              command: \"udevice\",\n              idx: Number(idx),\n              nvalue: val,\n            }\n          }\n        }\n      }\n      \n    domoticz[ID] = dev;\n    idxstate.push(dev);\n\n    flow.set(\"dz-state\", domoticz);\n    return [[msg, apower, voltage, current, total], null];\n  }\n  return;\n}\n\nif (msg.payload.script.source === \"Domoticz\") {\n  let shelly = flow.get(\"dz-state\") || {};\n  let idxshellystate = [];\n  let IDidx, dev;\n\n  if (msg.payload.idx === Number(msg.payload.domoticz.idx)) {\n    msg.topic = msg.payload.domoticz.name + \"/command/switch:0\";\n    IDidx = \"idx:\" + msg.payload.domoticz.idx;\n    dev = shelly[IDidx] || {};\n  } else if (msg.payload.idx === Number(msg.payload.domoticz.idxoption1)) {\n    msg.topic = msg.payload.domoticz.name + \"/command/switch:1\";\n    IDidx = \"idx:\" + msg.payload.domoticz.idxoption1;\n    dev = shelly[IDidx] || {};\n  }\n\n  if (msg.payload.nvalue == 1) {\n    msg.payload = \"on\";\n    dev.output = true;\n  } else if (msg.payload.nvalue == 0) {\n    msg.payload = \"off\";\n    dev.output = false;\n  }\n\n  shelly[IDidx] = dev;\n  idxshellystate.push(dev);\n\n  flow.set(\"dz-state\", shelly);\n  return [msg, null]\n}",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -6782,7 +6809,11 @@
         "wires": [
             [
                 "ba879db7f3788299",
-                "155c8d497f7d9280"
+                "155c8d497f7d9280",
+                "0c8b6e0ac4103dbd"
+            ],
+            [
+                "144028cd07e14cc0"
             ]
         ]
     },
@@ -7056,6 +7087,632 @@
         ]
     },
     {
+        "id": "9359d9b8f81fa4d2",
+        "type": "change",
+        "z": "92d196b8dd5edc6f",
+        "name": "Shelly pro 2PM",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "wensput/status/switch:0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"id\":0,\"source\":\"mqtt\",\"output\":true,\"aenergy\":{\"total\":39.236,\"by_minute\":[0.429,1.718,0.859],\"minute_ts\":1713723900},\"temperature\":{\"tC\":37.8,\"tF\":100}}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 20,
+        "wires": [
+            [
+                "8f51e32b5a47a5f8"
+            ]
+        ]
+    },
+    {
+        "id": "77370c6bf4e0b49f",
+        "type": "inject",
+        "z": "92d196b8dd5edc6f",
+        "name": "Shelly pro 2PM relay1 ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1370,
+        "y": 20,
+        "wires": [
+            [
+                "9359d9b8f81fa4d2"
+            ]
+        ]
+    },
+    {
+        "id": "b179283e080d8798",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "name": "Heartbeat check",
+        "func": "let d = new Date();\nlet idx; \n\nif (msg.payload.script.source === \"Heartbeat\") {\n    let heartbeat = flow.get(\"dz-state\") || {};\n    let length = Object.keys(heartbeat).length;\n    for (let i = 0; i < length; i++) {\n\n        let keys = Object.keys(heartbeat);\n        let IDkey = keys[i];\n        let dev = heartbeat[IDkey] || {};\n        if (dev.offline === \"Not set\" || dev.offline === \"Disable\" || dev.offline === \"N/A\") {\n            node.warn(\"There is a device which has no heartbeat set or disabled\")\n        } else {\n            if (d.getTime() - dev.lasttime > (dev.offline * 1000)) {\n                if (dev.online === true) {\n                    let bot = flow.get(\"bot\") || {};\n                    let chatid = flow.get(\"chatid\") || {};\n\n                    node.warn(\"Shelly device is offline: \" + dev.name);\n                    dev.online = false\n                    heartbeat[IDkey] = dev;\n                    flow.set(\"dz-state\", heartbeat);\n\n                    let telegram = 'https://api.telegram.org/bot' + bot + '/sendMessage?chat_id=' + chatid + '&text=';\n                    msg.payload = '' + telegram + 'Shelly device: ' + dev.name + ' is offline';\n                    node.send(msg);\n                }\n            }\n        }\n    }\n    return;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2460,
+        "y": 720,
+        "wires": [
+            [
+                "144028cd07e14cc0"
+            ]
+        ]
+    },
+    {
+        "id": "2d5dcb4304a0901a",
+        "type": "link out",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "SZ2D, Restore telegram (read file)",
+        "mode": "link",
+        "links": [
+            "21850dcc45e2382d",
+            "0eadbde0bc90c9c8"
+        ],
+        "x": 1625,
+        "y": 3100,
+        "wires": []
+    },
+    {
+        "id": "f897010fb19eecc9",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Get save location",
+        "func": "delete msg.payload;\nlet destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/telegram-bot-credentials.txt\";\n\nlet version = flow.get(\"NoderedVersion\");\nlet array = version.split(\".\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 3060,
+        "wires": [
+            [
+                "cf994b3878b086ab"
+            ]
+        ]
+    },
+    {
+        "id": "24b8247762331bc4",
+        "type": "link in",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Shelly, start UI",
+        "links": [
+            "e68df47c80fe8e65"
+        ],
+        "x": 75,
+        "y": 3100,
+        "wires": [
+            [
+                "f897010fb19eecc9",
+                "4ee5d0c3b24afb48"
+            ]
+        ]
+    },
+    {
+        "id": "cf994b3878b086ab",
+        "type": "file in",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Read telegram",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 520,
+        "y": 3060,
+        "wires": [
+            [
+                "8059f74a1505fd2d"
+            ]
+        ]
+    },
+    {
+        "id": "6aba90f378f86134",
+        "type": "file in",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Read telegram",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 520,
+        "y": 3140,
+        "wires": [
+            [
+                "2ddd3e5049ca712a"
+            ]
+        ]
+    },
+    {
+        "id": "4ee5d0c3b24afb48",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Get save location",
+        "func": "delete msg.payload;\nlet destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/telegram-chatid-credentials.txt\";\n\nlet version = flow.get(\"NoderedVersion\");\nlet array = version.split(\".\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 3140,
+        "wires": [
+            [
+                "6aba90f378f86134"
+            ]
+        ]
+    },
+    {
+        "id": "8059f74a1505fd2d",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Set Device settings",
+        "func": "flow.set(\"bot\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 3060,
+        "wires": [
+            [
+                "11baf83766458e57"
+            ]
+        ]
+    },
+    {
+        "id": "2ddd3e5049ca712a",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "Set Device settings",
+        "func": "flow.set(\"chatid\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 3140,
+        "wires": [
+            [
+                "d0bde3c507cbec9f"
+            ]
+        ]
+    },
+    {
+        "id": "11baf83766458e57",
+        "type": "change",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "parts.index = 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.index",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 3060,
+        "wires": [
+            [
+                "65b7fc994ed8a9d5"
+            ]
+        ]
+    },
+    {
+        "id": "d0bde3c507cbec9f",
+        "type": "change",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "parts.index = 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.index",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 3140,
+        "wires": [
+            [
+                "65b7fc994ed8a9d5"
+            ]
+        ]
+    },
+    {
+        "id": "65b7fc994ed8a9d5",
+        "type": "change",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "group id and count",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.id",
+                "pt": "msg",
+                "to": "mygroup",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts.count",
+                "pt": "msg",
+                "to": "2",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 3100,
+        "wires": [
+            [
+                "1aa46d9667bcf55b"
+            ]
+        ]
+    },
+    {
+        "id": "1aa46d9667bcf55b",
+        "type": "join",
+        "z": "92d196b8dd5edc6f",
+        "g": "1b078b4e3cb34041",
+        "name": "",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1490,
+        "y": 3100,
+        "wires": [
+            [
+                "2d5dcb4304a0901a"
+            ]
+        ]
+    },
+    {
+        "id": "ee14456093c642ae",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Get saved telegram info",
+        "func": "delete msg.payload;\nlet bot = flow.get(\"bot\");\nlet chatid = flow.get(\"chatid\");\nlet setbot;\nlet setchatid\n\nif (bot === undefined) {\n    setbot = { topic: \"bot\", payload: 'Not defined' };\n} else {\n    setbot = { topic: \"bot\", payload: bot};\n}\n\nif (chatid === undefined) {\n    setchatid = { topic: \"chatid\", payload: 'Not defined' };\n} else {\n    setchatid = { topic: \"chatid\", payload: chatid };\n}\n\nreturn [setbot, setchatid];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 3280,
+        "wires": [
+            [
+                "63f0dd7b943e2d88",
+                "8df879b0f01694f6"
+            ],
+            [
+                "cbf354f448d7609e",
+                "8df879b0f01694f6"
+            ]
+        ]
+    },
+    {
+        "id": "21850dcc45e2382d",
+        "type": "link in",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Shelly, set telegram after deploy",
+        "links": [
+            "2d5dcb4304a0901a"
+        ],
+        "x": 75,
+        "y": 3280,
+        "wires": [
+            [
+                "ee14456093c642ae"
+            ]
+        ]
+    },
+    {
+        "id": "63f0dd7b943e2d88",
+        "type": "ui_text_input",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "",
+        "label": "Telegram BOT credentials",
+        "tooltip": "",
+        "group": "39ab554c802973bb",
+        "order": 1,
+        "width": "10",
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "bot",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 650,
+        "y": 3240,
+        "wires": [
+            [
+                "8df879b0f01694f6"
+            ]
+        ]
+    },
+    {
+        "id": "cbf354f448d7609e",
+        "type": "ui_text_input",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "",
+        "label": "Telegram Chat ID credentials",
+        "tooltip": "",
+        "group": "39ab554c802973bb",
+        "order": 2,
+        "width": "10",
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "chatid",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 660,
+        "y": 3320,
+        "wires": [
+            [
+                "8df879b0f01694f6"
+            ]
+        ]
+    },
+    {
+        "id": "8df879b0f01694f6",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Set Device settings",
+        "func": "let data1 = context.get(\"data1\") || null; //get from context or default to 0\nlet data2 = context.get(\"data2\") || 0; //get from context or default to 0\n\n//var reconfig = flow.get(\"T2Zidx\") || {};\n\nswitch (msg.topic){\n\n    case \"bot\":\n        data1 = msg.payload; \n        context.set(\"data1\", data1);//store in context for next time \n        return;\n    \n    case \"chatid\":\n        data2 = msg.payload; \n        context.set(\"data2\", data2);//store in context for next time \n        return;\n            \n    case \"submit\":\n        if (data1 !== null ) {\n            if (data2 !== null) {\n                flow.set(\"bot\", data1);\n                flow.set(\"chatid\", data2);\n                let datasend1 = { payload: data1 };\n                let datasend2 = { payload: data2 };\n                context.set(\"data1\", null)\n                context.set(\"data2\", null)\n                return [datasend1, datasend2];\n            } else {\n                return;\n            }\n        } else {\n            return;\n        }\n    }",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 3280,
+        "wires": [
+            [
+                "3be3c709f83c4a7c"
+            ],
+            [
+                "8cd52e02a5b87194"
+            ]
+        ]
+    },
+    {
+        "id": "05c29c01d7a525f2",
+        "type": "ui_button",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "",
+        "group": "39ab554c802973bb",
+        "order": 4,
+        "width": "10",
+        "height": 1,
+        "passthru": false,
+        "label": "Save telegram settings",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "submit",
+        "topicType": "str",
+        "x": 640,
+        "y": 3360,
+        "wires": [
+            [
+                "8df879b0f01694f6"
+            ]
+        ]
+    },
+    {
+        "id": "3be3c709f83c4a7c",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Get save location",
+        "func": "let destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/telegram-bot-credentials.txt\";\nlet version = flow.get(\"NoderedVersion\");\nlet array = version.split(\".\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 3260,
+        "wires": [
+            [
+                "7856886803b859f9"
+            ]
+        ]
+    },
+    {
+        "id": "7856886803b859f9",
+        "type": "file",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Save to file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 1570,
+        "y": 3260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cd52e02a5b87194",
+        "type": "function",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Get save location",
+        "func": "let destination = flow.get(\"savefiledestination\");\nmsg.filename = destination + \"/telegram-chatid-credentials.txt\";\nlet version = flow.get(\"NoderedVersion\");\nlet array = version.split(\".\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 3300,
+        "wires": [
+            [
+                "956b8bc8609a7849"
+            ]
+        ]
+    },
+    {
+        "id": "956b8bc8609a7849",
+        "type": "file",
+        "z": "92d196b8dd5edc6f",
+        "g": "f9c91086607bc42e",
+        "name": "Save to file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 1570,
+        "y": 3300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "144028cd07e14cc0",
+        "type": "change",
+        "z": "92d196b8dd5edc6f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2750,
+        "y": 720,
+        "wires": [
+            [
+                "ba374ef64705c27c"
+            ]
+        ]
+    },
+    {
+        "id": "ba374ef64705c27c",
+        "type": "http request",
+        "z": "92d196b8dd5edc6f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2930,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "b6e6fa8f868e6d45",
         "type": "ui_spacer",
         "z": "92d196b8dd5edc6f",
@@ -7117,9 +7774,9 @@
     {
         "id": "ecbbb13f9bc2e1f2",
         "type": "ui_group",
-        "name": "",
+        "name": "Github",
         "tab": "e3edb57efc8062a5",
-        "order": 6,
+        "order": 8,
         "disp": true,
         "width": "30",
         "collapse": false,
@@ -7152,7 +7809,7 @@
         "type": "ui_group",
         "name": "URL",
         "tab": "e3edb57efc8062a5",
-        "order": 5,
+        "order": 6,
         "disp": false,
         "width": "30",
         "collapse": false,
@@ -7163,9 +7820,20 @@
         "type": "ui_group",
         "name": "Debug messages",
         "tab": "e3edb57efc8062a5",
-        "order": 5,
+        "order": 7,
         "disp": true,
         "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "39ab554c802973bb",
+        "type": "ui_group",
+        "name": "Telegram (for device offline messages)",
+        "tab": "e3edb57efc8062a5",
+        "order": 5,
+        "disp": true,
+        "width": "30",
         "collapse": false,
         "className": ""
     },
