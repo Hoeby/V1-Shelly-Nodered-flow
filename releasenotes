@@ -1,3 +1,5 @@
+<b>V1 19-11-2025 R1 beta: </b><br>
+- Heartbeat "Shelly 1PM" added <br>
 <b>V1 16-11-2025 R1 beta: </b><br>
 - Change: for "Shelly pro 2PM", switch:1 (relay) moved to IDXoption4<br>
 - Added: for "Shelly pro 2PM", power, current, voltage added<br>
